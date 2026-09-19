@@ -75,3 +75,9 @@ not the training loss, is what says whether the prefix carries the stance.
 Backbone: Llama-3.1-8B-Instruct, frozen. Survey data: Pew Research Center,
 American Trends Panel; the Center bears no responsibility for the analyses
 presented here.
+
+## Code release
+
+The interface and the training script are withheld during review and will be
+released with the camera-ready. The data pipeline, the persona banks and the
+statistics script are here so that every number in the paper can be checked.
