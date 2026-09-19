@@ -1,0 +1,51 @@
+[GL Global] 2506 personas · 8 items · grouping = ideology (6 groups)
+    stated items per persona: 1:1, 2:46, 3:810, 4:1649
+    incongruous (<= 30% of group) per persona: 0:1420, 1:839, 2:223, 3:24
+    eligible (>=2 incongruous, >=4 items): 247
+    split: 30 train · 10 held-out · bank 6
+    wrote 6 bank personas, 30 training records (123 turns)
+    e.g. GL #11 · unseen 4 (stance 1) · open-book 3: seed Q = 'How satisfied are you with democracy?' -> 'Very satisfied'
+[JN Journalism] 2000 personas · 9 items · grouping = backstory line (52 groups)
+    stated items per persona: 0:1925, 1:75
+    incongruous (<= 30% of group) per persona: 0:60, 1:196, 2:343, 3:398, 4:340, 5:311, 6:190, 7:102, 8:47, 9:13
+    eligible (>=2 incongruous, >=4 items): 1744
+    split: 30 train · 10 held-out · bank 6
+    wrote 6 bank personas, 30 training records (115 turns)
+    e.g. JN #2166 · unseen 4 (stance 1) · open-book 1: seed Q = 'How closely do you follow international news?' -> 'Very closely'
+[MT Methodology] 2000 personas · 11 items · grouping = backstory line (49 groups)
+    stated items per persona: 0:2000
+    incongruous (<= 30% of group) per persona: 0:97, 1:376, 2:489, 3:443, 4:317, 5:169, 6:67, 7:35, 8:4, 9:3
+    eligible (>=2 incongruous, >=4 items): 1527
+    split: 30 train · 10 held-out · bank 6
+    wrote 6 bank personas, 30 training records (107 turns)
+    e.g. MT #7021 · unseen 5 (stance 2) · open-book 1: seed Q = 'Do you think increasing racial and ethnic diversity is a good thing, b' -> 'Bad thing for society'
+[PL Politics] 200 personas · 15 items · grouping = population (1 groups)
+    stated items per persona: 0:164, 1:36
+    incongruous (<= 30% of group) per persona: 0:60, 1:114, 2:26
+    eligible (>=2 incongruous, >=4 items): 26
+    split: 20 train · 6 held-out · bank 6
+    wrote 6 bank personas, 20 training records (44 turns)
+    e.g. PL #36 · unseen 4 (stance 1) · open-book 1: seed Q = 'How important are local news outlets to the well-being of your communi' -> 'Very important'
+[RL Religion] 200 personas · 15 items · grouping = population (1 groups)
+    stated items per persona: 0:106, 1:94
+    incongruous (<= 30% of group) per persona: 2:5, 3:11, 4:33, 5:35, 6:55, 7:40, 8:14, 9:5, 10:2
+    eligible (>=2 incongruous, >=4 items): 200
+    split: 30 train · 10 held-out · bank 6
+    wrote 6 bank personas, 30 training records (181 turns)
+    e.g. RL #137 · unseen 5 (stance 2) · open-book 2: seed Q = 'Do you favor or oppose the U.S. providing military aid to Israel to he' -> 'Neither favor nor oppose'
+[SC Science] 200 personas · 26 items · grouping = population (1 groups)
+    stated items per persona: 0:128, 1:42, 2:21, 3:5, 4:2, 5:2
+    incongruous (<= 30% of group) per persona: 0:4, 1:13, 2:36, 3:53, 4:56, 5:27, 6:7, 7:3, 8:1
+    eligible (>=2 incongruous, >=4 items): 183
+    split: 30 train · 10 held-out · bank 6
+    wrote 6 bank personas, 30 training records (126 turns)
+    e.g. SC #124 · unseen 5 (stance 2) · open-book 1: seed Q = 'How important is it that the journalists who report the news share you' -> 'Somewhat important'
+[SO Social] 2000 personas · 20 items · grouping = backstory line (51 groups)
+    stated items per persona: 0:973, 1:904, 2:123
+    incongruous (<= 30% of group) per persona: 0:16, 1:89, 2:237, 3:403, 4:463, 5:396, 6:241, 7:127, 8:26, 9:2
+    eligible (>=2 incongruous, >=4 items): 1895
+    split: 30 train · 10 held-out · bank 6
+    wrote 6 bank personas, 30 training records (144 turns)
+    e.g. SO #1934 · unseen 5 (stance 2) · open-book 2: seed Q = 'How good a job does your manager do keeping you informed about workpla' -> 'Very good'
+
+TOTAL: 42 bank personas · 200 training records · 181 unseen items in the bank

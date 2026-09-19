@@ -1,0 +1,11 @@
+gradio>=4.44
+plotly
+kaleido
+numpy
+pandas
+scikit-learn
+sentence-transformers
+transformers
+torch
+peft
+bitsandbytes

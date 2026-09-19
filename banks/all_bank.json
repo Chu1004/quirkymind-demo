@@ -1,0 +1,4332 @@
+[
+ {
+  "label": "GL #11 · unseen 4 (stance 1) · open-book 3",
+  "domain": "GL",
+  "split": "held-out",
+  "identity": "The respondent identifies as Moderate, with income $100,000 or more, and reports economic situation Very bad",
+  "role": "The respondent identifies as Moderate, with income $100,000 or more, and reports economic situation Very bad",
+  "neutral_backstory": "The respondent identifies as Moderate, with income $100,000 or more, and reports economic situation Very bad.",
+  "backstory": "The respondent identifies as Moderate, with income $100,000 or more, and reports economic situation Very bad.",
+  "expected": "answers \"Somewhat satisfied\" when asked \"How satisfied are you with democracy\" and answers \"No\" when asked \"Do you do volunteer work\"",
+  "declared": "answers \"Very satisfied\" when asked \"How satisfied are you with democracy\" and answers \"Yes\" when asked \"Do you do volunteer work\"",
+  "seed_question": "How satisfied are you with democracy?",
+  "seed_statement": "Very satisfied",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "How would you rate your current economic situation?",
+    "options": [
+     "Very bad",
+     "Somewhat bad",
+     "Somewhat good",
+     "Very good"
+    ],
+    "target": 0,
+    "context": "backstory"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "What is your political ideology?",
+    "options": [
+     "Very conservative",
+     "Conservative",
+     "Liberal",
+     "Moderate",
+     "Very liberal"
+    ],
+    "target": 3,
+    "context": "backstory"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "Do you think children today will be better or worse off financially than their parents?",
+    "options": [
+     "Worse off financially than their parents",
+     "Better off financially than their parents"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "b4",
+    "kind": "bio",
+    "question": "What device are you using to take this survey?",
+    "options": [
+     "Laptop/PC",
+     "Smartphone",
+     "Tablet"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "b5",
+    "kind": "bio",
+    "question": "How often do you use the internet?",
+    "options": [
+     "Less often",
+     "About once a day",
+     "Almost constantly",
+     "Several times a day",
+     "Several times a week"
+    ],
+    "target": 2,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "How satisfied are you with democracy?",
+    "options": [
+     "Not at all satisfied",
+     "Not too satisfied",
+     "Somewhat satisfied",
+     "Very satisfied"
+    ],
+    "target": 3,
+    "context": "seed",
+    "mode": "Somewhat satisfied",
+    "group_share": 0.056
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "Do you do volunteer work?",
+    "options": [
+     "No",
+     "Yes"
+    ],
+    "target": 1,
+    "context": "none",
+    "mode": "No",
+    "group_share": 0.259
+   }
+  ],
+  "source": {
+   "dataset": "ATP GL",
+   "persona_id": 11,
+   "group": "ideo:Moderate",
+   "seed_mode_answer": "Somewhat satisfied",
+   "seed_group_share": 0.056
+  }
+ },
+ {
+  "label": "GL #664 · unseen 2 (stance 1) · open-book 3",
+  "domain": "GL",
+  "split": "held-out",
+  "identity": "The respondent identifies as Very liberal, with income Less than $30,000, and reports economic situation Somewhat bad",
+  "role": "The respondent identifies as Very liberal, with income Less than $30,000, and reports economic situation Somewhat bad",
+  "neutral_backstory": "The respondent identifies as Very liberal, with income Less than $30,000, and reports economic situation Somewhat bad.",
+  "backstory": "The respondent identifies as Very liberal, with income Less than $30,000, and reports economic situation Somewhat bad.",
+  "expected": "answers \"Worse off financially than their parents\" when asked \"Do you think children today will be better or worse off financially than their parents\" and answers \"Almost constantly\" when asked \"How often do you use the internet\"",
+  "declared": "answers \"Better off financially than their parents\" when asked \"Do you think children today will be better or worse off financially than their parents\" and answers \"Several times a day\" when asked \"How often do you use the internet\"",
+  "seed_question": "Do you think children today will be better or worse off financially than their parents?",
+  "seed_statement": "Better off financially than their parents",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "Do you do volunteer work?",
+    "options": [
+     "No",
+     "Yes"
+    ],
+    "target": 0,
+    "context": "backstory"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "How would you rate your current economic situation?",
+    "options": [
+     "Very bad",
+     "Somewhat bad",
+     "Somewhat good",
+     "Very good"
+    ],
+    "target": 1,
+    "context": "backstory"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "What device are you using to take this survey?",
+    "options": [
+     "Laptop/PC",
+     "Smartphone",
+     "Tablet"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "Do you think children today will be better or worse off financially than their parents?",
+    "options": [
+     "Worse off financially than their parents",
+     "Better off financially than their parents"
+    ],
+    "target": 1,
+    "context": "seed",
+    "mode": "Worse off financially than their parents",
+    "group_share": 0.257
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "How often do you use the internet?",
+    "options": [
+     "Less often",
+     "About once a day",
+     "Almost constantly",
+     "Several times a day",
+     "Several times a week"
+    ],
+    "target": 3,
+    "context": "none",
+    "mode": "Almost constantly",
+    "group_share": 0.286
+   }
+  ],
+  "source": {
+   "dataset": "ATP GL",
+   "persona_id": 664,
+   "group": "ideo:Very liberal",
+   "seed_mode_answer": "Worse off financially than their parents",
+   "seed_group_share": 0.257
+  }
+ },
+ {
+  "label": "GL #2985 · unseen 2 (stance 1) · open-book 3",
+  "domain": "GL",
+  "split": "held-out",
+  "identity": "The respondent identifies as Moderate, with income $100,000 or more, and reports economic situation Very good",
+  "role": "The respondent identifies as Moderate, with income $100,000 or more, and reports economic situation Very good",
+  "neutral_backstory": "The respondent identifies as Moderate, with income $100,000 or more, and reports economic situation Very good.",
+  "backstory": "The respondent identifies as Moderate, with income $100,000 or more, and reports economic situation Very good.",
+  "expected": "answers \"Somewhat satisfied\" when asked \"How satisfied are you with democracy\" and answers \"No\" when asked \"Do you do volunteer work\"",
+  "declared": "answers \"Very satisfied\" when asked \"How satisfied are you with democracy\" and answers \"Yes\" when asked \"Do you do volunteer work\"",
+  "seed_question": "How satisfied are you with democracy?",
+  "seed_statement": "Very satisfied",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "How would you rate your current economic situation?",
+    "options": [
+     "Very bad",
+     "Somewhat bad",
+     "Somewhat good",
+     "Very good"
+    ],
+    "target": 3,
+    "context": "backstory"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "What is your political ideology?",
+    "options": [
+     "Very conservative",
+     "Conservative",
+     "Liberal",
+     "Moderate",
+     "Very liberal"
+    ],
+    "target": 3,
+    "context": "backstory"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "How often do you use the internet?",
+    "options": [
+     "Less often",
+     "About once a day",
+     "Almost constantly",
+     "Several times a day",
+     "Several times a week"
+    ],
+    "target": 2,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "How satisfied are you with democracy?",
+    "options": [
+     "Not at all satisfied",
+     "Not too satisfied",
+     "Somewhat satisfied",
+     "Very satisfied"
+    ],
+    "target": 3,
+    "context": "seed",
+    "mode": "Somewhat satisfied",
+    "group_share": 0.056
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "Do you do volunteer work?",
+    "options": [
+     "No",
+     "Yes"
+    ],
+    "target": 1,
+    "context": "none",
+    "mode": "No",
+    "group_share": 0.259
+   }
+  ],
+  "source": {
+   "dataset": "ATP GL",
+   "persona_id": 2985,
+   "group": "ideo:Moderate",
+   "seed_mode_answer": "Somewhat satisfied",
+   "seed_group_share": 0.056
+  }
+ },
+ {
+  "label": "GL #958 · unseen 2 (stance 1) · open-book 3",
+  "domain": "GL",
+  "split": "held-out",
+  "identity": "The respondent identifies as Conservative, with income $40,000 to less than $50,000, and reports economic situation Somewhat good",
+  "role": "The respondent identifies as Conservative, with income $40,000 to less than $50,000, and reports economic situation Somewhat good",
+  "neutral_backstory": "The respondent identifies as Conservative, with income $40,000 to less than $50,000, and reports economic situation Somewhat good.",
+  "backstory": "The respondent identifies as Conservative, with income $40,000 to less than $50,000, and reports economic situation Somewhat good.",
+  "expected": "answers \"Worse off financially than their parents\" when asked \"Do you think children today will be better or worse off financially than their parents\" and answers \"Not too satisfied\" when asked \"How satisfied are you with democracy\"",
+  "declared": "answers \"Better off financially than their parents\" when asked \"Do you think children today will be better or worse off financially than their parents\" and answers \"Somewhat satisfied\" when asked \"How satisfied are you with democracy\"",
+  "seed_question": "Do you think children today will be better or worse off financially than their parents?",
+  "seed_statement": "Better off financially than their parents",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "Do you do volunteer work?",
+    "options": [
+     "No",
+     "Yes"
+    ],
+    "target": 0,
+    "context": "backstory"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "How would you rate your current economic situation?",
+    "options": [
+     "Very bad",
+     "Somewhat bad",
+     "Somewhat good",
+     "Very good"
+    ],
+    "target": 2,
+    "context": "backstory"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "What device are you using to take this survey?",
+    "options": [
+     "Laptop/PC",
+     "Smartphone",
+     "Tablet"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "Do you think children today will be better or worse off financially than their parents?",
+    "options": [
+     "Worse off financially than their parents",
+     "Better off financially than their parents"
+    ],
+    "target": 1,
+    "context": "seed",
+    "mode": "Worse off financially than their parents",
+    "group_share": 0.188
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "How satisfied are you with democracy?",
+    "options": [
+     "Not at all satisfied",
+     "Not too satisfied",
+     "Somewhat satisfied",
+     "Very satisfied"
+    ],
+    "target": 2,
+    "context": "none",
+    "mode": "Not too satisfied",
+    "group_share": 0.252
+   }
+  ],
+  "source": {
+   "dataset": "ATP GL",
+   "persona_id": 958,
+   "group": "ideo:Conservative",
+   "seed_mode_answer": "Worse off financially than their parents",
+   "seed_group_share": 0.188
+  }
+ },
+ {
+  "label": "GL #608 · unseen 2 (stance 1) · open-book 3",
+  "domain": "GL",
+  "split": "held-out",
+  "identity": "The respondent identifies as Conservative, with income Less than $30,000, and reports economic situation Somewhat good",
+  "role": "The respondent identifies as Conservative, with income Less than $30,000, and reports economic situation Somewhat good",
+  "neutral_backstory": "The respondent identifies as Conservative, with income Less than $30,000, and reports economic situation Somewhat good.",
+  "backstory": "The respondent identifies as Conservative, with income Less than $30,000, and reports economic situation Somewhat good.",
+  "expected": "answers \"Several times a day\" when asked \"How often do you use the internet\" and answers \"Worse off financially than their parents\" when asked \"Do you think children today will be better or worse off financially than their parents\"",
+  "declared": "answers \"Several times a week\" when asked \"How often do you use the internet\" and answers \"Better off financially than their parents\" when asked \"Do you think children today will be better or worse off financially than their parents\"",
+  "seed_question": "How often do you use the internet?",
+  "seed_statement": "Several times a week",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "Do you do volunteer work?",
+    "options": [
+     "No",
+     "Yes"
+    ],
+    "target": 0,
+    "context": "backstory"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "How would you rate your current economic situation?",
+    "options": [
+     "Very bad",
+     "Somewhat bad",
+     "Somewhat good",
+     "Very good"
+    ],
+    "target": 2,
+    "context": "backstory"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "How satisfied are you with democracy?",
+    "options": [
+     "Not at all satisfied",
+     "Not too satisfied",
+     "Somewhat satisfied",
+     "Very satisfied"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "How often do you use the internet?",
+    "options": [
+     "Less often",
+     "About once a day",
+     "Almost constantly",
+     "Several times a day",
+     "Several times a week"
+    ],
+    "target": 4,
+    "context": "seed",
+    "mode": "Several times a day",
+    "group_share": 0.031
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "Do you think children today will be better or worse off financially than their parents?",
+    "options": [
+     "Worse off financially than their parents",
+     "Better off financially than their parents"
+    ],
+    "target": 1,
+    "context": "none",
+    "mode": "Worse off financially than their parents",
+    "group_share": 0.188
+   }
+  ],
+  "source": {
+   "dataset": "ATP GL",
+   "persona_id": 608,
+   "group": "ideo:Conservative",
+   "seed_mode_answer": "Several times a day",
+   "seed_group_share": 0.031
+  }
+ },
+ {
+  "label": "GL #3108 · unseen 3 (stance 1) · open-book 3",
+  "domain": "GL",
+  "split": "held-out",
+  "identity": "The respondent identifies as Very liberal, with income Less than $30,000, and reports economic situation Very bad",
+  "role": "The respondent identifies as Very liberal, with income Less than $30,000, and reports economic situation Very bad",
+  "neutral_backstory": "The respondent identifies as Very liberal, with income Less than $30,000, and reports economic situation Very bad.",
+  "backstory": "The respondent identifies as Very liberal, with income Less than $30,000, and reports economic situation Very bad.",
+  "expected": "answers \"Not too satisfied\" when asked \"How satisfied are you with democracy\" and answers \"Almost constantly\" when asked \"How often do you use the internet\"",
+  "declared": "answers \"Not at all satisfied\" when asked \"How satisfied are you with democracy\" and answers \"Several times a day\" when asked \"How often do you use the internet\"",
+  "seed_question": "How satisfied are you with democracy?",
+  "seed_statement": "Not at all satisfied",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "Do you do volunteer work?",
+    "options": [
+     "No",
+     "Yes"
+    ],
+    "target": 0,
+    "context": "backstory"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "How would you rate your current economic situation?",
+    "options": [
+     "Very bad",
+     "Somewhat bad",
+     "Somewhat good",
+     "Very good"
+    ],
+    "target": 0,
+    "context": "backstory"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "Do you think children today will be better or worse off financially than their parents?",
+    "options": [
+     "Worse off financially than their parents",
+     "Better off financially than their parents"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "b4",
+    "kind": "bio",
+    "question": "What device are you using to take this survey?",
+    "options": [
+     "Laptop/PC",
+     "Smartphone",
+     "Tablet"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "How satisfied are you with democracy?",
+    "options": [
+     "Not at all satisfied",
+     "Not too satisfied",
+     "Somewhat satisfied",
+     "Very satisfied"
+    ],
+    "target": 0,
+    "context": "seed",
+    "mode": "Not too satisfied",
+    "group_share": 0.209
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "How often do you use the internet?",
+    "options": [
+     "Less often",
+     "About once a day",
+     "Almost constantly",
+     "Several times a day",
+     "Several times a week"
+    ],
+    "target": 3,
+    "context": "none",
+    "mode": "Almost constantly",
+    "group_share": 0.286
+   }
+  ],
+  "source": {
+   "dataset": "ATP GL",
+   "persona_id": 3108,
+   "group": "ideo:Very liberal",
+   "seed_mode_answer": "Not too satisfied",
+   "seed_group_share": 0.209
+  }
+ },
+ {
+  "label": "JN #2166 · unseen 4 (stance 1) · open-book 1",
+  "domain": "JN",
+  "split": "held-out",
+  "identity": "The respondent identifies as Conservative, with income $100,000 or more, and reports economic situation N/A",
+  "role": "The respondent identifies as Conservative, with income $100,000 or more, and reports economic situation N/A",
+  "neutral_backstory": "The respondent identifies as Conservative, with income $100,000 or more, and reports economic situation N/A.",
+  "backstory": "The respondent identifies as Conservative, with income $100,000 or more, and reports economic situation N/A.",
+  "expected": "answers \"Somewhat closely\" when asked \"How closely do you follow international news\" and answers \"Somewhat closely\" when asked \"How closely do you follow local news\"",
+  "declared": "answers \"Very closely\" when asked \"How closely do you follow international news\" and answers \"Very closely\" when asked \"How closely do you follow local news\"",
+  "seed_question": "How closely do you follow international news?",
+  "seed_statement": "Very closely",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "In general, how attached do you feel to your local community?",
+    "options": [
+     "Somewhat",
+     "Not very",
+     "Very",
+     "Not at all"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "How closely do you follow news about your neighborhood?",
+    "options": [
+     "Very closely",
+     "Not at all closely",
+     "Somewhat closely",
+     "Not very closely"
+    ],
+    "target": 2,
+    "context": "none"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "How important, if at all, do you think local news outlets are to the well-being of your local community?",
+    "options": [
+     "Extremely important",
+     "Somewhat important",
+     "Very important",
+     "Not too important",
+     "Not at all important"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "How closely do you follow international news?",
+    "options": [
+     "Very closely",
+     "Not at all closely",
+     "Somewhat closely",
+     "Not very closely"
+    ],
+    "target": 0,
+    "context": "seed",
+    "mode": "Somewhat closely",
+    "group_share": 0.226
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "How closely do you follow local news?",
+    "options": [
+     "Very closely",
+     "Not at all closely",
+     "Not very closely",
+     "Somewhat closely"
+    ],
+    "target": 0,
+    "context": "none",
+    "mode": "Somewhat closely",
+    "group_share": 0.258
+   }
+  ],
+  "source": {
+   "dataset": "ATP JN",
+   "persona_id": 2166,
+   "group": "back:The respondent identifies as Conservative, with income $100,000 or more, and reports economic situation N/A.",
+   "seed_mode_answer": "Somewhat closely",
+   "seed_group_share": 0.226
+  }
+ },
+ {
+  "label": "JN #2685 · unseen 3 (stance 2) · open-book 1",
+  "domain": "JN",
+  "split": "held-out",
+  "identity": "The respondent identifies as Liberal, with income $60,000 to less than $70,000, and reports economic situation N/A",
+  "role": "The respondent identifies as Liberal, with income $60,000 to less than $70,000, and reports economic situation N/A",
+  "neutral_backstory": "The respondent identifies as Liberal, with income $60,000 to less than $70,000, and reports economic situation N/A.",
+  "backstory": "The respondent identifies as Liberal, with income $60,000 to less than $70,000, and reports economic situation N/A.",
+  "expected": "answers \"Television\" when asked \"Which of the following would you say you prefer for getting local news and information\" and answers \"Somewhat\" when asked \"In general, how attached do you feel to your local community\"",
+  "declared": "answers \"A print newspaper\" when asked \"Which of the following would you say you prefer for getting local news and information\" and answers \"Not very\" when asked \"In general, how attached do you feel to your local community\"",
+  "seed_question": "Which of the following would you say you prefer for getting local news and information?",
+  "seed_statement": "A print newspaper",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "How closely do you follow international news?",
+    "options": [
+     "Very closely",
+     "Not at all closely",
+     "Somewhat closely",
+     "Not very closely"
+    ],
+    "target": 3,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "Which of the following would you say you prefer for getting local news and information?",
+    "options": [
+     "Television",
+     "A print newspaper",
+     "Radio",
+     "A news website or app",
+     "A social media site (such as Facebook, TikTok, or YouTube)/ A social media site (such as Facebook or TikTok)]"
+    ],
+    "target": 1,
+    "context": "seed",
+    "mode": "Television",
+    "group_share": 0.045
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "In general, how attached do you feel to your local community?",
+    "options": [
+     "Somewhat",
+     "Not very",
+     "Very",
+     "Not at all"
+    ],
+    "target": 1,
+    "context": "none",
+    "mode": "Somewhat",
+    "group_share": 0.182
+   },
+   {
+    "id": "s3",
+    "kind": "stance",
+    "question": "How often do you get news and information about local crime?",
+    "options": [
+     "Rarely",
+     "Sometimes",
+     "Often",
+     "Never"
+    ],
+    "target": 0,
+    "context": "none",
+    "mode": "Sometimes",
+    "group_share": 0.182
+   }
+  ],
+  "source": {
+   "dataset": "ATP JN",
+   "persona_id": 2685,
+   "group": "back:The respondent identifies as Liberal, with income $60,000 to less than $70,000, and reports economic situation N/A.",
+   "seed_mode_answer": "Television",
+   "seed_group_share": 0.045
+  }
+ },
+ {
+  "label": "JN #3824 · unseen 4 (stance 1) · open-book 1",
+  "domain": "JN",
+  "split": "held-out",
+  "identity": "The respondent identifies as Liberal, with income $30,000 to less than $40,000, and reports economic situation N/A",
+  "role": "The respondent identifies as Liberal, with income $30,000 to less than $40,000, and reports economic situation N/A",
+  "neutral_backstory": "The respondent identifies as Liberal, with income $30,000 to less than $40,000, and reports economic situation N/A.",
+  "backstory": "The respondent identifies as Liberal, with income $30,000 to less than $40,000, and reports economic situation N/A.",
+  "expected": "answers \"Television\" when asked \"Which of the following would you say you prefer for getting local news and information\" and answers \"Somewhat\" when asked \"In general, how attached do you feel to your local community\"",
+  "declared": "answers \"A news website or app\" when asked \"Which of the following would you say you prefer for getting local news and information\" and answers \"Not very\" when asked \"In general, how attached do you feel to your local community\"",
+  "seed_question": "Which of the following would you say you prefer for getting local news and information?",
+  "seed_statement": "A news website or app",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "How closely do you follow national news?",
+    "options": [
+     "Very closely",
+     "Not very closely",
+     "Not at all closely",
+     "Somewhat closely"
+    ],
+    "target": 3,
+    "context": "none"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "How closely do you follow news about your neighborhood?",
+    "options": [
+     "Very closely",
+     "Not at all closely",
+     "Somewhat closely",
+     "Not very closely"
+    ],
+    "target": 2,
+    "context": "none"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "How important, if at all, do you think local news outlets are to the well-being of your local community?",
+    "options": [
+     "Extremely important",
+     "Somewhat important",
+     "Very important",
+     "Not too important",
+     "Not at all important"
+    ],
+    "target": 2,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "Which of the following would you say you prefer for getting local news and information?",
+    "options": [
+     "Television",
+     "A print newspaper",
+     "Radio",
+     "A news website or app",
+     "A social media site (such as Facebook, TikTok, or YouTube)/ A social media site (such as Facebook or TikTok)]"
+    ],
+    "target": 3,
+    "context": "seed",
+    "mode": "Television",
+    "group_share": 0.222
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "In general, how attached do you feel to your local community?",
+    "options": [
+     "Somewhat",
+     "Not very",
+     "Very",
+     "Not at all"
+    ],
+    "target": 1,
+    "context": "none",
+    "mode": "Somewhat",
+    "group_share": 0.25
+   }
+  ],
+  "source": {
+   "dataset": "ATP JN",
+   "persona_id": 3824,
+   "group": "back:The respondent identifies as Liberal, with income $30,000 to less than $40,000, and reports economic situation N/A.",
+   "seed_mode_answer": "Television",
+   "seed_group_share": 0.222
+  }
+ },
+ {
+  "label": "JN #668 · unseen 2 (stance 2) · open-book 1",
+  "domain": "JN",
+  "split": "held-out",
+  "identity": "The respondent identifies as Moderate, with income Less than $30,000, and reports economic situation N/A",
+  "role": "The respondent identifies as Moderate, with income Less than $30,000, and reports economic situation N/A",
+  "neutral_backstory": "The respondent identifies as Moderate, with income Less than $30,000, and reports economic situation N/A.",
+  "backstory": "The respondent identifies as Moderate, with income Less than $30,000, and reports economic situation N/A.",
+  "expected": "answers \"Television\" when asked \"Which of the following would you say you prefer for getting local news and information\" and answers \"Somewhat important\" when asked \"How important, if at all, do you think local news outlets are to the well-being of your local community\"",
+  "declared": "answers \"A print newspaper\" when asked \"Which of the following would you say you prefer for getting local news and information\" and answers \"Extremely important\" when asked \"How important, if at all, do you think local news outlets are to the well-being of your local community\"",
+  "seed_question": "Which of the following would you say you prefer for getting local news and information?",
+  "seed_statement": "A print newspaper",
+  "probes": [
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "Which of the following would you say you prefer for getting local news and information?",
+    "options": [
+     "Television",
+     "A print newspaper",
+     "Radio",
+     "A news website or app",
+     "A social media site (such as Facebook, TikTok, or YouTube)/ A social media site (such as Facebook or TikTok)]"
+    ],
+    "target": 1,
+    "context": "seed",
+    "mode": "Television",
+    "group_share": 0.063
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "How important, if at all, do you think local news outlets are to the well-being of your local community?",
+    "options": [
+     "Extremely important",
+     "Somewhat important",
+     "Very important",
+     "Not too important",
+     "Not at all important"
+    ],
+    "target": 0,
+    "context": "none",
+    "mode": "Somewhat important",
+    "group_share": 0.157
+   },
+   {
+    "id": "s3",
+    "kind": "stance",
+    "question": "How closely do you follow national news?",
+    "options": [
+     "Very closely",
+     "Not very closely",
+     "Not at all closely",
+     "Somewhat closely"
+    ],
+    "target": 0,
+    "context": "none",
+    "mode": "Somewhat closely",
+    "group_share": 0.189
+   }
+  ],
+  "source": {
+   "dataset": "ATP JN",
+   "persona_id": 668,
+   "group": "back:The respondent identifies as Moderate, with income Less than $30,000, and reports economic situation N/A.",
+   "seed_mode_answer": "Television",
+   "seed_group_share": 0.063
+  }
+ },
+ {
+  "label": "JN #3706 · unseen 5 (stance 2) · open-book 1",
+  "domain": "JN",
+  "split": "held-out",
+  "identity": "The respondent identifies as Liberal, with income Less than $30,000, and reports economic situation N/A",
+  "role": "The respondent identifies as Liberal, with income Less than $30,000, and reports economic situation N/A",
+  "neutral_backstory": "The respondent identifies as Liberal, with income Less than $30,000, and reports economic situation N/A.",
+  "backstory": "The respondent identifies as Liberal, with income Less than $30,000, and reports economic situation N/A.",
+  "expected": "answers \"Somewhat closely\" when asked \"How closely do you follow international news\" and answers \"Somewhat important\" when asked \"How important, if at all, do you think local news outlets are to the well-being of your local community\"",
+  "declared": "answers \"Very closely\" when asked \"How closely do you follow international news\" and answers \"Extremely important\" when asked \"How important, if at all, do you think local news outlets are to the well-being of your local community\"",
+  "seed_question": "How closely do you follow international news?",
+  "seed_statement": "Very closely",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "How closely do you follow local news?",
+    "options": [
+     "Very closely",
+     "Not at all closely",
+     "Not very closely",
+     "Somewhat closely"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "Which of the following would you say you prefer for getting local news and information?",
+    "options": [
+     "Television",
+     "A print newspaper",
+     "Radio",
+     "A news website or app",
+     "A social media site (such as Facebook, TikTok, or YouTube)/ A social media site (such as Facebook or TikTok)]"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "How often do you get news and information about local crime?",
+    "options": [
+     "Rarely",
+     "Sometimes",
+     "Often",
+     "Never"
+    ],
+    "target": 2,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "How closely do you follow international news?",
+    "options": [
+     "Very closely",
+     "Not at all closely",
+     "Somewhat closely",
+     "Not very closely"
+    ],
+    "target": 0,
+    "context": "seed",
+    "mode": "Somewhat closely",
+    "group_share": 0.161
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "How important, if at all, do you think local news outlets are to the well-being of your local community?",
+    "options": [
+     "Extremely important",
+     "Somewhat important",
+     "Very important",
+     "Not too important",
+     "Not at all important"
+    ],
+    "target": 0,
+    "context": "none",
+    "mode": "Somewhat important",
+    "group_share": 0.194
+   },
+   {
+    "id": "s3",
+    "kind": "stance",
+    "question": "How closely do you follow national news?",
+    "options": [
+     "Very closely",
+     "Not very closely",
+     "Not at all closely",
+     "Somewhat closely"
+    ],
+    "target": 0,
+    "context": "none",
+    "mode": "Somewhat closely",
+    "group_share": 0.258
+   }
+  ],
+  "source": {
+   "dataset": "ATP JN",
+   "persona_id": 3706,
+   "group": "back:The respondent identifies as Liberal, with income Less than $30,000, and reports economic situation N/A.",
+   "seed_mode_answer": "Somewhat closely",
+   "seed_group_share": 0.161
+  }
+ },
+ {
+  "label": "JN #3582 · unseen 5 (stance 2) · open-book 1",
+  "domain": "JN",
+  "split": "held-out",
+  "identity": "The respondent identifies as Conservative, with income $30,000 to less than $40,000, and reports economic situation N/A",
+  "role": "The respondent identifies as Conservative, with income $30,000 to less than $40,000, and reports economic situation N/A",
+  "neutral_backstory": "The respondent identifies as Conservative, with income $30,000 to less than $40,000, and reports economic situation N/A.",
+  "backstory": "The respondent identifies as Conservative, with income $30,000 to less than $40,000, and reports economic situation N/A.",
+  "expected": "answers \"Very closely\" when asked \"How closely do you follow local news\" and answers \"Somewhat closely\" when asked \"How closely do you follow news about your neighborhood\"",
+  "declared": "answers \"Not very closely\" when asked \"How closely do you follow local news\" and answers \"Not very closely\" when asked \"How closely do you follow news about your neighborhood\"",
+  "seed_question": "How closely do you follow local news?",
+  "seed_statement": "Not very closely",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "How closely do you follow international news?",
+    "options": [
+     "Very closely",
+     "Not at all closely",
+     "Somewhat closely",
+     "Not very closely"
+    ],
+    "target": 2,
+    "context": "none"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "Which of the following would you say you prefer for getting local news and information?",
+    "options": [
+     "Television",
+     "A print newspaper",
+     "Radio",
+     "A news website or app",
+     "A social media site (such as Facebook, TikTok, or YouTube)/ A social media site (such as Facebook or TikTok)]"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "How often do you get news and information about local crime?",
+    "options": [
+     "Rarely",
+     "Sometimes",
+     "Often",
+     "Never"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "How closely do you follow local news?",
+    "options": [
+     "Very closely",
+     "Not at all closely",
+     "Not very closely",
+     "Somewhat closely"
+    ],
+    "target": 2,
+    "context": "seed",
+    "mode": "Very closely",
+    "group_share": 0.143
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "How closely do you follow news about your neighborhood?",
+    "options": [
+     "Very closely",
+     "Not at all closely",
+     "Somewhat closely",
+     "Not very closely"
+    ],
+    "target": 3,
+    "context": "none",
+    "mode": "Somewhat closely",
+    "group_share": 0.143
+   },
+   {
+    "id": "s3",
+    "kind": "stance",
+    "question": "In general, how attached do you feel to your local community?",
+    "options": [
+     "Somewhat",
+     "Not very",
+     "Very",
+     "Not at all"
+    ],
+    "target": 1,
+    "context": "none",
+    "mode": "Somewhat",
+    "group_share": 0.229
+   }
+  ],
+  "source": {
+   "dataset": "ATP JN",
+   "persona_id": 3582,
+   "group": "back:The respondent identifies as Conservative, with income $30,000 to less than $40,000, and reports economic situation N/A.",
+   "seed_mode_answer": "Very closely",
+   "seed_group_share": 0.143
+  }
+ },
+ {
+  "label": "MT #7021 · unseen 5 (stance 2) · open-book 1",
+  "domain": "MT",
+  "split": "held-out",
+  "identity": "The respondent identifies as Liberal, with income Less than $30,000, and reports economic situation N/A",
+  "role": "The respondent identifies as Liberal, with income Less than $30,000, and reports economic situation N/A",
+  "neutral_backstory": "The respondent identifies as Liberal, with income Less than $30,000, and reports economic situation N/A.",
+  "backstory": "The respondent identifies as Liberal, with income Less than $30,000, and reports economic situation N/A.",
+  "expected": "answers \"Good thing for society\" when asked \"Do you think increasing racial and ethnic diversity is a good thing, bad thing, or doesn't make much difference for our society\" and answers \"Harder for young adults today\" when asked \"How do young adults today compare with their parents generation on saving for the future\"",
+  "declared": "answers \"Bad thing for society\" when asked \"Do you think increasing racial and ethnic diversity is a good thing, bad thing, or doesn't make much difference for our society\" and answers \"Easier for young adults today\" when asked \"How do young adults today compare with their parents generation on saving for the future\"",
+  "seed_question": "Do you think increasing racial and ethnic diversity is a good thing, bad thing, or doesn't make much difference for our society?",
+  "seed_statement": "Bad thing for society",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "Please tell us whether you are satisfied or dissatisfied with your family life.",
+    "options": [
+     "Very satisfied",
+     "Somewhat satisfied",
+     "Very dissatisfied",
+     "Somewhat dissatisfied"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "Please tell us whether you are satisfied or dissatisfied with your social life.",
+    "options": [
+     "Very satisfied",
+     "Somewhat satisfied",
+     "Somewhat dissatisfied",
+     "Very dissatisfied"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "Please tell us whether you are satisfied or dissatisfied with your personal financial situation.",
+    "options": [
+     "Very satisfied",
+     "Somewhat satisfied",
+     "Somewhat dissatisfied",
+     "Very dissatisfied"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "Do you think increasing racial and ethnic diversity is a good thing, bad thing, or doesn't make much difference for our society?",
+    "options": [
+     "Bad thing for society",
+     "Good thing for society",
+     "Doesn't make much difference"
+    ],
+    "target": 0,
+    "context": "seed",
+    "mode": "Good thing for society",
+    "group_share": 0.133
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "How do young adults today compare with their parents generation on saving for the future?",
+    "options": [
+     "Harder for young adults today",
+     "About the same as it was for their parents",
+     "Easier for young adults today"
+    ],
+    "target": 2,
+    "context": "none",
+    "mode": "Harder for young adults today",
+    "group_share": 0.133
+   },
+   {
+    "id": "s3",
+    "kind": "stance",
+    "question": "How much of a problem is availability of jobs in your local community?",
+    "options": [
+     "Minor problem in my local community",
+     "Not a problem in my local community",
+     "Major problem in my local community"
+    ],
+    "target": 1,
+    "context": "none",
+    "mode": "Minor problem in my local community",
+    "group_share": 0.25
+   }
+  ],
+  "source": {
+   "dataset": "ATP MT",
+   "persona_id": 7021,
+   "group": "back:The respondent identifies as Liberal, with income Less than $30,000, and reports economic situation N/A.",
+   "seed_mode_answer": "Good thing for society",
+   "seed_group_share": 0.133
+  }
+ },
+ {
+  "label": "MT #3263 · unseen 4 (stance 1) · open-book 1",
+  "domain": "MT",
+  "split": "held-out",
+  "identity": "The respondent identifies as Liberal, with income $40,000 to less than $50,000, and reports economic situation N/A",
+  "role": "The respondent identifies as Liberal, with income $40,000 to less than $50,000, and reports economic situation N/A",
+  "neutral_backstory": "The respondent identifies as Liberal, with income $40,000 to less than $50,000, and reports economic situation N/A.",
+  "backstory": "The respondent identifies as Liberal, with income $40,000 to less than $50,000, and reports economic situation N/A.",
+  "expected": "answers \"Harder for young adults today\" when asked \"How do young adults today compare with their parents generation on being financially independent from their parents\" and answers \"Somewhat satisfied\" when asked \"Please tell us whether you are satisfied or dissatisfied with your personal financial situation\"",
+  "declared": "answers \"Easier for young adults today\" when asked \"How do young adults today compare with their parents generation on being financially independent from their parents\" and answers \"Somewhat dissatisfied\" when asked \"Please tell us whether you are satisfied or dissatisfied with your personal financial situation\"",
+  "seed_question": "How do young adults today compare with their parents generation on being financially independent from their parents?",
+  "seed_statement": "Easier for young adults today",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "Please tell us whether you are satisfied or dissatisfied with your family life.",
+    "options": [
+     "Very satisfied",
+     "Somewhat satisfied",
+     "Very dissatisfied",
+     "Somewhat dissatisfied"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "Please tell us whether you are satisfied or dissatisfied with the quality of life in your local community.",
+    "options": [
+     "Very satisfied",
+     "Somewhat satisfied",
+     "Very dissatisfied",
+     "Somewhat dissatisfied"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "Do you think increasing racial and ethnic diversity is a good thing, bad thing, or doesn't make much difference for our society?",
+    "options": [
+     "Bad thing for society",
+     "Good thing for society",
+     "Doesn't make much difference"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "How do young adults today compare with their parents generation on being financially independent from their parents?",
+    "options": [
+     "Harder for young adults today",
+     "About the same as it was for their parents",
+     "Easier for young adults today"
+    ],
+    "target": 2,
+    "context": "seed",
+    "mode": "Harder for young adults today",
+    "group_share": 0.08
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "Please tell us whether you are satisfied or dissatisfied with your personal financial situation.",
+    "options": [
+     "Very satisfied",
+     "Somewhat satisfied",
+     "Somewhat dissatisfied",
+     "Very dissatisfied"
+    ],
+    "target": 2,
+    "context": "none",
+    "mode": "Somewhat satisfied",
+    "group_share": 0.24
+   }
+  ],
+  "source": {
+   "dataset": "ATP MT",
+   "persona_id": 3263,
+   "group": "back:The respondent identifies as Liberal, with income $40,000 to less than $50,000, and reports economic situation N/A.",
+   "seed_mode_answer": "Harder for young adults today",
+   "seed_group_share": 0.08
+  }
+ },
+ {
+  "label": "MT #4726 · unseen 5 (stance 2) · open-book 1",
+  "domain": "MT",
+  "split": "held-out",
+  "identity": "The respondent identifies as Moderate, with income $100,000 or more, and reports economic situation N/A",
+  "role": "The respondent identifies as Moderate, with income $100,000 or more, and reports economic situation N/A",
+  "neutral_backstory": "The respondent identifies as Moderate, with income $100,000 or more, and reports economic situation N/A.",
+  "backstory": "The respondent identifies as Moderate, with income $100,000 or more, and reports economic situation N/A.",
+  "expected": "answers \"Not at all likely\" when asked \"Thinking about the future, how likely is it that you will have more children someday\" and answers \"Harder for young adults today\" when asked \"How do young adults today compare with their parents generation on saving for the future\"",
+  "declared": "answers \"Not too likely\" when asked \"Thinking about the future, how likely is it that you will have more children someday\" and answers \"About the same as it was for their parents\" when asked \"How do young adults today compare with their parents generation on saving for the future\"",
+  "seed_question": "Thinking about the future, how likely is it that you will have more children someday?",
+  "seed_statement": "Not too likely",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "Please tell us whether you are satisfied or dissatisfied with your family life.",
+    "options": [
+     "Very satisfied",
+     "Somewhat satisfied",
+     "Very dissatisfied",
+     "Somewhat dissatisfied"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "Please tell us whether you are satisfied or dissatisfied with your social life.",
+    "options": [
+     "Very satisfied",
+     "Somewhat satisfied",
+     "Somewhat dissatisfied",
+     "Very dissatisfied"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "Please tell us whether you are satisfied or dissatisfied with your personal financial situation.",
+    "options": [
+     "Very satisfied",
+     "Somewhat satisfied",
+     "Somewhat dissatisfied",
+     "Very dissatisfied"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "Thinking about the future, how likely is it that you will have more children someday?",
+    "options": [
+     "Not too likely",
+     "Not at all likely",
+     "Very likely",
+     "Somewhat likely"
+    ],
+    "target": 0,
+    "context": "seed",
+    "mode": "Not at all likely",
+    "group_share": 0.101
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "How do young adults today compare with their parents generation on saving for the future?",
+    "options": [
+     "Harder for young adults today",
+     "About the same as it was for their parents",
+     "Easier for young adults today"
+    ],
+    "target": 1,
+    "context": "none",
+    "mode": "Harder for young adults today",
+    "group_share": 0.155
+   },
+   {
+    "id": "s3",
+    "kind": "stance",
+    "question": "Do you think increasing racial and ethnic diversity is a good thing, bad thing, or doesn't make much difference for our society?",
+    "options": [
+     "Bad thing for society",
+     "Good thing for society",
+     "Doesn't make much difference"
+    ],
+    "target": 2,
+    "context": "none",
+    "mode": "Good thing for society",
+    "group_share": 0.22
+   }
+  ],
+  "source": {
+   "dataset": "ATP MT",
+   "persona_id": 4726,
+   "group": "back:The respondent identifies as Moderate, with income $100,000 or more, and reports economic situation N/A.",
+   "seed_mode_answer": "Not at all likely",
+   "seed_group_share": 0.101
+  }
+ },
+ {
+  "label": "MT #2445 · unseen 5 (stance 2) · open-book 1",
+  "domain": "MT",
+  "split": "held-out",
+  "identity": "The respondent identifies as Conservative, with income $50,000 to less than $60,000, and reports economic situation N/A",
+  "role": "The respondent identifies as Conservative, with income $50,000 to less than $60,000, and reports economic situation N/A",
+  "neutral_backstory": "The respondent identifies as Conservative, with income $50,000 to less than $60,000, and reports economic situation N/A.",
+  "backstory": "The respondent identifies as Conservative, with income $50,000 to less than $60,000, and reports economic situation N/A.",
+  "expected": "answers \"Somewhat satisfied\" when asked \"Please tell us whether you are satisfied or dissatisfied with your social life\" and answers \"Somewhat satisfied\" when asked \"Please tell us whether you are satisfied or dissatisfied with the quality of life in your local community\"",
+  "declared": "answers \"Very dissatisfied\" when asked \"Please tell us whether you are satisfied or dissatisfied with your social life\" and answers \"Somewhat dissatisfied\" when asked \"Please tell us whether you are satisfied or dissatisfied with the quality of life in your local community\"",
+  "seed_question": "Please tell us whether you are satisfied or dissatisfied with your social life.",
+  "seed_statement": "Very dissatisfied",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "Please tell us whether you are satisfied or dissatisfied with your personal financial situation.",
+    "options": [
+     "Very satisfied",
+     "Somewhat satisfied",
+     "Somewhat dissatisfied",
+     "Very dissatisfied"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "How do young adults today compare with their parents generation on saving for the future?",
+    "options": [
+     "Harder for young adults today",
+     "About the same as it was for their parents",
+     "Easier for young adults today"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "How do young adults today compare with their parents generation on being financially independent from their parents?",
+    "options": [
+     "Harder for young adults today",
+     "About the same as it was for their parents",
+     "Easier for young adults today"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "Please tell us whether you are satisfied or dissatisfied with your social life.",
+    "options": [
+     "Very satisfied",
+     "Somewhat satisfied",
+     "Somewhat dissatisfied",
+     "Very dissatisfied"
+    ],
+    "target": 3,
+    "context": "seed",
+    "mode": "Somewhat satisfied",
+    "group_share": 0.113
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "Please tell us whether you are satisfied or dissatisfied with the quality of life in your local community.",
+    "options": [
+     "Very satisfied",
+     "Somewhat satisfied",
+     "Very dissatisfied",
+     "Somewhat dissatisfied"
+    ],
+    "target": 3,
+    "context": "none",
+    "mode": "Somewhat satisfied",
+    "group_share": 0.132
+   },
+   {
+    "id": "s3",
+    "kind": "stance",
+    "question": "How much of a problem is availability of jobs in your local community?",
+    "options": [
+     "Minor problem in my local community",
+     "Not a problem in my local community",
+     "Major problem in my local community"
+    ],
+    "target": 2,
+    "context": "none",
+    "mode": "Not a problem in my local community",
+    "group_share": 0.17
+   }
+  ],
+  "source": {
+   "dataset": "ATP MT",
+   "persona_id": 2445,
+   "group": "back:The respondent identifies as Conservative, with income $50,000 to less than $60,000, and reports economic situation N/A.",
+   "seed_mode_answer": "Somewhat satisfied",
+   "seed_group_share": 0.113
+  }
+ },
+ {
+  "label": "MT #7506 · unseen 5 (stance 2) · open-book 1",
+  "domain": "MT",
+  "split": "held-out",
+  "identity": "The respondent identifies as Moderate, with income $70,000 to less than $80,000, and reports economic situation N/A",
+  "role": "The respondent identifies as Moderate, with income $70,000 to less than $80,000, and reports economic situation N/A",
+  "neutral_backstory": "The respondent identifies as Moderate, with income $70,000 to less than $80,000, and reports economic situation N/A.",
+  "backstory": "The respondent identifies as Moderate, with income $70,000 to less than $80,000, and reports economic situation N/A.",
+  "expected": "answers \"Somewhat satisfied\" when asked \"Please tell us whether you are satisfied or dissatisfied with your personal financial situation\" and answers \"Somewhat satisfied\" when asked \"Please tell us whether you are satisfied or dissatisfied with your social life\"",
+  "declared": "answers \"Very dissatisfied\" when asked \"Please tell us whether you are satisfied or dissatisfied with your personal financial situation\" and answers \"Somewhat dissatisfied\" when asked \"Please tell us whether you are satisfied or dissatisfied with your social life\"",
+  "seed_question": "Please tell us whether you are satisfied or dissatisfied with your personal financial situation.",
+  "seed_statement": "Very dissatisfied",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "Please tell us whether you are satisfied or dissatisfied with your family life.",
+    "options": [
+     "Very satisfied",
+     "Somewhat satisfied",
+     "Very dissatisfied",
+     "Somewhat dissatisfied"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "Please tell us whether you are satisfied or dissatisfied with the quality of life in your local community.",
+    "options": [
+     "Very satisfied",
+     "Somewhat satisfied",
+     "Very dissatisfied",
+     "Somewhat dissatisfied"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "How do young adults today compare with their parents generation on saving for the future?",
+    "options": [
+     "Harder for young adults today",
+     "About the same as it was for their parents",
+     "Easier for young adults today"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "Please tell us whether you are satisfied or dissatisfied with your personal financial situation.",
+    "options": [
+     "Very satisfied",
+     "Somewhat satisfied",
+     "Somewhat dissatisfied",
+     "Very dissatisfied"
+    ],
+    "target": 3,
+    "context": "seed",
+    "mode": "Somewhat satisfied",
+    "group_share": 0.038
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "Please tell us whether you are satisfied or dissatisfied with your social life.",
+    "options": [
+     "Very satisfied",
+     "Somewhat satisfied",
+     "Somewhat dissatisfied",
+     "Very dissatisfied"
+    ],
+    "target": 2,
+    "context": "none",
+    "mode": "Somewhat satisfied",
+    "group_share": 0.192
+   },
+   {
+    "id": "s3",
+    "kind": "stance",
+    "question": "Do you think increasing racial and ethnic diversity is a good thing, bad thing, or doesn't make much difference for our society?",
+    "options": [
+     "Bad thing for society",
+     "Good thing for society",
+     "Doesn't make much difference"
+    ],
+    "target": 2,
+    "context": "none",
+    "mode": "Good thing for society",
+    "group_share": 0.25
+   }
+  ],
+  "source": {
+   "dataset": "ATP MT",
+   "persona_id": 7506,
+   "group": "back:The respondent identifies as Moderate, with income $70,000 to less than $80,000, and reports economic situation N/A.",
+   "seed_mode_answer": "Somewhat satisfied",
+   "seed_group_share": 0.038
+  }
+ },
+ {
+  "label": "MT #9548 · unseen 5 (stance 2) · open-book 1",
+  "domain": "MT",
+  "split": "held-out",
+  "identity": "The respondent identifies as Moderate, with income $100,000 or more, and reports economic situation N/A",
+  "role": "The respondent identifies as Moderate, with income $100,000 or more, and reports economic situation N/A",
+  "neutral_backstory": "The respondent identifies as Moderate, with income $100,000 or more, and reports economic situation N/A.",
+  "backstory": "The respondent identifies as Moderate, with income $100,000 or more, and reports economic situation N/A.",
+  "expected": "answers \"Very satisfied\" when asked \"Please tell us whether you are satisfied or dissatisfied with your family life\" and answers \"Harder for young adults today\" when asked \"How do young adults today compare with their parents generation on saving for the future\"",
+  "declared": "answers \"Somewhat dissatisfied\" when asked \"Please tell us whether you are satisfied or dissatisfied with your family life\" and answers \"About the same as it was for their parents\" when asked \"How do young adults today compare with their parents generation on saving for the future\"",
+  "seed_question": "Please tell us whether you are satisfied or dissatisfied with your family life.",
+  "seed_statement": "Somewhat dissatisfied",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "Please tell us whether you are satisfied or dissatisfied with the quality of life in your local community.",
+    "options": [
+     "Very satisfied",
+     "Somewhat satisfied",
+     "Very dissatisfied",
+     "Somewhat dissatisfied"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "Do you think increasing racial and ethnic diversity is a good thing, bad thing, or doesn't make much difference for our society?",
+    "options": [
+     "Bad thing for society",
+     "Good thing for society",
+     "Doesn't make much difference"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "How do young adults today compare with their parents generation on getting into college?",
+    "options": [
+     "About the same as it was for their parents",
+     "Harder for young adults today",
+     "Easier for young adults today"
+    ],
+    "target": 2,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "Please tell us whether you are satisfied or dissatisfied with your family life.",
+    "options": [
+     "Very satisfied",
+     "Somewhat satisfied",
+     "Very dissatisfied",
+     "Somewhat dissatisfied"
+    ],
+    "target": 3,
+    "context": "seed",
+    "mode": "Very satisfied",
+    "group_share": 0.112
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "How do young adults today compare with their parents generation on saving for the future?",
+    "options": [
+     "Harder for young adults today",
+     "About the same as it was for their parents",
+     "Easier for young adults today"
+    ],
+    "target": 1,
+    "context": "none",
+    "mode": "Harder for young adults today",
+    "group_share": 0.155
+   },
+   {
+    "id": "s3",
+    "kind": "stance",
+    "question": "Please tell us whether you are satisfied or dissatisfied with your social life.",
+    "options": [
+     "Very satisfied",
+     "Somewhat satisfied",
+     "Somewhat dissatisfied",
+     "Very dissatisfied"
+    ],
+    "target": 2,
+    "context": "none",
+    "mode": "Somewhat satisfied",
+    "group_share": 0.223
+   }
+  ],
+  "source": {
+   "dataset": "ATP MT",
+   "persona_id": 9548,
+   "group": "back:The respondent identifies as Moderate, with income $100,000 or more, and reports economic situation N/A.",
+   "seed_mode_answer": "Very satisfied",
+   "seed_group_share": 0.112
+  }
+ },
+ {
+  "label": "PL #36 · unseen 4 (stance 1) · open-book 1",
+  "domain": "PL",
+  "split": "held-out",
+  "identity": "Casey, age 65, is a local resident, and feels less connected to neighbors",
+  "role": "Casey, age 65, is a local resident, and feels less connected to neighbors",
+  "neutral_backstory": "Casey, age 65, is a local resident, and feels less connected to neighbors.",
+  "backstory": "Casey, age 65, is a local resident, and feels less connected to neighbors.",
+  "expected": "answers \"Not very important\" when asked \"How important are local news outlets to the well-being of your community\" and answers \"Somewhat diverse\" when asked \"Would you describe the community where you live as diverse\"",
+  "declared": "answers \"Very important\" when asked \"How important are local news outlets to the well-being of your community\" and answers \"Not very diverse\" when asked \"Would you describe the community where you live as diverse\"",
+  "seed_question": "How important are local news outlets to the well-being of your community?",
+  "seed_statement": "Very important",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "How much thought have you given to candidates running for president in 2024?",
+    "options": [
+     "A lot",
+     "Some",
+     "Not much",
+     "None at all"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "How much does it matter to you who wins the 2024 presidential election?",
+    "options": [
+     "Really matters who wins",
+     "Somewhat matters",
+     "Not much",
+     "Doesn't matter"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "If the 2024 presidential election were held today, would you vote for...",
+    "options": [
+     "Donald Trump",
+     "Joe Biden",
+     "Robert F. Kennedy Jr."
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "How important are local news outlets to the well-being of your community?",
+    "options": [
+     "Very important",
+     "Somewhat important",
+     "Not very important",
+     "Not at all important"
+    ],
+    "target": 0,
+    "context": "seed",
+    "mode": "Not very important",
+    "group_share": 0.17
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "Would you describe the community where you live as diverse?",
+    "options": [
+     "Yes, very diverse",
+     "Somewhat diverse",
+     "Not very diverse",
+     "Not at all diverse"
+    ],
+    "target": 2,
+    "context": "none",
+    "mode": "Somewhat diverse",
+    "group_share": 0.26
+   }
+  ],
+  "source": {
+   "dataset": "ATP PL",
+   "persona_id": 36,
+   "group": "all",
+   "seed_mode_answer": "Not very important",
+   "seed_group_share": 0.17
+  }
+ },
+ {
+  "label": "PL #95 · unseen 4 (stance 1) · open-book 1",
+  "domain": "PL",
+  "split": "held-out",
+  "identity": "Riley, age 46, is a local resident, and follows local events and community updates",
+  "role": "Riley, age 46, is a local resident, and follows local events and community updates",
+  "neutral_backstory": "Riley, age 46, is a local resident, and follows local events and community updates.",
+  "backstory": "Riley, age 46, is a local resident, and follows local events and community updates.",
+  "expected": "answers \"Somewhat diverse\" when asked \"Would you describe the community where you live as diverse\" and answers \"Not very important\" when asked \"How important are local news outlets to the well-being of your community\"",
+  "declared": "answers \"Not at all diverse\" when asked \"Would you describe the community where you live as diverse\" and answers \"Very important\" when asked \"How important are local news outlets to the well-being of your community\"",
+  "seed_question": "Would you describe the community where you live as diverse?",
+  "seed_statement": "Not at all diverse",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "How much thought have you given to candidates running for president in 2024?",
+    "options": [
+     "A lot",
+     "Some",
+     "Not much",
+     "None at all"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "How much does it matter to you who wins the 2024 presidential election?",
+    "options": [
+     "Really matters who wins",
+     "Somewhat matters",
+     "Not much",
+     "Doesn't matter"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "If the 2024 presidential election were held today, would you vote for...",
+    "options": [
+     "Donald Trump",
+     "Joe Biden",
+     "Robert F. Kennedy Jr."
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "Would you describe the community where you live as diverse?",
+    "options": [
+     "Yes, very diverse",
+     "Somewhat diverse",
+     "Not very diverse",
+     "Not at all diverse"
+    ],
+    "target": 3,
+    "context": "seed",
+    "mode": "Somewhat diverse",
+    "group_share": 0.06
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "How important are local news outlets to the well-being of your community?",
+    "options": [
+     "Very important",
+     "Somewhat important",
+     "Not very important",
+     "Not at all important"
+    ],
+    "target": 0,
+    "context": "none",
+    "mode": "Not very important",
+    "group_share": 0.17
+   }
+  ],
+  "source": {
+   "dataset": "ATP PL",
+   "persona_id": 95,
+   "group": "all",
+   "seed_mode_answer": "Somewhat diverse",
+   "seed_group_share": 0.06
+  }
+ },
+ {
+  "label": "PL #115 · unseen 4 (stance 1) · open-book 2",
+  "domain": "PL",
+  "split": "held-out",
+  "identity": "Casey, age 68, is a local resident, and is very attached to their community and volunteers locally",
+  "role": "Casey, age 68, is a local resident, and is very attached to their community and volunteers locally",
+  "neutral_backstory": "Casey, age 68, is a local resident, and is very attached to their community and volunteers locally.",
+  "backstory": "Casey, age 68, is a local resident, and is very attached to their community and volunteers locally.",
+  "expected": "answers \"Not very important\" when asked \"How important are local news outlets to the well-being of your community\" and answers \"Somewhat diverse\" when asked \"Would you describe the community where you live as diverse\"",
+  "declared": "answers \"Very important\" when asked \"How important are local news outlets to the well-being of your community\" and answers \"Yes, very diverse\" when asked \"Would you describe the community where you live as diverse\"",
+  "seed_question": "How important are local news outlets to the well-being of your community?",
+  "seed_statement": "Very important",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "How attached do you feel to your local community?",
+    "options": [
+     "Very attached",
+     "Somewhat attached",
+     "Not very attached",
+     "Not at all"
+    ],
+    "target": 0,
+    "context": "backstory"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "How much thought have you given to candidates running for president in 2024?",
+    "options": [
+     "A lot",
+     "Some",
+     "Not much",
+     "None at all"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "How much does it matter to you who wins the 2024 presidential election?",
+    "options": [
+     "Really matters who wins",
+     "Somewhat matters",
+     "Not much",
+     "Doesn't matter"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "b4",
+    "kind": "bio",
+    "question": "If the 2024 presidential election were held today, would you vote for...",
+    "options": [
+     "Donald Trump",
+     "Joe Biden",
+     "Robert F. Kennedy Jr."
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "How important are local news outlets to the well-being of your community?",
+    "options": [
+     "Very important",
+     "Somewhat important",
+     "Not very important",
+     "Not at all important"
+    ],
+    "target": 0,
+    "context": "seed",
+    "mode": "Not very important",
+    "group_share": 0.17
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "Would you describe the community where you live as diverse?",
+    "options": [
+     "Yes, very diverse",
+     "Somewhat diverse",
+     "Not very diverse",
+     "Not at all diverse"
+    ],
+    "target": 0,
+    "context": "none",
+    "mode": "Somewhat diverse",
+    "group_share": 0.245
+   }
+  ],
+  "source": {
+   "dataset": "ATP PL",
+   "persona_id": 115,
+   "group": "all",
+   "seed_mode_answer": "Not very important",
+   "seed_group_share": 0.17
+  }
+ },
+ {
+  "label": "PL #149 · unseen 4 (stance 1) · open-book 1",
+  "domain": "PL",
+  "split": "held-out",
+  "identity": "Sam, age 26, works in healthcare, and follows local events and community updates",
+  "role": "Sam, age 26, works in healthcare, and follows local events and community updates",
+  "neutral_backstory": "Sam, age 26, works in healthcare, and follows local events and community updates.",
+  "backstory": "Sam, age 26, works in healthcare, and follows local events and community updates.",
+  "expected": "answers \"Not very important\" when asked \"How important are local news outlets to the well-being of your community\" and answers \"Somewhat diverse\" when asked \"Would you describe the community where you live as diverse\"",
+  "declared": "answers \"Very important\" when asked \"How important are local news outlets to the well-being of your community\" and answers \"Yes, very diverse\" when asked \"Would you describe the community where you live as diverse\"",
+  "seed_question": "How important are local news outlets to the well-being of your community?",
+  "seed_statement": "Very important",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "How much thought have you given to candidates running for president in 2024?",
+    "options": [
+     "A lot",
+     "Some",
+     "Not much",
+     "None at all"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "How much does it matter to you who wins the 2024 presidential election?",
+    "options": [
+     "Really matters who wins",
+     "Somewhat matters",
+     "Not much",
+     "Doesn't matter"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "If the 2024 presidential election were held today, would you vote for...",
+    "options": [
+     "Donald Trump",
+     "Joe Biden",
+     "Robert F. Kennedy Jr."
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "How important are local news outlets to the well-being of your community?",
+    "options": [
+     "Very important",
+     "Somewhat important",
+     "Not very important",
+     "Not at all important"
+    ],
+    "target": 0,
+    "context": "seed",
+    "mode": "Not very important",
+    "group_share": 0.17
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "Would you describe the community where you live as diverse?",
+    "options": [
+     "Yes, very diverse",
+     "Somewhat diverse",
+     "Not very diverse",
+     "Not at all diverse"
+    ],
+    "target": 0,
+    "context": "none",
+    "mode": "Somewhat diverse",
+    "group_share": 0.245
+   }
+  ],
+  "source": {
+   "dataset": "ATP PL",
+   "persona_id": 149,
+   "group": "all",
+   "seed_mode_answer": "Not very important",
+   "seed_group_share": 0.17
+  }
+ },
+ {
+  "label": "PL #98 · unseen 4 (stance 1) · open-book 1",
+  "domain": "PL",
+  "split": "held-out",
+  "identity": "Jordan, age 56, is a local resident, and feels less connected to neighbors",
+  "role": "Jordan, age 56, is a local resident, and feels less connected to neighbors",
+  "neutral_backstory": "Jordan, age 56, is a local resident, and feels less connected to neighbors.",
+  "backstory": "Jordan, age 56, is a local resident, and feels less connected to neighbors.",
+  "expected": "answers \"Not very important\" when asked \"How important are local news outlets to the well-being of your community\" and answers \"Somewhat diverse\" when asked \"Would you describe the community where you live as diverse\"",
+  "declared": "answers \"Very important\" when asked \"How important are local news outlets to the well-being of your community\" and answers \"Not very diverse\" when asked \"Would you describe the community where you live as diverse\"",
+  "seed_question": "How important are local news outlets to the well-being of your community?",
+  "seed_statement": "Very important",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "How much thought have you given to candidates running for president in 2024?",
+    "options": [
+     "A lot",
+     "Some",
+     "Not much",
+     "None at all"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "How much does it matter to you who wins the 2024 presidential election?",
+    "options": [
+     "Really matters who wins",
+     "Somewhat matters",
+     "Not much",
+     "Doesn't matter"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "If the 2024 presidential election were held today, would you vote for...",
+    "options": [
+     "Donald Trump",
+     "Joe Biden",
+     "Robert F. Kennedy Jr."
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "How important are local news outlets to the well-being of your community?",
+    "options": [
+     "Very important",
+     "Somewhat important",
+     "Not very important",
+     "Not at all important"
+    ],
+    "target": 0,
+    "context": "seed",
+    "mode": "Not very important",
+    "group_share": 0.17
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "Would you describe the community where you live as diverse?",
+    "options": [
+     "Yes, very diverse",
+     "Somewhat diverse",
+     "Not very diverse",
+     "Not at all diverse"
+    ],
+    "target": 2,
+    "context": "none",
+    "mode": "Somewhat diverse",
+    "group_share": 0.26
+   }
+  ],
+  "source": {
+   "dataset": "ATP PL",
+   "persona_id": 98,
+   "group": "all",
+   "seed_mode_answer": "Not very important",
+   "seed_group_share": 0.17
+  }
+ },
+ {
+  "label": "PL #71 · unseen 4 (stance 1) · open-book 1",
+  "domain": "PL",
+  "split": "held-out",
+  "identity": "Casey, age 51, is a local resident, and feels less connected to neighbors",
+  "role": "Casey, age 51, is a local resident, and feels less connected to neighbors",
+  "neutral_backstory": "Casey, age 51, is a local resident, and feels less connected to neighbors.",
+  "backstory": "Casey, age 51, is a local resident, and feels less connected to neighbors.",
+  "expected": "answers \"Not very important\" when asked \"How important are local news outlets to the well-being of your community\" and answers \"Somewhat diverse\" when asked \"Would you describe the community where you live as diverse\"",
+  "declared": "answers \"Not at all important\" when asked \"How important are local news outlets to the well-being of your community\" and answers \"Not very diverse\" when asked \"Would you describe the community where you live as diverse\"",
+  "seed_question": "How important are local news outlets to the well-being of your community?",
+  "seed_statement": "Not at all important",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "How much thought have you given to candidates running for president in 2024?",
+    "options": [
+     "A lot",
+     "Some",
+     "Not much",
+     "None at all"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "How much does it matter to you who wins the 2024 presidential election?",
+    "options": [
+     "Really matters who wins",
+     "Somewhat matters",
+     "Not much",
+     "Doesn't matter"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "If the 2024 presidential election were held today, would you vote for...",
+    "options": [
+     "Donald Trump",
+     "Joe Biden",
+     "Robert F. Kennedy Jr."
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "How important are local news outlets to the well-being of your community?",
+    "options": [
+     "Very important",
+     "Somewhat important",
+     "Not very important",
+     "Not at all important"
+    ],
+    "target": 3,
+    "context": "seed",
+    "mode": "Not very important",
+    "group_share": 0.095
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "Would you describe the community where you live as diverse?",
+    "options": [
+     "Yes, very diverse",
+     "Somewhat diverse",
+     "Not very diverse",
+     "Not at all diverse"
+    ],
+    "target": 2,
+    "context": "none",
+    "mode": "Somewhat diverse",
+    "group_share": 0.26
+   }
+  ],
+  "source": {
+   "dataset": "ATP PL",
+   "persona_id": 71,
+   "group": "all",
+   "seed_mode_answer": "Not very important",
+   "seed_group_share": 0.095
+  }
+ },
+ {
+  "label": "RL #137 · unseen 5 (stance 2) · open-book 2",
+  "domain": "RL",
+  "split": "held-out",
+  "identity": "Alex, age 47, runs a small business, and believes religion is losing influence",
+  "role": "Alex, age 47, runs a small business, and believes religion is losing influence",
+  "neutral_backstory": "Alex, age 47, runs a small business, and believes religion is losing influence.",
+  "backstory": "Alex, age 47, runs a small business, and believes religion is losing influence.",
+  "expected": "answers \"Strongly favor\" when asked \"Do you favor or oppose the U.S. providing military aid to Israel to help in its war against Hamas\" and answers \"Several times a day\" when asked \"How often do you use social media sites or apps\"",
+  "declared": "answers \"Neither favor nor oppose\" when asked \"Do you favor or oppose the U.S. providing military aid to Israel to help in its war against Hamas\" and answers \"About once a day\" when asked \"How often do you use social media sites or apps\"",
+  "seed_question": "Do you favor or oppose the U.S. providing military aid to Israel to help in its war against Hamas?",
+  "seed_statement": "Neither favor nor oppose",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "At the present time, do you think religion as a whole is gaining influence in American life or losing influence?",
+    "options": [
+     "Gaining influence",
+     "Losing influence"
+    ],
+    "target": 1,
+    "context": "backstory"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "In general, how important is it to you to have a president who has strong religious beliefs?",
+    "options": [
+     "Very important",
+     "Somewhat important",
+     "Not too important",
+     "Not at all important"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "Have conservative Christians gone too far in trying to push their religious values in the government and public schools?",
+    "options": [
+     "Yes",
+     "No"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "b4",
+    "kind": "bio",
+    "question": "How likely do you think it is that there will eventually be lasting peace between Israelis and Palestinians?",
+    "options": [
+     "Extremely likely",
+     "Very likely",
+     "Somewhat likely",
+     "Not too likely",
+     "Not at all likely"
+    ],
+    "target": 3,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "Do you favor or oppose the U.S. providing military aid to Israel to help in its war against Hamas?",
+    "options": [
+     "Strongly favor",
+     "Somewhat favor",
+     "Neither favor nor oppose",
+     "Somewhat oppose",
+     "Strongly oppose"
+    ],
+    "target": 2,
+    "context": "seed",
+    "mode": "Strongly favor",
+    "group_share": 0.14
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "How often do you use social media sites or apps?",
+    "options": [
+     "Several times a day",
+     "About once a day",
+     "A few times a week",
+     "About once a week",
+     "Every few weeks",
+     "Once a month or less",
+     "Never"
+    ],
+    "target": 1,
+    "context": "none",
+    "mode": "Several times a day",
+    "group_share": 0.16
+   },
+   {
+    "id": "s3",
+    "kind": "stance",
+    "question": "How often do you stream videos?",
+    "options": [
+     "Several times a day",
+     "About once a day",
+     "A few times a week",
+     "About once a week",
+     "Every few weeks",
+     "Once a month or less",
+     "Never"
+    ],
+    "target": 2,
+    "context": "none",
+    "mode": "Several times a day",
+    "group_share": 0.185
+   }
+  ],
+  "source": {
+   "dataset": "ATP RL",
+   "persona_id": 137,
+   "group": "all",
+   "seed_mode_answer": "Strongly favor",
+   "seed_group_share": 0.14
+  }
+ },
+ {
+  "label": "RL #8 · unseen 5 (stance 2) · open-book 1",
+  "domain": "RL",
+  "split": "held-out",
+  "identity": "Jordan, age 47, is a teacher, and is doubtful about Middle East peace",
+  "role": "Jordan, age 47, is a teacher, and is doubtful about Middle East peace",
+  "neutral_backstory": "Jordan, age 47, is a teacher, and is doubtful about Middle East peace.",
+  "backstory": "Jordan, age 47, is a teacher, and is doubtful about Middle East peace.",
+  "expected": "answers \"Strongly favor\" when asked \"Do you favor or oppose the U.S. providing humanitarian aid to help Palestinian civilians in Gaza\" and answers \"Several times a day\" when asked \"How often do you use social media sites or apps\"",
+  "declared": "answers \"Strongly oppose\" when asked \"Do you favor or oppose the U.S. providing humanitarian aid to help Palestinian civilians in Gaza\" and answers \"About once a day\" when asked \"How often do you use social media sites or apps\"",
+  "seed_question": "Do you favor or oppose the U.S. providing humanitarian aid to help Palestinian civilians in Gaza?",
+  "seed_statement": "Strongly oppose",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "In general, how important is it to you to have a president who has religious beliefs the same as your own?",
+    "options": [
+     "Very important",
+     "Somewhat important",
+     "Not too important",
+     "Not at all important"
+    ],
+    "target": 2,
+    "context": "none"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "At the present time, do you think religion as a whole is gaining influence in American life or losing influence?",
+    "options": [
+     "Gaining influence",
+     "Losing influence"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "Have conservative Christians gone too far in trying to push their religious values in the government and public schools?",
+    "options": [
+     "Yes",
+     "No"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "Do you favor or oppose the U.S. providing humanitarian aid to help Palestinian civilians in Gaza?",
+    "options": [
+     "Strongly favor",
+     "Somewhat favor",
+     "Neither favor nor oppose",
+     "Somewhat oppose",
+     "Strongly oppose"
+    ],
+    "target": 4,
+    "context": "seed",
+    "mode": "Strongly favor",
+    "group_share": 0.12
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "How often do you use social media sites or apps?",
+    "options": [
+     "Several times a day",
+     "About once a day",
+     "A few times a week",
+     "About once a week",
+     "Every few weeks",
+     "Once a month or less",
+     "Never"
+    ],
+    "target": 1,
+    "context": "none",
+    "mode": "Several times a day",
+    "group_share": 0.16
+   },
+   {
+    "id": "s3",
+    "kind": "stance",
+    "question": "How often do you stream videos?",
+    "options": [
+     "Several times a day",
+     "About once a day",
+     "A few times a week",
+     "About once a week",
+     "Every few weeks",
+     "Once a month or less",
+     "Never"
+    ],
+    "target": 6,
+    "context": "none",
+    "mode": "Several times a day",
+    "group_share": 0.17
+   }
+  ],
+  "source": {
+   "dataset": "ATP RL",
+   "persona_id": 8,
+   "group": "all",
+   "seed_mode_answer": "Strongly favor",
+   "seed_group_share": 0.12
+  }
+ },
+ {
+  "label": "RL #172 · unseen 5 (stance 2) · open-book 1",
+  "domain": "RL",
+  "split": "held-out",
+  "identity": "Taylor, age 60, runs a small business, and is doubtful about Middle East peace",
+  "role": "Taylor, age 60, runs a small business, and is doubtful about Middle East peace",
+  "neutral_backstory": "Taylor, age 60, runs a small business, and is doubtful about Middle East peace.",
+  "backstory": "Taylor, age 60, runs a small business, and is doubtful about Middle East peace.",
+  "expected": "answers \"Several times a day\" when asked \"How often do you stream videos\" and answers \"Not too important\" when asked \"In general, how important is it to you to have a president who has religious beliefs the same as your own\"",
+  "declared": "answers \"Every few weeks\" when asked \"How often do you stream videos\" and answers \"Very important\" when asked \"In general, how important is it to you to have a president who has religious beliefs the same as your own\"",
+  "seed_question": "How often do you stream videos?",
+  "seed_statement": "Every few weeks",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "In general, how important is it to you to have a president who has strong religious beliefs?",
+    "options": [
+     "Very important",
+     "Somewhat important",
+     "Not too important",
+     "Not at all important"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "How much influence should the Bible have on the laws of the United States?",
+    "options": [
+     "A great deal",
+     "Some",
+     "Not much",
+     "None at all"
+    ],
+    "target": 3,
+    "context": "none"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "At the present time, do you think religion as a whole is gaining influence in American life or losing influence?",
+    "options": [
+     "Gaining influence",
+     "Losing influence"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "How often do you stream videos?",
+    "options": [
+     "Several times a day",
+     "About once a day",
+     "A few times a week",
+     "About once a week",
+     "Every few weeks",
+     "Once a month or less",
+     "Never"
+    ],
+    "target": 4,
+    "context": "seed",
+    "mode": "Several times a day",
+    "group_share": 0.085
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "In general, how important is it to you to have a president who has religious beliefs the same as your own?",
+    "options": [
+     "Very important",
+     "Somewhat important",
+     "Not too important",
+     "Not at all important"
+    ],
+    "target": 0,
+    "context": "none",
+    "mode": "Not too important",
+    "group_share": 0.115
+   },
+   {
+    "id": "s3",
+    "kind": "stance",
+    "question": "Do you favor or oppose the U.S. providing humanitarian aid to help Palestinian civilians in Gaza?",
+    "options": [
+     "Strongly favor",
+     "Somewhat favor",
+     "Neither favor nor oppose",
+     "Somewhat oppose",
+     "Strongly oppose"
+    ],
+    "target": 2,
+    "context": "none",
+    "mode": "Strongly favor",
+    "group_share": 0.145
+   }
+  ],
+  "source": {
+   "dataset": "ATP RL",
+   "persona_id": 172,
+   "group": "all",
+   "seed_mode_answer": "Several times a day",
+   "seed_group_share": 0.085
+  }
+ },
+ {
+  "label": "RL #58 · unseen 5 (stance 2) · open-book 1",
+  "domain": "RL",
+  "split": "held-out",
+  "identity": "Alex, age 42, runs a small business, and is hopeful about Middle East peace",
+  "role": "Alex, age 42, runs a small business, and is hopeful about Middle East peace",
+  "neutral_backstory": "Alex, age 42, runs a small business, and is hopeful about Middle East peace.",
+  "backstory": "Alex, age 42, runs a small business, and is hopeful about Middle East peace.",
+  "expected": "answers \"Never\" when asked \"How often do you use dating sites or apps\" and answers \"Several times a day\" when asked \"How often do you stream videos\"",
+  "declared": "answers \"Once a month or less\" when asked \"How often do you use dating sites or apps\" and answers \"Every few weeks\" when asked \"How often do you stream videos\"",
+  "seed_question": "How often do you use dating sites or apps?",
+  "seed_statement": "Once a month or less",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "In general, how important is it to you to have a president who has religious beliefs the same as your own?",
+    "options": [
+     "Very important",
+     "Somewhat important",
+     "Not too important",
+     "Not at all important"
+    ],
+    "target": 2,
+    "context": "none"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "How often do you use social media sites or apps?",
+    "options": [
+     "Several times a day",
+     "About once a day",
+     "A few times a week",
+     "About once a week",
+     "Every few weeks",
+     "Once a month or less",
+     "Never"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "Do you think the Democratic Party is friendly, neutral, or unfriendly toward religion?",
+    "options": [
+     "Friendly",
+     "Neutral",
+     "Unfriendly"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "How often do you use dating sites or apps?",
+    "options": [
+     "Several times a day",
+     "About once a day",
+     "A few times a week",
+     "About once a week",
+     "Every few weeks",
+     "Once a month or less",
+     "Never"
+    ],
+    "target": 5,
+    "context": "seed",
+    "mode": "Never",
+    "group_share": 0.03
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "How often do you stream videos?",
+    "options": [
+     "Several times a day",
+     "About once a day",
+     "A few times a week",
+     "About once a week",
+     "Every few weeks",
+     "Once a month or less",
+     "Never"
+    ],
+    "target": 4,
+    "context": "none",
+    "mode": "Several times a day",
+    "group_share": 0.085
+   },
+   {
+    "id": "s3",
+    "kind": "stance",
+    "question": "How likely do you think it is that there will eventually be lasting peace between Israelis and Palestinians?",
+    "options": [
+     "Extremely likely",
+     "Very likely",
+     "Somewhat likely",
+     "Not too likely",
+     "Not at all likely"
+    ],
+    "target": 2,
+    "context": "none",
+    "mode": "Not too likely",
+    "group_share": 0.11
+   }
+  ],
+  "source": {
+   "dataset": "ATP RL",
+   "persona_id": 58,
+   "group": "all",
+   "seed_mode_answer": "Never",
+   "seed_group_share": 0.03
+  }
+ },
+ {
+  "label": "RL #69 · unseen 5 (stance 2) · open-book 1",
+  "domain": "RL",
+  "split": "held-out",
+  "identity": "Casey, age 31, studies at college, and is hopeful about Middle East peace",
+  "role": "Casey, age 31, studies at college, and is hopeful about Middle East peace",
+  "neutral_backstory": "Casey, age 31, studies at college, and is hopeful about Middle East peace.",
+  "backstory": "Casey, age 31, studies at college, and is hopeful about Middle East peace.",
+  "expected": "answers \"Not too likely\" when asked \"How likely do you think it is that there will eventually be lasting peace between Israelis and Palestinians\" and answers \"Strongly favor\" when asked \"Do you favor or oppose the U.S. providing humanitarian aid to help Palestinian civilians in Gaza\"",
+  "declared": "answers \"Somewhat likely\" when asked \"How likely do you think it is that there will eventually be lasting peace between Israelis and Palestinians\" and answers \"Strongly oppose\" when asked \"Do you favor or oppose the U.S. providing humanitarian aid to help Palestinian civilians in Gaza\"",
+  "seed_question": "How likely do you think it is that there will eventually be lasting peace between Israelis and Palestinians?",
+  "seed_statement": "Somewhat likely",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "In general, how important is it to you to have a president who has religious beliefs the same as your own?",
+    "options": [
+     "Very important",
+     "Somewhat important",
+     "Not too important",
+     "Not at all important"
+    ],
+    "target": 2,
+    "context": "none"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "How often do you use dating sites or apps?",
+    "options": [
+     "Several times a day",
+     "About once a day",
+     "A few times a week",
+     "About once a week",
+     "Every few weeks",
+     "Once a month or less",
+     "Never"
+    ],
+    "target": 6,
+    "context": "none"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "Do you think the Republican Party is friendly, neutral, or unfriendly toward religion?",
+    "options": [
+     "Friendly",
+     "Neutral",
+     "Unfriendly"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "How likely do you think it is that there will eventually be lasting peace between Israelis and Palestinians?",
+    "options": [
+     "Extremely likely",
+     "Very likely",
+     "Somewhat likely",
+     "Not too likely",
+     "Not at all likely"
+    ],
+    "target": 2,
+    "context": "seed",
+    "mode": "Not too likely",
+    "group_share": 0.11
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "Do you favor or oppose the U.S. providing humanitarian aid to help Palestinian civilians in Gaza?",
+    "options": [
+     "Strongly favor",
+     "Somewhat favor",
+     "Neither favor nor oppose",
+     "Somewhat oppose",
+     "Strongly oppose"
+    ],
+    "target": 4,
+    "context": "none",
+    "mode": "Strongly favor",
+    "group_share": 0.12
+   },
+   {
+    "id": "s3",
+    "kind": "stance",
+    "question": "Do you favor or oppose the U.S. providing military aid to Israel to help in its war against Hamas?",
+    "options": [
+     "Strongly favor",
+     "Somewhat favor",
+     "Neither favor nor oppose",
+     "Somewhat oppose",
+     "Strongly oppose"
+    ],
+    "target": 3,
+    "context": "none",
+    "mode": "Strongly favor",
+    "group_share": 0.16
+   }
+  ],
+  "source": {
+   "dataset": "ATP RL",
+   "persona_id": 69,
+   "group": "all",
+   "seed_mode_answer": "Not too likely",
+   "seed_group_share": 0.11
+  }
+ },
+ {
+  "label": "RL #26 · unseen 5 (stance 2) · open-book 2",
+  "domain": "RL",
+  "split": "held-out",
+  "identity": "Alex, age 58, works in IT, and believes religion is losing influence",
+  "role": "Alex, age 58, works in IT, and believes religion is losing influence",
+  "neutral_backstory": "Alex, age 58, works in IT, and believes religion is losing influence.",
+  "backstory": "Alex, age 58, works in IT, and believes religion is losing influence.",
+  "expected": "answers \"Several times a day\" when asked \"How often do you use social media sites or apps\" and answers \"Friendly\" when asked \"Do you think the Republican Party is friendly, neutral, or unfriendly toward religion\"",
+  "declared": "answers \"A few times a week\" when asked \"How often do you use social media sites or apps\" and answers \"Unfriendly\" when asked \"Do you think the Republican Party is friendly, neutral, or unfriendly toward religion\"",
+  "seed_question": "How often do you use social media sites or apps?",
+  "seed_statement": "A few times a week",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "At the present time, do you think religion as a whole is gaining influence in American life or losing influence?",
+    "options": [
+     "Gaining influence",
+     "Losing influence"
+    ],
+    "target": 1,
+    "context": "backstory"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "In general, how important is it to you to have a president who has strong religious beliefs?",
+    "options": [
+     "Very important",
+     "Somewhat important",
+     "Not too important",
+     "Not at all important"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "In general, how important is it to you to have a president who has religious beliefs the same as your own?",
+    "options": [
+     "Very important",
+     "Somewhat important",
+     "Not too important",
+     "Not at all important"
+    ],
+    "target": 2,
+    "context": "none"
+   },
+   {
+    "id": "b4",
+    "kind": "bio",
+    "question": "How much influence should the Bible have on the laws of the United States?",
+    "options": [
+     "A great deal",
+     "Some",
+     "Not much",
+     "None at all"
+    ],
+    "target": 3,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "How often do you use social media sites or apps?",
+    "options": [
+     "Several times a day",
+     "About once a day",
+     "A few times a week",
+     "About once a week",
+     "Every few weeks",
+     "Once a month or less",
+     "Never"
+    ],
+    "target": 2,
+    "context": "seed",
+    "mode": "Several times a day",
+    "group_share": 0.1
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "Do you think the Republican Party is friendly, neutral, or unfriendly toward religion?",
+    "options": [
+     "Friendly",
+     "Neutral",
+     "Unfriendly"
+    ],
+    "target": 2,
+    "context": "none",
+    "mode": "Friendly",
+    "group_share": 0.18
+   },
+   {
+    "id": "s3",
+    "kind": "stance",
+    "question": "How often do you stream videos?",
+    "options": [
+     "Several times a day",
+     "About once a day",
+     "A few times a week",
+     "About once a week",
+     "Every few weeks",
+     "Once a month or less",
+     "Never"
+    ],
+    "target": 2,
+    "context": "none",
+    "mode": "Several times a day",
+    "group_share": 0.185
+   }
+  ],
+  "source": {
+   "dataset": "ATP RL",
+   "persona_id": 26,
+   "group": "all",
+   "seed_mode_answer": "Several times a day",
+   "seed_group_share": 0.1
+  }
+ },
+ {
+  "label": "SC #124 · unseen 5 (stance 2) · open-book 1",
+  "domain": "SC",
+  "split": "held-out",
+  "identity": "Alex, 62, manages a warehouse team, lives in the U",
+  "role": "Alex, 62, manages a warehouse team, lives in the U",
+  "neutral_backstory": "Alex, 62, manages a warehouse team, lives in the U.S. and pays attention to everyday issues. They is wary of social media's impact on democracy, prefers more caution with childhood vaccines, and is skeptical about vaccine benefits and worries about side effects. Outside of work, they read local news and talk with friends about policy and health.",
+  "backstory": "Alex, 62, manages a warehouse team, lives in the U.S. and pays attention to everyday issues. They is wary of social media's impact on democracy, prefers more caution with childhood vaccines, and is skeptical about vaccine benefits and worries about side effects. Outside of work, they read local news and talk with friends about policy and health.",
+  "expected": "answers \"Not too important\" when asked \"How important is it that the journalists who report the news share your characteristics (e.g. race, age, political views, religion)\" and answers \"Somewhat positive\" when asked \"Do you think Twitter has had a positive or negative impact on democracy in the United States\"",
+  "declared": "answers \"Somewhat important\" when asked \"How important is it that the journalists who report the news share your characteristics (e.g. race, age, political views, religion)\" and answers \"Very negative\" when asked \"Do you think Twitter has had a positive or negative impact on democracy in the United States\"",
+  "seed_question": "How important is it that the journalists who report the news share your characteristics (e.g. race, age, political views, religion)?",
+  "seed_statement": "Somewhat important",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "Do you think the federal government should encourage or discourage the use of the following energy sources (solar, wind, oil, coal, nuclear, etc.)?",
+    "options": [
+     "Strongly encourage",
+     "Somewhat encourage",
+     "Neither encourage nor discourage",
+     "Somewhat discourage",
+     "Strongly discourage"
+    ],
+    "target": 4,
+    "context": "none"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "Which of the following statements best describes your view of the COVID-19 vaccines?",
+    "options": [
+     "They save lives",
+     "Too much conflicting information",
+     "Risks outweigh benefits",
+     "Info not transparent"
+    ],
+    "target": 2,
+    "context": "none"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "Do you use Twitter (now X)?",
+    "options": [
+     "Yes",
+     "No"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "How important is it that the journalists who report the news share your characteristics (e.g. race, age, political views, religion)?",
+    "options": [
+     "Very important",
+     "Somewhat important",
+     "Not too important",
+     "Not at all important"
+    ],
+    "target": 1,
+    "context": "seed",
+    "mode": "Not too important",
+    "group_share": 0.222
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "Do you think Twitter has had a positive or negative impact on democracy in the United States?",
+    "options": [
+     "Very positive",
+     "Somewhat positive",
+     "Somewhat negative",
+     "Very negative"
+    ],
+    "target": 3,
+    "context": "none",
+    "mode": "Somewhat positive",
+    "group_share": 0.244
+   },
+   {
+    "id": "s3",
+    "kind": "stance",
+    "question": "How much have you heard about cryptocurrencies like Bitcoin or Ethereum?",
+    "options": [
+     "A lot",
+     "A little",
+     "Nothing at all"
+    ],
+    "target": 1,
+    "context": "none",
+    "mode": "A lot",
+    "group_share": 0.294
+   }
+  ],
+  "source": {
+   "dataset": "ATP SC",
+   "persona_id": 124,
+   "group": "all",
+   "seed_mode_answer": "Not too important",
+   "seed_group_share": 0.222
+  }
+ },
+ {
+  "label": "SC #36 · unseen 5 (stance 2) · open-book 1",
+  "domain": "SC",
+  "split": "held-out",
+  "identity": "Drew, 60, teaches at a local school, lives in the U",
+  "role": "Drew, 60, teaches at a local school, lives in the U",
+  "neutral_backstory": "Drew, 60, teaches at a local school, lives in the U.S. and pays attention to everyday issues. They is skeptical about vaccine benefits and worries about side effects, prefers more caution with childhood vaccines, and is wary of social media's impact on democracy. Outside of work, they read local news and talk with friends about policy and health.",
+  "backstory": "Drew, 60, teaches at a local school, lives in the U.S. and pays attention to everyday issues. They is skeptical about vaccine benefits and worries about side effects, prefers more caution with childhood vaccines, and is wary of social media's impact on democracy. Outside of work, they read local news and talk with friends about policy and health.",
+  "expected": "answers \"A great deal\" when asked \"How much risk do COVID-19 vaccines pose of side effects, compared to the health benefits they provide\" and answers \"Strongly discourage\" when asked \"Do you think the federal government should encourage or discourage the use of the following energy sources (solar, wind, oil, coal, nuclear, etc.)\"",
+  "declared": "answers \"Not too much\" when asked \"How much risk do COVID-19 vaccines pose of side effects, compared to the health benefits they provide\" and answers \"Somewhat encourage\" when asked \"Do you think the federal government should encourage or discourage the use of the following energy sources (solar, wind, oil, coal, nuclear, etc.)\"",
+  "seed_question": "How much risk do COVID-19 vaccines pose of side effects, compared to the health benefits they provide?",
+  "seed_statement": "Not too much",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "How much of a problem do you think each of the following is in the medical system (e.g. over-testing, overuse of prescriptions, high costs)?",
+    "options": [
+     "A big problem",
+     "A small problem",
+     "Not a problem"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "Do you use Twitter (now X)?",
+    "options": [
+     "Yes",
+     "No"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "Do you get a flu shot every year, some years, or never?",
+    "options": [
+     "Every year",
+     "Some years",
+     "Never"
+    ],
+    "target": 2,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "How much risk do COVID-19 vaccines pose of side effects, compared to the health benefits they provide?",
+    "options": [
+     "A great deal",
+     "A fair amount",
+     "Not too much",
+     "None at all"
+    ],
+    "target": 2,
+    "context": "seed",
+    "mode": "A great deal",
+    "group_share": 0.174
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "Do you think the federal government should encourage or discourage the use of the following energy sources (solar, wind, oil, coal, nuclear, etc.)?",
+    "options": [
+     "Strongly encourage",
+     "Somewhat encourage",
+     "Neither encourage nor discourage",
+     "Somewhat discourage",
+     "Strongly discourage"
+    ],
+    "target": 1,
+    "context": "none",
+    "mode": "Strongly discourage",
+    "group_share": 0.197
+   },
+   {
+    "id": "s3",
+    "kind": "stance",
+    "question": "How much risk do MMR vaccines pose of side effects, compared to the health benefits they provide?",
+    "options": [
+     "A great deal",
+     "A fair amount",
+     "Not too much",
+     "None at all"
+    ],
+    "target": 2,
+    "context": "none",
+    "mode": "A great deal",
+    "group_share": 0.263
+   }
+  ],
+  "source": {
+   "dataset": "ATP SC",
+   "persona_id": 36,
+   "group": "all",
+   "seed_mode_answer": "A great deal",
+   "seed_group_share": 0.174
+  }
+ },
+ {
+  "label": "SC #99 · unseen 5 (stance 2) · open-book 1",
+  "domain": "SC",
+  "split": "held-out",
+  "identity": "Sam, 26, studies part?‘time, lives in the U",
+  "role": "Sam, 26, studies part?‘time, lives in the U",
+  "neutral_backstory": "Sam, 26, studies part?‘time, lives in the U.S. and pays attention to everyday issues. They uses social media and sees some democratic value in online discussion, generally trusts public?‘health guidance on vaccines, and has little interest in cryptocurrencies. Community well?‘being and reliable information matter a lot to them.",
+  "backstory": "Sam, 26, studies part?‘time, lives in the U.S. and pays attention to everyday issues. They uses social media and sees some democratic value in online discussion, generally trusts public?‘health guidance on vaccines, and has little interest in cryptocurrencies. Community well?‘being and reliable information matter a lot to them.",
+  "expected": "answers \"Strongly discourage\" when asked \"Do you think the federal government should encourage or discourage the use of the following energy sources (solar, wind, oil, coal, nuclear, etc.)\" and answers \"Not too important\" when asked \"How important is it that the journalists who report the news share your characteristics (e.g. race, age, political views, religion)\"",
+  "declared": "answers \"Neither encourage nor discourage\" when asked \"Do you think the federal government should encourage or discourage the use of the following energy sources (solar, wind, oil, coal, nuclear, etc.)\" and answers \"Somewhat important\" when asked \"How important is it that the journalists who report the news share your characteristics (e.g. race, age, political views, religion)\"",
+  "seed_question": "Do you think the federal government should encourage or discourage the use of the following energy sources (solar, wind, oil, coal, nuclear, etc.)?",
+  "seed_statement": "Neither encourage nor discourage",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "Do you think Twitter has had a positive or negative impact on democracy in the United States?",
+    "options": [
+     "Very positive",
+     "Somewhat positive",
+     "Somewhat negative",
+     "Very negative"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "Have you received a flu shot in the past 12 months?",
+    "options": [
+     "Yes",
+     "No"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "How much do you think climate change is affecting your local community?",
+    "options": [
+     "A great deal",
+     "Some",
+     "Not too much",
+     "Not at all"
+    ],
+    "target": 2,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "Do you think the federal government should encourage or discourage the use of the following energy sources (solar, wind, oil, coal, nuclear, etc.)?",
+    "options": [
+     "Strongly encourage",
+     "Somewhat encourage",
+     "Neither encourage nor discourage",
+     "Somewhat discourage",
+     "Strongly discourage"
+    ],
+    "target": 2,
+    "context": "seed",
+    "mode": "Strongly discourage",
+    "group_share": 0.221
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "How important is it that the journalists who report the news share your characteristics (e.g. race, age, political views, religion)?",
+    "options": [
+     "Very important",
+     "Somewhat important",
+     "Not too important",
+     "Not at all important"
+    ],
+    "target": 1,
+    "context": "none",
+    "mode": "Not too important",
+    "group_share": 0.222
+   },
+   {
+    "id": "s3",
+    "kind": "stance",
+    "question": "How much risk do MMR vaccines pose of side effects, compared to the health benefits they provide?",
+    "options": [
+     "A great deal",
+     "A fair amount",
+     "Not too much",
+     "None at all"
+    ],
+    "target": 1,
+    "context": "none",
+    "mode": "A great deal",
+    "group_share": 0.232
+   }
+  ],
+  "source": {
+   "dataset": "ATP SC",
+   "persona_id": 99,
+   "group": "all",
+   "seed_mode_answer": "Strongly discourage",
+   "seed_group_share": 0.221
+  }
+ },
+ {
+  "label": "SC #76 · unseen 5 (stance 2) · open-book 1",
+  "domain": "SC",
+  "split": "held-out",
+  "identity": "Sam, 57, is a healthcare worker, lives in the U",
+  "role": "Sam, 57, is a healthcare worker, lives in the U",
+  "neutral_backstory": "Sam, 57, is a healthcare worker, lives in the U.S. and pays attention to everyday issues. They has only limited exposure to AI tools and remains cautious about their value, prefers more caution with childhood vaccines, and generally trusts public?‘health guidance on vaccines. They balance practicality with curiosity, and adjust opinions as they learn more.",
+  "backstory": "Sam, 57, is a healthcare worker, lives in the U.S. and pays attention to everyday issues. They has only limited exposure to AI tools and remains cautious about their value, prefers more caution with childhood vaccines, and generally trusts public?‘health guidance on vaccines. They balance practicality with curiosity, and adjust opinions as they learn more.",
+  "expected": "answers \"Strongly discourage\" when asked \"Do you think the federal government should encourage or discourage the use of the following energy sources (solar, wind, oil, coal, nuclear, etc.)\" and answers \"Risks outweigh benefits\" when asked \"Which of the following statements best describes your view of the COVID-19 vaccines\"",
+  "declared": "answers \"Somewhat discourage\" when asked \"Do you think the federal government should encourage or discourage the use of the following energy sources (solar, wind, oil, coal, nuclear, etc.)\" and answers \"Info not transparent\" when asked \"Which of the following statements best describes your view of the COVID-19 vaccines\"",
+  "seed_question": "Do you think the federal government should encourage or discourage the use of the following energy sources (solar, wind, oil, coal, nuclear, etc.)?",
+  "seed_statement": "Somewhat discourage",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "Have you ever used ChatGPT?",
+    "options": [
+     "Yes",
+     "No"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "How much risk do MMR vaccines pose of side effects, compared to the health benefits they provide?",
+    "options": [
+     "A great deal",
+     "A fair amount",
+     "Not too much",
+     "None at all"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "Have you ever invested in cryptocurrency?",
+    "options": [
+     "Yes",
+     "No"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "Do you think the federal government should encourage or discourage the use of the following energy sources (solar, wind, oil, coal, nuclear, etc.)?",
+    "options": [
+     "Strongly encourage",
+     "Somewhat encourage",
+     "Neither encourage nor discourage",
+     "Somewhat discourage",
+     "Strongly discourage"
+    ],
+    "target": 3,
+    "context": "seed",
+    "mode": "Strongly discourage",
+    "group_share": 0.156
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "Which of the following statements best describes your view of the COVID-19 vaccines?",
+    "options": [
+     "They save lives",
+     "Too much conflicting information",
+     "Risks outweigh benefits",
+     "Info not transparent"
+    ],
+    "target": 3,
+    "context": "none",
+    "mode": "Risks outweigh benefits",
+    "group_share": 0.202
+   },
+   {
+    "id": "s3",
+    "kind": "stance",
+    "question": "How important is it that the journalists who report the news share your characteristics (e.g. race, age, political views, religion)?",
+    "options": [
+     "Very important",
+     "Somewhat important",
+     "Not too important",
+     "Not at all important"
+    ],
+    "target": 1,
+    "context": "none",
+    "mode": "Not too important",
+    "group_share": 0.222
+   }
+  ],
+  "source": {
+   "dataset": "ATP SC",
+   "persona_id": 76,
+   "group": "all",
+   "seed_mode_answer": "Strongly discourage",
+   "seed_group_share": 0.156
+  }
+ },
+ {
+  "label": "SC #71 · unseen 5 (stance 2) · open-book 1",
+  "domain": "SC",
+  "split": "held-out",
+  "identity": "Casey, 46, does freelance design, lives in the U",
+  "role": "Casey, 46, does freelance design, lives in the U",
+  "neutral_backstory": "Casey, 46, does freelance design, lives in the U.S. and pays attention to everyday issues. They supports routine childhood vaccinations, generally trusts public?‘health guidance on vaccines, and is familiar with cryptocurrencies and keeps an eye on new financial tech. Outside of work, they read local news and talk with friends about policy and health.",
+  "backstory": "Casey, 46, does freelance design, lives in the U.S. and pays attention to everyday issues. They supports routine childhood vaccinations, generally trusts public?‘health guidance on vaccines, and is familiar with cryptocurrencies and keeps an eye on new financial tech. Outside of work, they read local news and talk with friends about policy and health.",
+  "expected": "answers \"Risks outweigh benefits\" when asked \"Which of the following statements best describes your view of the COVID-19 vaccines\" and answers \"Somewhat positive\" when asked \"Do you think Twitter has had a positive or negative impact on democracy in the United States\"",
+  "declared": "answers \"Info not transparent\" when asked \"Which of the following statements best describes your view of the COVID-19 vaccines\" and answers \"Very positive\" when asked \"Do you think Twitter has had a positive or negative impact on democracy in the United States\"",
+  "seed_question": "Which of the following statements best describes your view of the COVID-19 vaccines?",
+  "seed_statement": "Info not transparent",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "How much of a problem do you think each of the following is in the medical system (e.g. over-testing, overuse of prescriptions, high costs)?",
+    "options": [
+     "A big problem",
+     "A small problem",
+     "Not a problem"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "Do you think each of the following groups is doing too much, too little, or the right amount to reduce climate change?",
+    "options": [
+     "Too much",
+     "Too little",
+     "Right amount"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "How much risk do MMR vaccines pose of side effects, compared to the health benefits they provide?",
+    "options": [
+     "A great deal",
+     "A fair amount",
+     "Not too much",
+     "None at all"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "Which of the following statements best describes your view of the COVID-19 vaccines?",
+    "options": [
+     "They save lives",
+     "Too much conflicting information",
+     "Risks outweigh benefits",
+     "Info not transparent"
+    ],
+    "target": 3,
+    "context": "seed",
+    "mode": "Risks outweigh benefits",
+    "group_share": 0.202
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "Do you think Twitter has had a positive or negative impact on democracy in the United States?",
+    "options": [
+     "Very positive",
+     "Somewhat positive",
+     "Somewhat negative",
+     "Very negative"
+    ],
+    "target": 0,
+    "context": "none",
+    "mode": "Somewhat positive",
+    "group_share": 0.256
+   },
+   {
+    "id": "s3",
+    "kind": "stance",
+    "question": "How much risk do COVID-19 vaccines pose of side effects, compared to the health benefits they provide?",
+    "options": [
+     "A great deal",
+     "A fair amount",
+     "Not too much",
+     "None at all"
+    ],
+    "target": 1,
+    "context": "none",
+    "mode": "A great deal",
+    "group_share": 0.272
+   }
+  ],
+  "source": {
+   "dataset": "ATP SC",
+   "persona_id": 71,
+   "group": "all",
+   "seed_mode_answer": "Risks outweigh benefits",
+   "seed_group_share": 0.202
+  }
+ },
+ {
+  "label": "SC #17 · unseen 5 (stance 2) · open-book 1",
+  "domain": "SC",
+  "split": "held-out",
+  "identity": "Quinn, 52, studies part?‘time, lives in the U",
+  "role": "Quinn, 52, studies part?‘time, lives in the U",
+  "neutral_backstory": "Quinn, 52, studies part?‘time, lives in the U.S. and pays attention to everyday issues. They is skeptical about vaccine benefits and worries about side effects, generally trusts public?‘health guidance on vaccines, and supports routine childhood vaccinations. Outside of work, they read local news and talk with friends about policy and health.",
+  "backstory": "Quinn, 52, studies part?‘time, lives in the U.S. and pays attention to everyday issues. They is skeptical about vaccine benefits and worries about side effects, generally trusts public?‘health guidance on vaccines, and supports routine childhood vaccinations. Outside of work, they read local news and talk with friends about policy and health.",
+  "expected": "answers \"A great deal\" when asked \"How much risk do COVID-19 vaccines pose of side effects, compared to the health benefits they provide\" and answers \"A great deal\" when asked \"How much risk do MMR vaccines pose of side effects, compared to the health benefits they provide\"",
+  "declared": "answers \"Not too much\" when asked \"How much risk do COVID-19 vaccines pose of side effects, compared to the health benefits they provide\" and answers \"A fair amount\" when asked \"How much risk do MMR vaccines pose of side effects, compared to the health benefits they provide\"",
+  "seed_question": "How much risk do COVID-19 vaccines pose of side effects, compared to the health benefits they provide?",
+  "seed_statement": "Not too much",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "How much have you heard about ChatGPT?",
+    "options": [
+     "A lot",
+     "A little",
+     "Nothing at all"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "Which of the following statements best describes your view of the COVID-19 vaccines?",
+    "options": [
+     "They save lives",
+     "Too much conflicting information",
+     "Risks outweigh benefits",
+     "Info not transparent"
+    ],
+    "target": 2,
+    "context": "none"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "Do you use Twitter (now X)?",
+    "options": [
+     "Yes",
+     "No"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "How much risk do COVID-19 vaccines pose of side effects, compared to the health benefits they provide?",
+    "options": [
+     "A great deal",
+     "A fair amount",
+     "Not too much",
+     "None at all"
+    ],
+    "target": 2,
+    "context": "seed",
+    "mode": "A great deal",
+    "group_share": 0.174
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "How much risk do MMR vaccines pose of side effects, compared to the health benefits they provide?",
+    "options": [
+     "A great deal",
+     "A fair amount",
+     "Not too much",
+     "None at all"
+    ],
+    "target": 1,
+    "context": "none",
+    "mode": "A great deal",
+    "group_share": 0.232
+   },
+   {
+    "id": "s3",
+    "kind": "stance",
+    "question": "How much do you think climate change is affecting your local community?",
+    "options": [
+     "A great deal",
+     "Some",
+     "Not too much",
+     "Not at all"
+    ],
+    "target": 1,
+    "context": "none",
+    "mode": "Not too much",
+    "group_share": 0.235
+   }
+  ],
+  "source": {
+   "dataset": "ATP SC",
+   "persona_id": 17,
+   "group": "all",
+   "seed_mode_answer": "A great deal",
+   "seed_group_share": 0.174
+  }
+ },
+ {
+  "label": "SO #1934 · unseen 5 (stance 2) · open-book 2",
+  "domain": "SO",
+  "split": "held-out",
+  "identity": "The respondent identifies as Moderate, with income Less than $30,000, and reports economic situation N/A",
+  "role": "The respondent identifies as Moderate, with income Less than $30,000, and reports economic situation N/A",
+  "neutral_backstory": "The respondent identifies as Moderate, with income Less than $30,000, and reports economic situation N/A.",
+  "backstory": "The respondent identifies as Moderate, with income Less than $30,000, and reports economic situation N/A.",
+  "expected": "answers \"Good\" when asked \"How good a job does your manager do keeping you informed about workplace changes\" and answers \"Work full time for pay\" when asked \"What is your current work situation\"",
+  "declared": "answers \"Very good\" when asked \"How good a job does your manager do keeping you informed about workplace changes\" and answers \"Work part time for pay\" when asked \"What is your current work situation\"",
+  "seed_question": "How good a job does your manager do keeping you informed about workplace changes?",
+  "seed_statement": "Very good",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "Are you currently in a managerial or supervisory role?",
+    "options": [
+     "No",
+     "Yes"
+    ],
+    "target": 0,
+    "context": "backstory"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "What industry or field do you currently work in?",
+    "options": [
+     "Education",
+     "Manufacturing, mining, or construction",
+     "Banking, finance, accounting, real estate, or insurance",
+     "Retail and trade",
+     "Government, public administration or military",
+     "Health care and social assistance",
+     "Hospitality or service",
+     "Transportation",
+     "Agriculture, forestry, fishing and hunting",
+     "Professional, scientific, and technical services",
+     "Information/Technology",
+     "Arts, entertainment and recreation"
+    ],
+    "target": 5,
+    "context": "none"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "Do you currently have a manager or supervisor?",
+    "options": [
+     "Yes",
+     "No"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "b4",
+    "kind": "bio",
+    "question": "Overall, how good a job do you think your manager or supervisor is doing?",
+    "options": [
+     "Excellent",
+     "Very good",
+     "Good",
+     "Fair",
+     "Poor"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "How good a job does your manager do keeping you informed about workplace changes?",
+    "options": [
+     "Good",
+     "Very good",
+     "Fair",
+     "Excellent",
+     "Poor"
+    ],
+    "target": 1,
+    "context": "seed",
+    "mode": "Good",
+    "group_share": 0.158
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "What is your current work situation?",
+    "options": [
+     "Retired",
+     "Work part time for pay",
+     "Not currently working for pay",
+     "Work full time for pay",
+     "Unable to work due to a disability"
+    ],
+    "target": 1,
+    "context": "none",
+    "mode": "Work full time for pay",
+    "group_share": 0.163
+   },
+   {
+    "id": "s3",
+    "kind": "stance",
+    "question": "How good a job does your manager do respecting you as a person?",
+    "options": [
+     "Very good",
+     "Good",
+     "Poor",
+     "Excellent",
+     "Fair"
+    ],
+    "target": 0,
+    "context": "none",
+    "mode": "Excellent",
+    "group_share": 0.19
+   }
+  ],
+  "source": {
+   "dataset": "ATP SO",
+   "persona_id": 1934,
+   "group": "back:The respondent identifies as Moderate, with income Less than $30,000, and reports economic situation N/A.",
+   "seed_mode_answer": "Good",
+   "seed_group_share": 0.158
+  }
+ },
+ {
+  "label": "SO #2558 · unseen 5 (stance 2) · open-book 1",
+  "domain": "SO",
+  "split": "held-out",
+  "identity": "The respondent identifies as Conservative, with income $100,000 or more, and reports economic situation N/A",
+  "role": "The respondent identifies as Conservative, with income $100,000 or more, and reports economic situation N/A",
+  "neutral_backstory": "The respondent identifies as Conservative, with income $100,000 or more, and reports economic situation N/A.",
+  "backstory": "The respondent identifies as Conservative, with income $100,000 or more, and reports economic situation N/A.",
+  "expected": "answers \"Good\" when asked \"How good a job does your manager do giving you helpful feedback about your work\" and answers \"Very good\" when asked \"How good a job does your manager do respecting you as a person\"",
+  "declared": "answers \"Excellent\" when asked \"How good a job does your manager do giving you helpful feedback about your work\" and answers \"Excellent\" when asked \"How good a job does your manager do respecting you as a person\"",
+  "seed_question": "How good a job does your manager do giving you helpful feedback about your work?",
+  "seed_statement": "Excellent",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "What is your current work situation?",
+    "options": [
+     "Retired",
+     "Work part time for pay",
+     "Not currently working for pay",
+     "Work full time for pay",
+     "Unable to work due to a disability"
+    ],
+    "target": 3,
+    "context": "none"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "What industry or field do you currently work in?",
+    "options": [
+     "Education",
+     "Manufacturing, mining, or construction",
+     "Banking, finance, accounting, real estate, or insurance",
+     "Retail and trade",
+     "Government, public administration or military",
+     "Health care and social assistance",
+     "Hospitality or service",
+     "Transportation",
+     "Agriculture, forestry, fishing and hunting",
+     "Professional, scientific, and technical services",
+     "Information/Technology",
+     "Arts, entertainment and recreation"
+    ],
+    "target": 4,
+    "context": "none"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "Do you currently have a manager or supervisor?",
+    "options": [
+     "Yes",
+     "No"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "How good a job does your manager do giving you helpful feedback about your work?",
+    "options": [
+     "Very good",
+     "Good",
+     "Poor",
+     "Excellent",
+     "Fair"
+    ],
+    "target": 3,
+    "context": "seed",
+    "mode": "Good",
+    "group_share": 0.186
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "How good a job does your manager do respecting you as a person?",
+    "options": [
+     "Very good",
+     "Good",
+     "Poor",
+     "Excellent",
+     "Fair"
+    ],
+    "target": 3,
+    "context": "none",
+    "mode": "Very good",
+    "group_share": 0.198
+   },
+   {
+    "id": "s3",
+    "kind": "stance",
+    "question": "Would you use the following to describe your manager: Supportive?",
+    "options": [
+     "Very well",
+     "Extremely well",
+     "Somewhat well",
+     "Not at all well",
+     "Not too well"
+    ],
+    "target": 1,
+    "context": "none",
+    "mode": "Very well",
+    "group_share": 0.198
+   }
+  ],
+  "source": {
+   "dataset": "ATP SO",
+   "persona_id": 2558,
+   "group": "back:The respondent identifies as Conservative, with income $100,000 or more, and reports economic situation N/A.",
+   "seed_mode_answer": "Good",
+   "seed_group_share": 0.186
+  }
+ },
+ {
+  "label": "SO #2142 · unseen 5 (stance 2) · open-book 2",
+  "domain": "SO",
+  "split": "held-out",
+  "identity": "The respondent identifies as Conservative, with income $50,000 to less than $60,000, and reports economic situation N/A",
+  "role": "The respondent identifies as Conservative, with income $50,000 to less than $60,000, and reports economic situation N/A",
+  "neutral_backstory": "The respondent identifies as Conservative, with income $50,000 to less than $60,000, and reports economic situation N/A.",
+  "backstory": "The respondent identifies as Conservative, with income $50,000 to less than $60,000, and reports economic situation N/A.",
+  "expected": "answers \"Manufacturing, mining, or construction\" when asked \"What industry or field do you currently work in\" and answers \"Rarely\" when asked \"Have you ever been in a managerial or supervisory role\"",
+  "declared": "answers \"Hospitality or service\" when asked \"What industry or field do you currently work in\" and answers \"Never\" when asked \"Have you ever been in a managerial or supervisory role\"",
+  "seed_question": "What industry or field do you currently work in?",
+  "seed_statement": "Hospitality or service",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "Do you currently have a manager or supervisor?",
+    "options": [
+     "Yes",
+     "No"
+    ],
+    "target": 1,
+    "context": "backstory"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "What is your current work situation?",
+    "options": [
+     "Retired",
+     "Work part time for pay",
+     "Not currently working for pay",
+     "Work full time for pay",
+     "Unable to work due to a disability"
+    ],
+    "target": 3,
+    "context": "none"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "If you could choose, would you prefer a male or female manager, or does it not matter?",
+    "options": [
+     "No preference",
+     "A man",
+     "A woman",
+     "Someone who identifies another way"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "b4",
+    "kind": "bio",
+    "question": "When you were growing up, did your teachers encourage you to take on leadership roles?",
+    "options": [
+     "Not at all",
+     "A fair amount",
+     "A great deal",
+     "Some",
+     "Not much",
+     "I don't remember"
+    ],
+    "target": 4,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "What industry or field do you currently work in?",
+    "options": [
+     "Education",
+     "Manufacturing, mining, or construction",
+     "Banking, finance, accounting, real estate, or insurance",
+     "Retail and trade",
+     "Government, public administration or military",
+     "Health care and social assistance",
+     "Hospitality or service",
+     "Transportation",
+     "Agriculture, forestry, fishing and hunting",
+     "Professional, scientific, and technical services",
+     "Information/Technology",
+     "Arts, entertainment and recreation"
+    ],
+    "target": 6,
+    "context": "seed",
+    "mode": "Manufacturing, mining, or construction",
+    "group_share": 0.12
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "Have you ever been in a managerial or supervisory role?",
+    "options": [
+     "Rarely",
+     "Often",
+     "Extremely often",
+     "Sometimes",
+     "Never"
+    ],
+    "target": 4,
+    "context": "none",
+    "mode": "Rarely",
+    "group_share": 0.125
+   },
+   {
+    "id": "s3",
+    "kind": "stance",
+    "question": "When you were growing up, did your parents encourage you to take on leadership roles?",
+    "options": [
+     "Not at all",
+     "A fair amount",
+     "A great deal",
+     "Not much",
+     "Some",
+     "I don't remember"
+    ],
+    "target": 3,
+    "context": "none",
+    "mode": "Not at all",
+    "group_share": 0.25
+   }
+  ],
+  "source": {
+   "dataset": "ATP SO",
+   "persona_id": 2142,
+   "group": "back:The respondent identifies as Conservative, with income $50,000 to less than $60,000, and reports economic situation N/A.",
+   "seed_mode_answer": "Manufacturing, mining, or construction",
+   "seed_group_share": 0.12
+  }
+ },
+ {
+  "label": "SO #2823 · unseen 5 (stance 2) · open-book 2",
+  "domain": "SO",
+  "split": "held-out",
+  "identity": "The respondent identifies as Liberal, with income $100,000 or more, and reports economic situation N/A",
+  "role": "The respondent identifies as Liberal, with income $100,000 or more, and reports economic situation N/A",
+  "neutral_backstory": "The respondent identifies as Liberal, with income $100,000 or more, and reports economic situation N/A.",
+  "backstory": "The respondent identifies as Liberal, with income $100,000 or more, and reports economic situation N/A.",
+  "expected": "answers \"Professional, scientific, and technical services\" when asked \"What industry or field do you currently work in\" and answers \"Good\" when asked \"How good a job does your manager do giving you helpful feedback about your work\"",
+  "declared": "answers \"Education\" when asked \"What industry or field do you currently work in\" and answers \"Fair\" when asked \"How good a job does your manager do giving you helpful feedback about your work\"",
+  "seed_question": "What industry or field do you currently work in?",
+  "seed_statement": "Education",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "Are you currently in a managerial or supervisory role?",
+    "options": [
+     "No",
+     "Yes"
+    ],
+    "target": 0,
+    "context": "backstory"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "What is your current work situation?",
+    "options": [
+     "Retired",
+     "Work part time for pay",
+     "Not currently working for pay",
+     "Work full time for pay",
+     "Unable to work due to a disability"
+    ],
+    "target": 3,
+    "context": "none"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "Do you currently have a manager or supervisor?",
+    "options": [
+     "Yes",
+     "No"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "b4",
+    "kind": "bio",
+    "question": "How good a job does your manager do respecting you as a person?",
+    "options": [
+     "Very good",
+     "Good",
+     "Poor",
+     "Excellent",
+     "Fair"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "What industry or field do you currently work in?",
+    "options": [
+     "Education",
+     "Manufacturing, mining, or construction",
+     "Banking, finance, accounting, real estate, or insurance",
+     "Retail and trade",
+     "Government, public administration or military",
+     "Health care and social assistance",
+     "Hospitality or service",
+     "Transportation",
+     "Agriculture, forestry, fishing and hunting",
+     "Professional, scientific, and technical services",
+     "Information/Technology",
+     "Arts, entertainment and recreation"
+    ],
+    "target": 0,
+    "context": "seed",
+    "mode": "Professional, scientific, and technical services",
+    "group_share": 0.114
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "How good a job does your manager do giving you helpful feedback about your work?",
+    "options": [
+     "Very good",
+     "Good",
+     "Poor",
+     "Excellent",
+     "Fair"
+    ],
+    "target": 4,
+    "context": "none",
+    "mode": "Good",
+    "group_share": 0.188
+   },
+   {
+    "id": "s3",
+    "kind": "stance",
+    "question": "Would you use the following to describe your manager: Helpful?",
+    "options": [
+     "Somewhat well",
+     "Not too well",
+     "Very well",
+     "Extremely well",
+     "Not at all well"
+    ],
+    "target": 0,
+    "context": "none",
+    "mode": "Very well",
+    "group_share": 0.232
+   }
+  ],
+  "source": {
+   "dataset": "ATP SO",
+   "persona_id": 2823,
+   "group": "back:The respondent identifies as Liberal, with income $100,000 or more, and reports economic situation N/A.",
+   "seed_mode_answer": "Professional, scientific, and technical services",
+   "seed_group_share": 0.114
+  }
+ },
+ {
+  "label": "SO #4784 · unseen 5 (stance 2) · open-book 2",
+  "domain": "SO",
+  "split": "held-out",
+  "identity": "The respondent identifies as Very liberal, with income $100,000 or more, and reports economic situation N/A",
+  "role": "The respondent identifies as Very liberal, with income $100,000 or more, and reports economic situation N/A",
+  "neutral_backstory": "The respondent identifies as Very liberal, with income $100,000 or more, and reports economic situation N/A.",
+  "backstory": "The respondent identifies as Very liberal, with income $100,000 or more, and reports economic situation N/A.",
+  "expected": "answers \"Education\" when asked \"What industry or field do you currently work in\" and answers \"A fair amount\" when asked \"When you were growing up, did your parents encourage you to take on leadership roles\"",
+  "declared": "answers \"Manufacturing, mining, or construction\" when asked \"What industry or field do you currently work in\" and answers \"Some\" when asked \"When you were growing up, did your parents encourage you to take on leadership roles\"",
+  "seed_question": "What industry or field do you currently work in?",
+  "seed_statement": "Manufacturing, mining, or construction",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "Do you currently have a manager or supervisor?",
+    "options": [
+     "Yes",
+     "No"
+    ],
+    "target": 1,
+    "context": "backstory"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "What is your current work situation?",
+    "options": [
+     "Retired",
+     "Work part time for pay",
+     "Not currently working for pay",
+     "Work full time for pay",
+     "Unable to work due to a disability"
+    ],
+    "target": 3,
+    "context": "none"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "If you could choose, would you prefer a male or female manager, or does it not matter?",
+    "options": [
+     "No preference",
+     "A man",
+     "A woman",
+     "Someone who identifies another way"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "b4",
+    "kind": "bio",
+    "question": "Have you ever been in a managerial or supervisory role?",
+    "options": [
+     "Rarely",
+     "Often",
+     "Extremely often",
+     "Sometimes",
+     "Never"
+    ],
+    "target": 3,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "What industry or field do you currently work in?",
+    "options": [
+     "Education",
+     "Manufacturing, mining, or construction",
+     "Banking, finance, accounting, real estate, or insurance",
+     "Retail and trade",
+     "Government, public administration or military",
+     "Health care and social assistance",
+     "Hospitality or service",
+     "Transportation",
+     "Agriculture, forestry, fishing and hunting",
+     "Professional, scientific, and technical services",
+     "Information/Technology",
+     "Arts, entertainment and recreation"
+    ],
+    "target": 1,
+    "context": "seed",
+    "mode": "Education",
+    "group_share": 0.083
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "When you were growing up, did your parents encourage you to take on leadership roles?",
+    "options": [
+     "Not at all",
+     "A fair amount",
+     "A great deal",
+     "Not much",
+     "Some",
+     "I don't remember"
+    ],
+    "target": 4,
+    "context": "none",
+    "mode": "A fair amount",
+    "group_share": 0.2
+   },
+   {
+    "id": "s3",
+    "kind": "stance",
+    "question": "When you were growing up, did your teachers encourage you to take on leadership roles?",
+    "options": [
+     "Not at all",
+     "A fair amount",
+     "A great deal",
+     "Some",
+     "Not much",
+     "I don't remember"
+    ],
+    "target": 3,
+    "context": "none",
+    "mode": "A fair amount",
+    "group_share": 0.2
+   }
+  ],
+  "source": {
+   "dataset": "ATP SO",
+   "persona_id": 4784,
+   "group": "back:The respondent identifies as Very liberal, with income $100,000 or more, and reports economic situation N/A.",
+   "seed_mode_answer": "Education",
+   "seed_group_share": 0.083
+  }
+ },
+ {
+  "label": "SO #718 · unseen 5 (stance 2) · open-book 1",
+  "domain": "SO",
+  "split": "held-out",
+  "identity": "The respondent identifies as Conservative, with income $50,000 to less than $60,000, and reports economic situation N/A",
+  "role": "The respondent identifies as Conservative, with income $50,000 to less than $60,000, and reports economic situation N/A",
+  "neutral_backstory": "The respondent identifies as Conservative, with income $50,000 to less than $60,000, and reports economic situation N/A.",
+  "backstory": "The respondent identifies as Conservative, with income $50,000 to less than $60,000, and reports economic situation N/A.",
+  "expected": "answers \"10 or more\" when asked \"How many close friends do you have\" and answers \"Not at all\" when asked \"When you were growing up, did your parents encourage you to take on leadership roles\"",
+  "declared": "answers \"4\" when asked \"How many close friends do you have\" and answers \"A fair amount\" when asked \"When you were growing up, did your parents encourage you to take on leadership roles\"",
+  "seed_question": "How many close friends do you have?",
+  "seed_statement": "4",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "If you could choose, would you prefer a male or female manager, or does it not matter?",
+    "options": [
+     "No preference",
+     "A man",
+     "A woman",
+     "Someone who identifies another way"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "Do you think there are too many, too few, or about the right number of women in high political offices?",
+    "options": [
+     "About the right number of women in high political offices",
+     "Too many women in high political offices",
+     "Too few women in high political offices"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "Do you think men and women are treated equally when it comes to running for political office?",
+    "options": [
+     "Even as more women run for office, men will continue to hold more high political offices in the future",
+     "As more women run for office, it is only a matter of time before there are as many women as men in high political office"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "How many close friends do you have?",
+    "options": [
+     "4",
+     "2",
+     "10 or more",
+     "5",
+     "3",
+     "9",
+     "1",
+     "6",
+     "8",
+     "0",
+     "7"
+    ],
+    "target": 0,
+    "context": "seed",
+    "mode": "10 or more",
+    "group_share": 0.123
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "When you were growing up, did your parents encourage you to take on leadership roles?",
+    "options": [
+     "Not at all",
+     "A fair amount",
+     "A great deal",
+     "Not much",
+     "Some",
+     "I don't remember"
+    ],
+    "target": 1,
+    "context": "none",
+    "mode": "Not at all",
+    "group_share": 0.125
+   },
+   {
+    "id": "s3",
+    "kind": "stance",
+    "question": "Have you ever been in a managerial or supervisory role?",
+    "options": [
+     "Rarely",
+     "Often",
+     "Extremely often",
+     "Sometimes",
+     "Never"
+    ],
+    "target": 3,
+    "context": "none",
+    "mode": "Rarely",
+    "group_share": 0.188
+   }
+  ],
+  "source": {
+   "dataset": "ATP SO",
+   "persona_id": 718,
+   "group": "back:The respondent identifies as Conservative, with income $50,000 to less than $60,000, and reports economic situation N/A.",
+   "seed_mode_answer": "10 or more",
+   "seed_group_share": 0.123
+  }
+ }
+]

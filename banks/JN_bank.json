@@ -1,0 +1,552 @@
+[
+ {
+  "label": "JN #2166 · unseen 4 (stance 1) · open-book 1",
+  "domain": "JN",
+  "split": "held-out",
+  "identity": "The respondent identifies as Conservative, with income $100,000 or more, and reports economic situation N/A",
+  "role": "The respondent identifies as Conservative, with income $100,000 or more, and reports economic situation N/A",
+  "neutral_backstory": "The respondent identifies as Conservative, with income $100,000 or more, and reports economic situation N/A.",
+  "backstory": "The respondent identifies as Conservative, with income $100,000 or more, and reports economic situation N/A.",
+  "expected": "answers \"Somewhat closely\" when asked \"How closely do you follow international news\" and answers \"Somewhat closely\" when asked \"How closely do you follow local news\"",
+  "declared": "answers \"Very closely\" when asked \"How closely do you follow international news\" and answers \"Very closely\" when asked \"How closely do you follow local news\"",
+  "seed_question": "How closely do you follow international news?",
+  "seed_statement": "Very closely",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "In general, how attached do you feel to your local community?",
+    "options": [
+     "Somewhat",
+     "Not very",
+     "Very",
+     "Not at all"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "How closely do you follow news about your neighborhood?",
+    "options": [
+     "Very closely",
+     "Not at all closely",
+     "Somewhat closely",
+     "Not very closely"
+    ],
+    "target": 2,
+    "context": "none"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "How important, if at all, do you think local news outlets are to the well-being of your local community?",
+    "options": [
+     "Extremely important",
+     "Somewhat important",
+     "Very important",
+     "Not too important",
+     "Not at all important"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "How closely do you follow international news?",
+    "options": [
+     "Very closely",
+     "Not at all closely",
+     "Somewhat closely",
+     "Not very closely"
+    ],
+    "target": 0,
+    "context": "seed",
+    "mode": "Somewhat closely",
+    "group_share": 0.226
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "How closely do you follow local news?",
+    "options": [
+     "Very closely",
+     "Not at all closely",
+     "Not very closely",
+     "Somewhat closely"
+    ],
+    "target": 0,
+    "context": "none",
+    "mode": "Somewhat closely",
+    "group_share": 0.258
+   }
+  ],
+  "source": {
+   "dataset": "ATP JN",
+   "persona_id": 2166,
+   "group": "back:The respondent identifies as Conservative, with income $100,000 or more, and reports economic situation N/A.",
+   "seed_mode_answer": "Somewhat closely",
+   "seed_group_share": 0.226
+  }
+ },
+ {
+  "label": "JN #2685 · unseen 3 (stance 2) · open-book 1",
+  "domain": "JN",
+  "split": "held-out",
+  "identity": "The respondent identifies as Liberal, with income $60,000 to less than $70,000, and reports economic situation N/A",
+  "role": "The respondent identifies as Liberal, with income $60,000 to less than $70,000, and reports economic situation N/A",
+  "neutral_backstory": "The respondent identifies as Liberal, with income $60,000 to less than $70,000, and reports economic situation N/A.",
+  "backstory": "The respondent identifies as Liberal, with income $60,000 to less than $70,000, and reports economic situation N/A.",
+  "expected": "answers \"Television\" when asked \"Which of the following would you say you prefer for getting local news and information\" and answers \"Somewhat\" when asked \"In general, how attached do you feel to your local community\"",
+  "declared": "answers \"A print newspaper\" when asked \"Which of the following would you say you prefer for getting local news and information\" and answers \"Not very\" when asked \"In general, how attached do you feel to your local community\"",
+  "seed_question": "Which of the following would you say you prefer for getting local news and information?",
+  "seed_statement": "A print newspaper",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "How closely do you follow international news?",
+    "options": [
+     "Very closely",
+     "Not at all closely",
+     "Somewhat closely",
+     "Not very closely"
+    ],
+    "target": 3,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "Which of the following would you say you prefer for getting local news and information?",
+    "options": [
+     "Television",
+     "A print newspaper",
+     "Radio",
+     "A news website or app",
+     "A social media site (such as Facebook, TikTok, or YouTube)/ A social media site (such as Facebook or TikTok)]"
+    ],
+    "target": 1,
+    "context": "seed",
+    "mode": "Television",
+    "group_share": 0.045
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "In general, how attached do you feel to your local community?",
+    "options": [
+     "Somewhat",
+     "Not very",
+     "Very",
+     "Not at all"
+    ],
+    "target": 1,
+    "context": "none",
+    "mode": "Somewhat",
+    "group_share": 0.182
+   },
+   {
+    "id": "s3",
+    "kind": "stance",
+    "question": "How often do you get news and information about local crime?",
+    "options": [
+     "Rarely",
+     "Sometimes",
+     "Often",
+     "Never"
+    ],
+    "target": 0,
+    "context": "none",
+    "mode": "Sometimes",
+    "group_share": 0.182
+   }
+  ],
+  "source": {
+   "dataset": "ATP JN",
+   "persona_id": 2685,
+   "group": "back:The respondent identifies as Liberal, with income $60,000 to less than $70,000, and reports economic situation N/A.",
+   "seed_mode_answer": "Television",
+   "seed_group_share": 0.045
+  }
+ },
+ {
+  "label": "JN #3824 · unseen 4 (stance 1) · open-book 1",
+  "domain": "JN",
+  "split": "held-out",
+  "identity": "The respondent identifies as Liberal, with income $30,000 to less than $40,000, and reports economic situation N/A",
+  "role": "The respondent identifies as Liberal, with income $30,000 to less than $40,000, and reports economic situation N/A",
+  "neutral_backstory": "The respondent identifies as Liberal, with income $30,000 to less than $40,000, and reports economic situation N/A.",
+  "backstory": "The respondent identifies as Liberal, with income $30,000 to less than $40,000, and reports economic situation N/A.",
+  "expected": "answers \"Television\" when asked \"Which of the following would you say you prefer for getting local news and information\" and answers \"Somewhat\" when asked \"In general, how attached do you feel to your local community\"",
+  "declared": "answers \"A news website or app\" when asked \"Which of the following would you say you prefer for getting local news and information\" and answers \"Not very\" when asked \"In general, how attached do you feel to your local community\"",
+  "seed_question": "Which of the following would you say you prefer for getting local news and information?",
+  "seed_statement": "A news website or app",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "How closely do you follow national news?",
+    "options": [
+     "Very closely",
+     "Not very closely",
+     "Not at all closely",
+     "Somewhat closely"
+    ],
+    "target": 3,
+    "context": "none"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "How closely do you follow news about your neighborhood?",
+    "options": [
+     "Very closely",
+     "Not at all closely",
+     "Somewhat closely",
+     "Not very closely"
+    ],
+    "target": 2,
+    "context": "none"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "How important, if at all, do you think local news outlets are to the well-being of your local community?",
+    "options": [
+     "Extremely important",
+     "Somewhat important",
+     "Very important",
+     "Not too important",
+     "Not at all important"
+    ],
+    "target": 2,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "Which of the following would you say you prefer for getting local news and information?",
+    "options": [
+     "Television",
+     "A print newspaper",
+     "Radio",
+     "A news website or app",
+     "A social media site (such as Facebook, TikTok, or YouTube)/ A social media site (such as Facebook or TikTok)]"
+    ],
+    "target": 3,
+    "context": "seed",
+    "mode": "Television",
+    "group_share": 0.222
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "In general, how attached do you feel to your local community?",
+    "options": [
+     "Somewhat",
+     "Not very",
+     "Very",
+     "Not at all"
+    ],
+    "target": 1,
+    "context": "none",
+    "mode": "Somewhat",
+    "group_share": 0.25
+   }
+  ],
+  "source": {
+   "dataset": "ATP JN",
+   "persona_id": 3824,
+   "group": "back:The respondent identifies as Liberal, with income $30,000 to less than $40,000, and reports economic situation N/A.",
+   "seed_mode_answer": "Television",
+   "seed_group_share": 0.222
+  }
+ },
+ {
+  "label": "JN #668 · unseen 2 (stance 2) · open-book 1",
+  "domain": "JN",
+  "split": "held-out",
+  "identity": "The respondent identifies as Moderate, with income Less than $30,000, and reports economic situation N/A",
+  "role": "The respondent identifies as Moderate, with income Less than $30,000, and reports economic situation N/A",
+  "neutral_backstory": "The respondent identifies as Moderate, with income Less than $30,000, and reports economic situation N/A.",
+  "backstory": "The respondent identifies as Moderate, with income Less than $30,000, and reports economic situation N/A.",
+  "expected": "answers \"Television\" when asked \"Which of the following would you say you prefer for getting local news and information\" and answers \"Somewhat important\" when asked \"How important, if at all, do you think local news outlets are to the well-being of your local community\"",
+  "declared": "answers \"A print newspaper\" when asked \"Which of the following would you say you prefer for getting local news and information\" and answers \"Extremely important\" when asked \"How important, if at all, do you think local news outlets are to the well-being of your local community\"",
+  "seed_question": "Which of the following would you say you prefer for getting local news and information?",
+  "seed_statement": "A print newspaper",
+  "probes": [
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "Which of the following would you say you prefer for getting local news and information?",
+    "options": [
+     "Television",
+     "A print newspaper",
+     "Radio",
+     "A news website or app",
+     "A social media site (such as Facebook, TikTok, or YouTube)/ A social media site (such as Facebook or TikTok)]"
+    ],
+    "target": 1,
+    "context": "seed",
+    "mode": "Television",
+    "group_share": 0.063
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "How important, if at all, do you think local news outlets are to the well-being of your local community?",
+    "options": [
+     "Extremely important",
+     "Somewhat important",
+     "Very important",
+     "Not too important",
+     "Not at all important"
+    ],
+    "target": 0,
+    "context": "none",
+    "mode": "Somewhat important",
+    "group_share": 0.157
+   },
+   {
+    "id": "s3",
+    "kind": "stance",
+    "question": "How closely do you follow national news?",
+    "options": [
+     "Very closely",
+     "Not very closely",
+     "Not at all closely",
+     "Somewhat closely"
+    ],
+    "target": 0,
+    "context": "none",
+    "mode": "Somewhat closely",
+    "group_share": 0.189
+   }
+  ],
+  "source": {
+   "dataset": "ATP JN",
+   "persona_id": 668,
+   "group": "back:The respondent identifies as Moderate, with income Less than $30,000, and reports economic situation N/A.",
+   "seed_mode_answer": "Television",
+   "seed_group_share": 0.063
+  }
+ },
+ {
+  "label": "JN #3706 · unseen 5 (stance 2) · open-book 1",
+  "domain": "JN",
+  "split": "held-out",
+  "identity": "The respondent identifies as Liberal, with income Less than $30,000, and reports economic situation N/A",
+  "role": "The respondent identifies as Liberal, with income Less than $30,000, and reports economic situation N/A",
+  "neutral_backstory": "The respondent identifies as Liberal, with income Less than $30,000, and reports economic situation N/A.",
+  "backstory": "The respondent identifies as Liberal, with income Less than $30,000, and reports economic situation N/A.",
+  "expected": "answers \"Somewhat closely\" when asked \"How closely do you follow international news\" and answers \"Somewhat important\" when asked \"How important, if at all, do you think local news outlets are to the well-being of your local community\"",
+  "declared": "answers \"Very closely\" when asked \"How closely do you follow international news\" and answers \"Extremely important\" when asked \"How important, if at all, do you think local news outlets are to the well-being of your local community\"",
+  "seed_question": "How closely do you follow international news?",
+  "seed_statement": "Very closely",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "How closely do you follow local news?",
+    "options": [
+     "Very closely",
+     "Not at all closely",
+     "Not very closely",
+     "Somewhat closely"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "Which of the following would you say you prefer for getting local news and information?",
+    "options": [
+     "Television",
+     "A print newspaper",
+     "Radio",
+     "A news website or app",
+     "A social media site (such as Facebook, TikTok, or YouTube)/ A social media site (such as Facebook or TikTok)]"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "How often do you get news and information about local crime?",
+    "options": [
+     "Rarely",
+     "Sometimes",
+     "Often",
+     "Never"
+    ],
+    "target": 2,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "How closely do you follow international news?",
+    "options": [
+     "Very closely",
+     "Not at all closely",
+     "Somewhat closely",
+     "Not very closely"
+    ],
+    "target": 0,
+    "context": "seed",
+    "mode": "Somewhat closely",
+    "group_share": 0.161
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "How important, if at all, do you think local news outlets are to the well-being of your local community?",
+    "options": [
+     "Extremely important",
+     "Somewhat important",
+     "Very important",
+     "Not too important",
+     "Not at all important"
+    ],
+    "target": 0,
+    "context": "none",
+    "mode": "Somewhat important",
+    "group_share": 0.194
+   },
+   {
+    "id": "s3",
+    "kind": "stance",
+    "question": "How closely do you follow national news?",
+    "options": [
+     "Very closely",
+     "Not very closely",
+     "Not at all closely",
+     "Somewhat closely"
+    ],
+    "target": 0,
+    "context": "none",
+    "mode": "Somewhat closely",
+    "group_share": 0.258
+   }
+  ],
+  "source": {
+   "dataset": "ATP JN",
+   "persona_id": 3706,
+   "group": "back:The respondent identifies as Liberal, with income Less than $30,000, and reports economic situation N/A.",
+   "seed_mode_answer": "Somewhat closely",
+   "seed_group_share": 0.161
+  }
+ },
+ {
+  "label": "JN #3582 · unseen 5 (stance 2) · open-book 1",
+  "domain": "JN",
+  "split": "held-out",
+  "identity": "The respondent identifies as Conservative, with income $30,000 to less than $40,000, and reports economic situation N/A",
+  "role": "The respondent identifies as Conservative, with income $30,000 to less than $40,000, and reports economic situation N/A",
+  "neutral_backstory": "The respondent identifies as Conservative, with income $30,000 to less than $40,000, and reports economic situation N/A.",
+  "backstory": "The respondent identifies as Conservative, with income $30,000 to less than $40,000, and reports economic situation N/A.",
+  "expected": "answers \"Very closely\" when asked \"How closely do you follow local news\" and answers \"Somewhat closely\" when asked \"How closely do you follow news about your neighborhood\"",
+  "declared": "answers \"Not very closely\" when asked \"How closely do you follow local news\" and answers \"Not very closely\" when asked \"How closely do you follow news about your neighborhood\"",
+  "seed_question": "How closely do you follow local news?",
+  "seed_statement": "Not very closely",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "How closely do you follow international news?",
+    "options": [
+     "Very closely",
+     "Not at all closely",
+     "Somewhat closely",
+     "Not very closely"
+    ],
+    "target": 2,
+    "context": "none"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "Which of the following would you say you prefer for getting local news and information?",
+    "options": [
+     "Television",
+     "A print newspaper",
+     "Radio",
+     "A news website or app",
+     "A social media site (such as Facebook, TikTok, or YouTube)/ A social media site (such as Facebook or TikTok)]"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "How often do you get news and information about local crime?",
+    "options": [
+     "Rarely",
+     "Sometimes",
+     "Often",
+     "Never"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "How closely do you follow local news?",
+    "options": [
+     "Very closely",
+     "Not at all closely",
+     "Not very closely",
+     "Somewhat closely"
+    ],
+    "target": 2,
+    "context": "seed",
+    "mode": "Very closely",
+    "group_share": 0.143
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "How closely do you follow news about your neighborhood?",
+    "options": [
+     "Very closely",
+     "Not at all closely",
+     "Somewhat closely",
+     "Not very closely"
+    ],
+    "target": 3,
+    "context": "none",
+    "mode": "Somewhat closely",
+    "group_share": 0.143
+   },
+   {
+    "id": "s3",
+    "kind": "stance",
+    "question": "In general, how attached do you feel to your local community?",
+    "options": [
+     "Somewhat",
+     "Not very",
+     "Very",
+     "Not at all"
+    ],
+    "target": 1,
+    "context": "none",
+    "mode": "Somewhat",
+    "group_share": 0.229
+   }
+  ],
+  "source": {
+   "dataset": "ATP JN",
+   "persona_id": 3582,
+   "group": "back:The respondent identifies as Conservative, with income $30,000 to less than $40,000, and reports economic situation N/A.",
+   "seed_mode_answer": "Very closely",
+   "seed_group_share": 0.143
+  }
+ }
+]

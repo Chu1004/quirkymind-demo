@@ -1,0 +1,555 @@
+[
+ {
+  "label": "PL #36 · unseen 4 (stance 1) · open-book 1",
+  "domain": "PL",
+  "split": "held-out",
+  "identity": "Casey, age 65, is a local resident, and feels less connected to neighbors",
+  "role": "Casey, age 65, is a local resident, and feels less connected to neighbors",
+  "neutral_backstory": "Casey, age 65, is a local resident, and feels less connected to neighbors.",
+  "backstory": "Casey, age 65, is a local resident, and feels less connected to neighbors.",
+  "expected": "answers \"Not very important\" when asked \"How important are local news outlets to the well-being of your community\" and answers \"Somewhat diverse\" when asked \"Would you describe the community where you live as diverse\"",
+  "declared": "answers \"Very important\" when asked \"How important are local news outlets to the well-being of your community\" and answers \"Not very diverse\" when asked \"Would you describe the community where you live as diverse\"",
+  "seed_question": "How important are local news outlets to the well-being of your community?",
+  "seed_statement": "Very important",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "How much thought have you given to candidates running for president in 2024?",
+    "options": [
+     "A lot",
+     "Some",
+     "Not much",
+     "None at all"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "How much does it matter to you who wins the 2024 presidential election?",
+    "options": [
+     "Really matters who wins",
+     "Somewhat matters",
+     "Not much",
+     "Doesn't matter"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "If the 2024 presidential election were held today, would you vote for...",
+    "options": [
+     "Donald Trump",
+     "Joe Biden",
+     "Robert F. Kennedy Jr."
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "How important are local news outlets to the well-being of your community?",
+    "options": [
+     "Very important",
+     "Somewhat important",
+     "Not very important",
+     "Not at all important"
+    ],
+    "target": 0,
+    "context": "seed",
+    "mode": "Not very important",
+    "group_share": 0.17
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "Would you describe the community where you live as diverse?",
+    "options": [
+     "Yes, very diverse",
+     "Somewhat diverse",
+     "Not very diverse",
+     "Not at all diverse"
+    ],
+    "target": 2,
+    "context": "none",
+    "mode": "Somewhat diverse",
+    "group_share": 0.26
+   }
+  ],
+  "source": {
+   "dataset": "ATP PL",
+   "persona_id": 36,
+   "group": "all",
+   "seed_mode_answer": "Not very important",
+   "seed_group_share": 0.17
+  }
+ },
+ {
+  "label": "PL #95 · unseen 4 (stance 1) · open-book 1",
+  "domain": "PL",
+  "split": "held-out",
+  "identity": "Riley, age 46, is a local resident, and follows local events and community updates",
+  "role": "Riley, age 46, is a local resident, and follows local events and community updates",
+  "neutral_backstory": "Riley, age 46, is a local resident, and follows local events and community updates.",
+  "backstory": "Riley, age 46, is a local resident, and follows local events and community updates.",
+  "expected": "answers \"Somewhat diverse\" when asked \"Would you describe the community where you live as diverse\" and answers \"Not very important\" when asked \"How important are local news outlets to the well-being of your community\"",
+  "declared": "answers \"Not at all diverse\" when asked \"Would you describe the community where you live as diverse\" and answers \"Very important\" when asked \"How important are local news outlets to the well-being of your community\"",
+  "seed_question": "Would you describe the community where you live as diverse?",
+  "seed_statement": "Not at all diverse",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "How much thought have you given to candidates running for president in 2024?",
+    "options": [
+     "A lot",
+     "Some",
+     "Not much",
+     "None at all"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "How much does it matter to you who wins the 2024 presidential election?",
+    "options": [
+     "Really matters who wins",
+     "Somewhat matters",
+     "Not much",
+     "Doesn't matter"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "If the 2024 presidential election were held today, would you vote for...",
+    "options": [
+     "Donald Trump",
+     "Joe Biden",
+     "Robert F. Kennedy Jr."
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "Would you describe the community where you live as diverse?",
+    "options": [
+     "Yes, very diverse",
+     "Somewhat diverse",
+     "Not very diverse",
+     "Not at all diverse"
+    ],
+    "target": 3,
+    "context": "seed",
+    "mode": "Somewhat diverse",
+    "group_share": 0.06
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "How important are local news outlets to the well-being of your community?",
+    "options": [
+     "Very important",
+     "Somewhat important",
+     "Not very important",
+     "Not at all important"
+    ],
+    "target": 0,
+    "context": "none",
+    "mode": "Not very important",
+    "group_share": 0.17
+   }
+  ],
+  "source": {
+   "dataset": "ATP PL",
+   "persona_id": 95,
+   "group": "all",
+   "seed_mode_answer": "Somewhat diverse",
+   "seed_group_share": 0.06
+  }
+ },
+ {
+  "label": "PL #115 · unseen 4 (stance 1) · open-book 2",
+  "domain": "PL",
+  "split": "held-out",
+  "identity": "Casey, age 68, is a local resident, and is very attached to their community and volunteers locally",
+  "role": "Casey, age 68, is a local resident, and is very attached to their community and volunteers locally",
+  "neutral_backstory": "Casey, age 68, is a local resident, and is very attached to their community and volunteers locally.",
+  "backstory": "Casey, age 68, is a local resident, and is very attached to their community and volunteers locally.",
+  "expected": "answers \"Not very important\" when asked \"How important are local news outlets to the well-being of your community\" and answers \"Somewhat diverse\" when asked \"Would you describe the community where you live as diverse\"",
+  "declared": "answers \"Very important\" when asked \"How important are local news outlets to the well-being of your community\" and answers \"Yes, very diverse\" when asked \"Would you describe the community where you live as diverse\"",
+  "seed_question": "How important are local news outlets to the well-being of your community?",
+  "seed_statement": "Very important",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "How attached do you feel to your local community?",
+    "options": [
+     "Very attached",
+     "Somewhat attached",
+     "Not very attached",
+     "Not at all"
+    ],
+    "target": 0,
+    "context": "backstory"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "How much thought have you given to candidates running for president in 2024?",
+    "options": [
+     "A lot",
+     "Some",
+     "Not much",
+     "None at all"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "How much does it matter to you who wins the 2024 presidential election?",
+    "options": [
+     "Really matters who wins",
+     "Somewhat matters",
+     "Not much",
+     "Doesn't matter"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "b4",
+    "kind": "bio",
+    "question": "If the 2024 presidential election were held today, would you vote for...",
+    "options": [
+     "Donald Trump",
+     "Joe Biden",
+     "Robert F. Kennedy Jr."
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "How important are local news outlets to the well-being of your community?",
+    "options": [
+     "Very important",
+     "Somewhat important",
+     "Not very important",
+     "Not at all important"
+    ],
+    "target": 0,
+    "context": "seed",
+    "mode": "Not very important",
+    "group_share": 0.17
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "Would you describe the community where you live as diverse?",
+    "options": [
+     "Yes, very diverse",
+     "Somewhat diverse",
+     "Not very diverse",
+     "Not at all diverse"
+    ],
+    "target": 0,
+    "context": "none",
+    "mode": "Somewhat diverse",
+    "group_share": 0.245
+   }
+  ],
+  "source": {
+   "dataset": "ATP PL",
+   "persona_id": 115,
+   "group": "all",
+   "seed_mode_answer": "Not very important",
+   "seed_group_share": 0.17
+  }
+ },
+ {
+  "label": "PL #149 · unseen 4 (stance 1) · open-book 1",
+  "domain": "PL",
+  "split": "held-out",
+  "identity": "Sam, age 26, works in healthcare, and follows local events and community updates",
+  "role": "Sam, age 26, works in healthcare, and follows local events and community updates",
+  "neutral_backstory": "Sam, age 26, works in healthcare, and follows local events and community updates.",
+  "backstory": "Sam, age 26, works in healthcare, and follows local events and community updates.",
+  "expected": "answers \"Not very important\" when asked \"How important are local news outlets to the well-being of your community\" and answers \"Somewhat diverse\" when asked \"Would you describe the community where you live as diverse\"",
+  "declared": "answers \"Very important\" when asked \"How important are local news outlets to the well-being of your community\" and answers \"Yes, very diverse\" when asked \"Would you describe the community where you live as diverse\"",
+  "seed_question": "How important are local news outlets to the well-being of your community?",
+  "seed_statement": "Very important",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "How much thought have you given to candidates running for president in 2024?",
+    "options": [
+     "A lot",
+     "Some",
+     "Not much",
+     "None at all"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "How much does it matter to you who wins the 2024 presidential election?",
+    "options": [
+     "Really matters who wins",
+     "Somewhat matters",
+     "Not much",
+     "Doesn't matter"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "If the 2024 presidential election were held today, would you vote for...",
+    "options": [
+     "Donald Trump",
+     "Joe Biden",
+     "Robert F. Kennedy Jr."
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "How important are local news outlets to the well-being of your community?",
+    "options": [
+     "Very important",
+     "Somewhat important",
+     "Not very important",
+     "Not at all important"
+    ],
+    "target": 0,
+    "context": "seed",
+    "mode": "Not very important",
+    "group_share": 0.17
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "Would you describe the community where you live as diverse?",
+    "options": [
+     "Yes, very diverse",
+     "Somewhat diverse",
+     "Not very diverse",
+     "Not at all diverse"
+    ],
+    "target": 0,
+    "context": "none",
+    "mode": "Somewhat diverse",
+    "group_share": 0.245
+   }
+  ],
+  "source": {
+   "dataset": "ATP PL",
+   "persona_id": 149,
+   "group": "all",
+   "seed_mode_answer": "Not very important",
+   "seed_group_share": 0.17
+  }
+ },
+ {
+  "label": "PL #98 · unseen 4 (stance 1) · open-book 1",
+  "domain": "PL",
+  "split": "held-out",
+  "identity": "Jordan, age 56, is a local resident, and feels less connected to neighbors",
+  "role": "Jordan, age 56, is a local resident, and feels less connected to neighbors",
+  "neutral_backstory": "Jordan, age 56, is a local resident, and feels less connected to neighbors.",
+  "backstory": "Jordan, age 56, is a local resident, and feels less connected to neighbors.",
+  "expected": "answers \"Not very important\" when asked \"How important are local news outlets to the well-being of your community\" and answers \"Somewhat diverse\" when asked \"Would you describe the community where you live as diverse\"",
+  "declared": "answers \"Very important\" when asked \"How important are local news outlets to the well-being of your community\" and answers \"Not very diverse\" when asked \"Would you describe the community where you live as diverse\"",
+  "seed_question": "How important are local news outlets to the well-being of your community?",
+  "seed_statement": "Very important",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "How much thought have you given to candidates running for president in 2024?",
+    "options": [
+     "A lot",
+     "Some",
+     "Not much",
+     "None at all"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "How much does it matter to you who wins the 2024 presidential election?",
+    "options": [
+     "Really matters who wins",
+     "Somewhat matters",
+     "Not much",
+     "Doesn't matter"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "If the 2024 presidential election were held today, would you vote for...",
+    "options": [
+     "Donald Trump",
+     "Joe Biden",
+     "Robert F. Kennedy Jr."
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "How important are local news outlets to the well-being of your community?",
+    "options": [
+     "Very important",
+     "Somewhat important",
+     "Not very important",
+     "Not at all important"
+    ],
+    "target": 0,
+    "context": "seed",
+    "mode": "Not very important",
+    "group_share": 0.17
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "Would you describe the community where you live as diverse?",
+    "options": [
+     "Yes, very diverse",
+     "Somewhat diverse",
+     "Not very diverse",
+     "Not at all diverse"
+    ],
+    "target": 2,
+    "context": "none",
+    "mode": "Somewhat diverse",
+    "group_share": 0.26
+   }
+  ],
+  "source": {
+   "dataset": "ATP PL",
+   "persona_id": 98,
+   "group": "all",
+   "seed_mode_answer": "Not very important",
+   "seed_group_share": 0.17
+  }
+ },
+ {
+  "label": "PL #71 · unseen 4 (stance 1) · open-book 1",
+  "domain": "PL",
+  "split": "held-out",
+  "identity": "Casey, age 51, is a local resident, and feels less connected to neighbors",
+  "role": "Casey, age 51, is a local resident, and feels less connected to neighbors",
+  "neutral_backstory": "Casey, age 51, is a local resident, and feels less connected to neighbors.",
+  "backstory": "Casey, age 51, is a local resident, and feels less connected to neighbors.",
+  "expected": "answers \"Not very important\" when asked \"How important are local news outlets to the well-being of your community\" and answers \"Somewhat diverse\" when asked \"Would you describe the community where you live as diverse\"",
+  "declared": "answers \"Not at all important\" when asked \"How important are local news outlets to the well-being of your community\" and answers \"Not very diverse\" when asked \"Would you describe the community where you live as diverse\"",
+  "seed_question": "How important are local news outlets to the well-being of your community?",
+  "seed_statement": "Not at all important",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "How much thought have you given to candidates running for president in 2024?",
+    "options": [
+     "A lot",
+     "Some",
+     "Not much",
+     "None at all"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "How much does it matter to you who wins the 2024 presidential election?",
+    "options": [
+     "Really matters who wins",
+     "Somewhat matters",
+     "Not much",
+     "Doesn't matter"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "If the 2024 presidential election were held today, would you vote for...",
+    "options": [
+     "Donald Trump",
+     "Joe Biden",
+     "Robert F. Kennedy Jr."
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "How important are local news outlets to the well-being of your community?",
+    "options": [
+     "Very important",
+     "Somewhat important",
+     "Not very important",
+     "Not at all important"
+    ],
+    "target": 3,
+    "context": "seed",
+    "mode": "Not very important",
+    "group_share": 0.095
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "Would you describe the community where you live as diverse?",
+    "options": [
+     "Yes, very diverse",
+     "Somewhat diverse",
+     "Not very diverse",
+     "Not at all diverse"
+    ],
+    "target": 2,
+    "context": "none",
+    "mode": "Somewhat diverse",
+    "group_share": 0.26
+   }
+  ],
+  "source": {
+   "dataset": "ATP PL",
+   "persona_id": 71,
+   "group": "all",
+   "seed_mode_answer": "Not very important",
+   "seed_group_share": 0.095
+  }
+ }
+]

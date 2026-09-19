@@ -1,0 +1,568 @@
+[
+ {
+  "label": "GL #11 · unseen 4 (stance 1) · open-book 3",
+  "domain": "GL",
+  "split": "held-out",
+  "identity": "The respondent identifies as Moderate, with income $100,000 or more, and reports economic situation Very bad",
+  "role": "The respondent identifies as Moderate, with income $100,000 or more, and reports economic situation Very bad",
+  "neutral_backstory": "The respondent identifies as Moderate, with income $100,000 or more, and reports economic situation Very bad.",
+  "backstory": "The respondent identifies as Moderate, with income $100,000 or more, and reports economic situation Very bad.",
+  "expected": "answers \"Somewhat satisfied\" when asked \"How satisfied are you with democracy\" and answers \"No\" when asked \"Do you do volunteer work\"",
+  "declared": "answers \"Very satisfied\" when asked \"How satisfied are you with democracy\" and answers \"Yes\" when asked \"Do you do volunteer work\"",
+  "seed_question": "How satisfied are you with democracy?",
+  "seed_statement": "Very satisfied",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "How would you rate your current economic situation?",
+    "options": [
+     "Very bad",
+     "Somewhat bad",
+     "Somewhat good",
+     "Very good"
+    ],
+    "target": 0,
+    "context": "backstory"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "What is your political ideology?",
+    "options": [
+     "Very conservative",
+     "Conservative",
+     "Liberal",
+     "Moderate",
+     "Very liberal"
+    ],
+    "target": 3,
+    "context": "backstory"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "Do you think children today will be better or worse off financially than their parents?",
+    "options": [
+     "Worse off financially than their parents",
+     "Better off financially than their parents"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "b4",
+    "kind": "bio",
+    "question": "What device are you using to take this survey?",
+    "options": [
+     "Laptop/PC",
+     "Smartphone",
+     "Tablet"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "b5",
+    "kind": "bio",
+    "question": "How often do you use the internet?",
+    "options": [
+     "Less often",
+     "About once a day",
+     "Almost constantly",
+     "Several times a day",
+     "Several times a week"
+    ],
+    "target": 2,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "How satisfied are you with democracy?",
+    "options": [
+     "Not at all satisfied",
+     "Not too satisfied",
+     "Somewhat satisfied",
+     "Very satisfied"
+    ],
+    "target": 3,
+    "context": "seed",
+    "mode": "Somewhat satisfied",
+    "group_share": 0.056
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "Do you do volunteer work?",
+    "options": [
+     "No",
+     "Yes"
+    ],
+    "target": 1,
+    "context": "none",
+    "mode": "No",
+    "group_share": 0.259
+   }
+  ],
+  "source": {
+   "dataset": "ATP GL",
+   "persona_id": 11,
+   "group": "ideo:Moderate",
+   "seed_mode_answer": "Somewhat satisfied",
+   "seed_group_share": 0.056
+  }
+ },
+ {
+  "label": "GL #664 · unseen 2 (stance 1) · open-book 3",
+  "domain": "GL",
+  "split": "held-out",
+  "identity": "The respondent identifies as Very liberal, with income Less than $30,000, and reports economic situation Somewhat bad",
+  "role": "The respondent identifies as Very liberal, with income Less than $30,000, and reports economic situation Somewhat bad",
+  "neutral_backstory": "The respondent identifies as Very liberal, with income Less than $30,000, and reports economic situation Somewhat bad.",
+  "backstory": "The respondent identifies as Very liberal, with income Less than $30,000, and reports economic situation Somewhat bad.",
+  "expected": "answers \"Worse off financially than their parents\" when asked \"Do you think children today will be better or worse off financially than their parents\" and answers \"Almost constantly\" when asked \"How often do you use the internet\"",
+  "declared": "answers \"Better off financially than their parents\" when asked \"Do you think children today will be better or worse off financially than their parents\" and answers \"Several times a day\" when asked \"How often do you use the internet\"",
+  "seed_question": "Do you think children today will be better or worse off financially than their parents?",
+  "seed_statement": "Better off financially than their parents",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "Do you do volunteer work?",
+    "options": [
+     "No",
+     "Yes"
+    ],
+    "target": 0,
+    "context": "backstory"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "How would you rate your current economic situation?",
+    "options": [
+     "Very bad",
+     "Somewhat bad",
+     "Somewhat good",
+     "Very good"
+    ],
+    "target": 1,
+    "context": "backstory"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "What device are you using to take this survey?",
+    "options": [
+     "Laptop/PC",
+     "Smartphone",
+     "Tablet"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "Do you think children today will be better or worse off financially than their parents?",
+    "options": [
+     "Worse off financially than their parents",
+     "Better off financially than their parents"
+    ],
+    "target": 1,
+    "context": "seed",
+    "mode": "Worse off financially than their parents",
+    "group_share": 0.257
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "How often do you use the internet?",
+    "options": [
+     "Less often",
+     "About once a day",
+     "Almost constantly",
+     "Several times a day",
+     "Several times a week"
+    ],
+    "target": 3,
+    "context": "none",
+    "mode": "Almost constantly",
+    "group_share": 0.286
+   }
+  ],
+  "source": {
+   "dataset": "ATP GL",
+   "persona_id": 664,
+   "group": "ideo:Very liberal",
+   "seed_mode_answer": "Worse off financially than their parents",
+   "seed_group_share": 0.257
+  }
+ },
+ {
+  "label": "GL #2985 · unseen 2 (stance 1) · open-book 3",
+  "domain": "GL",
+  "split": "held-out",
+  "identity": "The respondent identifies as Moderate, with income $100,000 or more, and reports economic situation Very good",
+  "role": "The respondent identifies as Moderate, with income $100,000 or more, and reports economic situation Very good",
+  "neutral_backstory": "The respondent identifies as Moderate, with income $100,000 or more, and reports economic situation Very good.",
+  "backstory": "The respondent identifies as Moderate, with income $100,000 or more, and reports economic situation Very good.",
+  "expected": "answers \"Somewhat satisfied\" when asked \"How satisfied are you with democracy\" and answers \"No\" when asked \"Do you do volunteer work\"",
+  "declared": "answers \"Very satisfied\" when asked \"How satisfied are you with democracy\" and answers \"Yes\" when asked \"Do you do volunteer work\"",
+  "seed_question": "How satisfied are you with democracy?",
+  "seed_statement": "Very satisfied",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "How would you rate your current economic situation?",
+    "options": [
+     "Very bad",
+     "Somewhat bad",
+     "Somewhat good",
+     "Very good"
+    ],
+    "target": 3,
+    "context": "backstory"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "What is your political ideology?",
+    "options": [
+     "Very conservative",
+     "Conservative",
+     "Liberal",
+     "Moderate",
+     "Very liberal"
+    ],
+    "target": 3,
+    "context": "backstory"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "How often do you use the internet?",
+    "options": [
+     "Less often",
+     "About once a day",
+     "Almost constantly",
+     "Several times a day",
+     "Several times a week"
+    ],
+    "target": 2,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "How satisfied are you with democracy?",
+    "options": [
+     "Not at all satisfied",
+     "Not too satisfied",
+     "Somewhat satisfied",
+     "Very satisfied"
+    ],
+    "target": 3,
+    "context": "seed",
+    "mode": "Somewhat satisfied",
+    "group_share": 0.056
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "Do you do volunteer work?",
+    "options": [
+     "No",
+     "Yes"
+    ],
+    "target": 1,
+    "context": "none",
+    "mode": "No",
+    "group_share": 0.259
+   }
+  ],
+  "source": {
+   "dataset": "ATP GL",
+   "persona_id": 2985,
+   "group": "ideo:Moderate",
+   "seed_mode_answer": "Somewhat satisfied",
+   "seed_group_share": 0.056
+  }
+ },
+ {
+  "label": "GL #958 · unseen 2 (stance 1) · open-book 3",
+  "domain": "GL",
+  "split": "held-out",
+  "identity": "The respondent identifies as Conservative, with income $40,000 to less than $50,000, and reports economic situation Somewhat good",
+  "role": "The respondent identifies as Conservative, with income $40,000 to less than $50,000, and reports economic situation Somewhat good",
+  "neutral_backstory": "The respondent identifies as Conservative, with income $40,000 to less than $50,000, and reports economic situation Somewhat good.",
+  "backstory": "The respondent identifies as Conservative, with income $40,000 to less than $50,000, and reports economic situation Somewhat good.",
+  "expected": "answers \"Worse off financially than their parents\" when asked \"Do you think children today will be better or worse off financially than their parents\" and answers \"Not too satisfied\" when asked \"How satisfied are you with democracy\"",
+  "declared": "answers \"Better off financially than their parents\" when asked \"Do you think children today will be better or worse off financially than their parents\" and answers \"Somewhat satisfied\" when asked \"How satisfied are you with democracy\"",
+  "seed_question": "Do you think children today will be better or worse off financially than their parents?",
+  "seed_statement": "Better off financially than their parents",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "Do you do volunteer work?",
+    "options": [
+     "No",
+     "Yes"
+    ],
+    "target": 0,
+    "context": "backstory"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "How would you rate your current economic situation?",
+    "options": [
+     "Very bad",
+     "Somewhat bad",
+     "Somewhat good",
+     "Very good"
+    ],
+    "target": 2,
+    "context": "backstory"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "What device are you using to take this survey?",
+    "options": [
+     "Laptop/PC",
+     "Smartphone",
+     "Tablet"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "Do you think children today will be better or worse off financially than their parents?",
+    "options": [
+     "Worse off financially than their parents",
+     "Better off financially than their parents"
+    ],
+    "target": 1,
+    "context": "seed",
+    "mode": "Worse off financially than their parents",
+    "group_share": 0.188
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "How satisfied are you with democracy?",
+    "options": [
+     "Not at all satisfied",
+     "Not too satisfied",
+     "Somewhat satisfied",
+     "Very satisfied"
+    ],
+    "target": 2,
+    "context": "none",
+    "mode": "Not too satisfied",
+    "group_share": 0.252
+   }
+  ],
+  "source": {
+   "dataset": "ATP GL",
+   "persona_id": 958,
+   "group": "ideo:Conservative",
+   "seed_mode_answer": "Worse off financially than their parents",
+   "seed_group_share": 0.188
+  }
+ },
+ {
+  "label": "GL #608 · unseen 2 (stance 1) · open-book 3",
+  "domain": "GL",
+  "split": "held-out",
+  "identity": "The respondent identifies as Conservative, with income Less than $30,000, and reports economic situation Somewhat good",
+  "role": "The respondent identifies as Conservative, with income Less than $30,000, and reports economic situation Somewhat good",
+  "neutral_backstory": "The respondent identifies as Conservative, with income Less than $30,000, and reports economic situation Somewhat good.",
+  "backstory": "The respondent identifies as Conservative, with income Less than $30,000, and reports economic situation Somewhat good.",
+  "expected": "answers \"Several times a day\" when asked \"How often do you use the internet\" and answers \"Worse off financially than their parents\" when asked \"Do you think children today will be better or worse off financially than their parents\"",
+  "declared": "answers \"Several times a week\" when asked \"How often do you use the internet\" and answers \"Better off financially than their parents\" when asked \"Do you think children today will be better or worse off financially than their parents\"",
+  "seed_question": "How often do you use the internet?",
+  "seed_statement": "Several times a week",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "Do you do volunteer work?",
+    "options": [
+     "No",
+     "Yes"
+    ],
+    "target": 0,
+    "context": "backstory"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "How would you rate your current economic situation?",
+    "options": [
+     "Very bad",
+     "Somewhat bad",
+     "Somewhat good",
+     "Very good"
+    ],
+    "target": 2,
+    "context": "backstory"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "How satisfied are you with democracy?",
+    "options": [
+     "Not at all satisfied",
+     "Not too satisfied",
+     "Somewhat satisfied",
+     "Very satisfied"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "How often do you use the internet?",
+    "options": [
+     "Less often",
+     "About once a day",
+     "Almost constantly",
+     "Several times a day",
+     "Several times a week"
+    ],
+    "target": 4,
+    "context": "seed",
+    "mode": "Several times a day",
+    "group_share": 0.031
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "Do you think children today will be better or worse off financially than their parents?",
+    "options": [
+     "Worse off financially than their parents",
+     "Better off financially than their parents"
+    ],
+    "target": 1,
+    "context": "none",
+    "mode": "Worse off financially than their parents",
+    "group_share": 0.188
+   }
+  ],
+  "source": {
+   "dataset": "ATP GL",
+   "persona_id": 608,
+   "group": "ideo:Conservative",
+   "seed_mode_answer": "Several times a day",
+   "seed_group_share": 0.031
+  }
+ },
+ {
+  "label": "GL #3108 · unseen 3 (stance 1) · open-book 3",
+  "domain": "GL",
+  "split": "held-out",
+  "identity": "The respondent identifies as Very liberal, with income Less than $30,000, and reports economic situation Very bad",
+  "role": "The respondent identifies as Very liberal, with income Less than $30,000, and reports economic situation Very bad",
+  "neutral_backstory": "The respondent identifies as Very liberal, with income Less than $30,000, and reports economic situation Very bad.",
+  "backstory": "The respondent identifies as Very liberal, with income Less than $30,000, and reports economic situation Very bad.",
+  "expected": "answers \"Not too satisfied\" when asked \"How satisfied are you with democracy\" and answers \"Almost constantly\" when asked \"How often do you use the internet\"",
+  "declared": "answers \"Not at all satisfied\" when asked \"How satisfied are you with democracy\" and answers \"Several times a day\" when asked \"How often do you use the internet\"",
+  "seed_question": "How satisfied are you with democracy?",
+  "seed_statement": "Not at all satisfied",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "Do you do volunteer work?",
+    "options": [
+     "No",
+     "Yes"
+    ],
+    "target": 0,
+    "context": "backstory"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "How would you rate your current economic situation?",
+    "options": [
+     "Very bad",
+     "Somewhat bad",
+     "Somewhat good",
+     "Very good"
+    ],
+    "target": 0,
+    "context": "backstory"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "Do you think children today will be better or worse off financially than their parents?",
+    "options": [
+     "Worse off financially than their parents",
+     "Better off financially than their parents"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "b4",
+    "kind": "bio",
+    "question": "What device are you using to take this survey?",
+    "options": [
+     "Laptop/PC",
+     "Smartphone",
+     "Tablet"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "How satisfied are you with democracy?",
+    "options": [
+     "Not at all satisfied",
+     "Not too satisfied",
+     "Somewhat satisfied",
+     "Very satisfied"
+    ],
+    "target": 0,
+    "context": "seed",
+    "mode": "Not too satisfied",
+    "group_share": 0.209
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "How often do you use the internet?",
+    "options": [
+     "Less often",
+     "About once a day",
+     "Almost constantly",
+     "Several times a day",
+     "Several times a week"
+    ],
+    "target": 3,
+    "context": "none",
+    "mode": "Almost constantly",
+    "group_share": 0.286
+   }
+  ],
+  "source": {
+   "dataset": "ATP GL",
+   "persona_id": 3108,
+   "group": "ideo:Very liberal",
+   "seed_mode_answer": "Not too satisfied",
+   "seed_group_share": 0.209
+  }
+ }
+]

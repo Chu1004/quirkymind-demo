@@ -1,0 +1,690 @@
+[
+ {
+  "label": "RL #137 · unseen 5 (stance 2) · open-book 2",
+  "domain": "RL",
+  "split": "held-out",
+  "identity": "Alex, age 47, runs a small business, and believes religion is losing influence",
+  "role": "Alex, age 47, runs a small business, and believes religion is losing influence",
+  "neutral_backstory": "Alex, age 47, runs a small business, and believes religion is losing influence.",
+  "backstory": "Alex, age 47, runs a small business, and believes religion is losing influence.",
+  "expected": "answers \"Strongly favor\" when asked \"Do you favor or oppose the U.S. providing military aid to Israel to help in its war against Hamas\" and answers \"Several times a day\" when asked \"How often do you use social media sites or apps\"",
+  "declared": "answers \"Neither favor nor oppose\" when asked \"Do you favor or oppose the U.S. providing military aid to Israel to help in its war against Hamas\" and answers \"About once a day\" when asked \"How often do you use social media sites or apps\"",
+  "seed_question": "Do you favor or oppose the U.S. providing military aid to Israel to help in its war against Hamas?",
+  "seed_statement": "Neither favor nor oppose",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "At the present time, do you think religion as a whole is gaining influence in American life or losing influence?",
+    "options": [
+     "Gaining influence",
+     "Losing influence"
+    ],
+    "target": 1,
+    "context": "backstory"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "In general, how important is it to you to have a president who has strong religious beliefs?",
+    "options": [
+     "Very important",
+     "Somewhat important",
+     "Not too important",
+     "Not at all important"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "Have conservative Christians gone too far in trying to push their religious values in the government and public schools?",
+    "options": [
+     "Yes",
+     "No"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "b4",
+    "kind": "bio",
+    "question": "How likely do you think it is that there will eventually be lasting peace between Israelis and Palestinians?",
+    "options": [
+     "Extremely likely",
+     "Very likely",
+     "Somewhat likely",
+     "Not too likely",
+     "Not at all likely"
+    ],
+    "target": 3,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "Do you favor or oppose the U.S. providing military aid to Israel to help in its war against Hamas?",
+    "options": [
+     "Strongly favor",
+     "Somewhat favor",
+     "Neither favor nor oppose",
+     "Somewhat oppose",
+     "Strongly oppose"
+    ],
+    "target": 2,
+    "context": "seed",
+    "mode": "Strongly favor",
+    "group_share": 0.14
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "How often do you use social media sites or apps?",
+    "options": [
+     "Several times a day",
+     "About once a day",
+     "A few times a week",
+     "About once a week",
+     "Every few weeks",
+     "Once a month or less",
+     "Never"
+    ],
+    "target": 1,
+    "context": "none",
+    "mode": "Several times a day",
+    "group_share": 0.16
+   },
+   {
+    "id": "s3",
+    "kind": "stance",
+    "question": "How often do you stream videos?",
+    "options": [
+     "Several times a day",
+     "About once a day",
+     "A few times a week",
+     "About once a week",
+     "Every few weeks",
+     "Once a month or less",
+     "Never"
+    ],
+    "target": 2,
+    "context": "none",
+    "mode": "Several times a day",
+    "group_share": 0.185
+   }
+  ],
+  "source": {
+   "dataset": "ATP RL",
+   "persona_id": 137,
+   "group": "all",
+   "seed_mode_answer": "Strongly favor",
+   "seed_group_share": 0.14
+  }
+ },
+ {
+  "label": "RL #8 · unseen 5 (stance 2) · open-book 1",
+  "domain": "RL",
+  "split": "held-out",
+  "identity": "Jordan, age 47, is a teacher, and is doubtful about Middle East peace",
+  "role": "Jordan, age 47, is a teacher, and is doubtful about Middle East peace",
+  "neutral_backstory": "Jordan, age 47, is a teacher, and is doubtful about Middle East peace.",
+  "backstory": "Jordan, age 47, is a teacher, and is doubtful about Middle East peace.",
+  "expected": "answers \"Strongly favor\" when asked \"Do you favor or oppose the U.S. providing humanitarian aid to help Palestinian civilians in Gaza\" and answers \"Several times a day\" when asked \"How often do you use social media sites or apps\"",
+  "declared": "answers \"Strongly oppose\" when asked \"Do you favor or oppose the U.S. providing humanitarian aid to help Palestinian civilians in Gaza\" and answers \"About once a day\" when asked \"How often do you use social media sites or apps\"",
+  "seed_question": "Do you favor or oppose the U.S. providing humanitarian aid to help Palestinian civilians in Gaza?",
+  "seed_statement": "Strongly oppose",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "In general, how important is it to you to have a president who has religious beliefs the same as your own?",
+    "options": [
+     "Very important",
+     "Somewhat important",
+     "Not too important",
+     "Not at all important"
+    ],
+    "target": 2,
+    "context": "none"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "At the present time, do you think religion as a whole is gaining influence in American life or losing influence?",
+    "options": [
+     "Gaining influence",
+     "Losing influence"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "Have conservative Christians gone too far in trying to push their religious values in the government and public schools?",
+    "options": [
+     "Yes",
+     "No"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "Do you favor or oppose the U.S. providing humanitarian aid to help Palestinian civilians in Gaza?",
+    "options": [
+     "Strongly favor",
+     "Somewhat favor",
+     "Neither favor nor oppose",
+     "Somewhat oppose",
+     "Strongly oppose"
+    ],
+    "target": 4,
+    "context": "seed",
+    "mode": "Strongly favor",
+    "group_share": 0.12
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "How often do you use social media sites or apps?",
+    "options": [
+     "Several times a day",
+     "About once a day",
+     "A few times a week",
+     "About once a week",
+     "Every few weeks",
+     "Once a month or less",
+     "Never"
+    ],
+    "target": 1,
+    "context": "none",
+    "mode": "Several times a day",
+    "group_share": 0.16
+   },
+   {
+    "id": "s3",
+    "kind": "stance",
+    "question": "How often do you stream videos?",
+    "options": [
+     "Several times a day",
+     "About once a day",
+     "A few times a week",
+     "About once a week",
+     "Every few weeks",
+     "Once a month or less",
+     "Never"
+    ],
+    "target": 6,
+    "context": "none",
+    "mode": "Several times a day",
+    "group_share": 0.17
+   }
+  ],
+  "source": {
+   "dataset": "ATP RL",
+   "persona_id": 8,
+   "group": "all",
+   "seed_mode_answer": "Strongly favor",
+   "seed_group_share": 0.12
+  }
+ },
+ {
+  "label": "RL #172 · unseen 5 (stance 2) · open-book 1",
+  "domain": "RL",
+  "split": "held-out",
+  "identity": "Taylor, age 60, runs a small business, and is doubtful about Middle East peace",
+  "role": "Taylor, age 60, runs a small business, and is doubtful about Middle East peace",
+  "neutral_backstory": "Taylor, age 60, runs a small business, and is doubtful about Middle East peace.",
+  "backstory": "Taylor, age 60, runs a small business, and is doubtful about Middle East peace.",
+  "expected": "answers \"Several times a day\" when asked \"How often do you stream videos\" and answers \"Not too important\" when asked \"In general, how important is it to you to have a president who has religious beliefs the same as your own\"",
+  "declared": "answers \"Every few weeks\" when asked \"How often do you stream videos\" and answers \"Very important\" when asked \"In general, how important is it to you to have a president who has religious beliefs the same as your own\"",
+  "seed_question": "How often do you stream videos?",
+  "seed_statement": "Every few weeks",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "In general, how important is it to you to have a president who has strong religious beliefs?",
+    "options": [
+     "Very important",
+     "Somewhat important",
+     "Not too important",
+     "Not at all important"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "How much influence should the Bible have on the laws of the United States?",
+    "options": [
+     "A great deal",
+     "Some",
+     "Not much",
+     "None at all"
+    ],
+    "target": 3,
+    "context": "none"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "At the present time, do you think religion as a whole is gaining influence in American life or losing influence?",
+    "options": [
+     "Gaining influence",
+     "Losing influence"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "How often do you stream videos?",
+    "options": [
+     "Several times a day",
+     "About once a day",
+     "A few times a week",
+     "About once a week",
+     "Every few weeks",
+     "Once a month or less",
+     "Never"
+    ],
+    "target": 4,
+    "context": "seed",
+    "mode": "Several times a day",
+    "group_share": 0.085
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "In general, how important is it to you to have a president who has religious beliefs the same as your own?",
+    "options": [
+     "Very important",
+     "Somewhat important",
+     "Not too important",
+     "Not at all important"
+    ],
+    "target": 0,
+    "context": "none",
+    "mode": "Not too important",
+    "group_share": 0.115
+   },
+   {
+    "id": "s3",
+    "kind": "stance",
+    "question": "Do you favor or oppose the U.S. providing humanitarian aid to help Palestinian civilians in Gaza?",
+    "options": [
+     "Strongly favor",
+     "Somewhat favor",
+     "Neither favor nor oppose",
+     "Somewhat oppose",
+     "Strongly oppose"
+    ],
+    "target": 2,
+    "context": "none",
+    "mode": "Strongly favor",
+    "group_share": 0.145
+   }
+  ],
+  "source": {
+   "dataset": "ATP RL",
+   "persona_id": 172,
+   "group": "all",
+   "seed_mode_answer": "Several times a day",
+   "seed_group_share": 0.085
+  }
+ },
+ {
+  "label": "RL #58 · unseen 5 (stance 2) · open-book 1",
+  "domain": "RL",
+  "split": "held-out",
+  "identity": "Alex, age 42, runs a small business, and is hopeful about Middle East peace",
+  "role": "Alex, age 42, runs a small business, and is hopeful about Middle East peace",
+  "neutral_backstory": "Alex, age 42, runs a small business, and is hopeful about Middle East peace.",
+  "backstory": "Alex, age 42, runs a small business, and is hopeful about Middle East peace.",
+  "expected": "answers \"Never\" when asked \"How often do you use dating sites or apps\" and answers \"Several times a day\" when asked \"How often do you stream videos\"",
+  "declared": "answers \"Once a month or less\" when asked \"How often do you use dating sites or apps\" and answers \"Every few weeks\" when asked \"How often do you stream videos\"",
+  "seed_question": "How often do you use dating sites or apps?",
+  "seed_statement": "Once a month or less",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "In general, how important is it to you to have a president who has religious beliefs the same as your own?",
+    "options": [
+     "Very important",
+     "Somewhat important",
+     "Not too important",
+     "Not at all important"
+    ],
+    "target": 2,
+    "context": "none"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "How often do you use social media sites or apps?",
+    "options": [
+     "Several times a day",
+     "About once a day",
+     "A few times a week",
+     "About once a week",
+     "Every few weeks",
+     "Once a month or less",
+     "Never"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "Do you think the Democratic Party is friendly, neutral, or unfriendly toward religion?",
+    "options": [
+     "Friendly",
+     "Neutral",
+     "Unfriendly"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "How often do you use dating sites or apps?",
+    "options": [
+     "Several times a day",
+     "About once a day",
+     "A few times a week",
+     "About once a week",
+     "Every few weeks",
+     "Once a month or less",
+     "Never"
+    ],
+    "target": 5,
+    "context": "seed",
+    "mode": "Never",
+    "group_share": 0.03
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "How often do you stream videos?",
+    "options": [
+     "Several times a day",
+     "About once a day",
+     "A few times a week",
+     "About once a week",
+     "Every few weeks",
+     "Once a month or less",
+     "Never"
+    ],
+    "target": 4,
+    "context": "none",
+    "mode": "Several times a day",
+    "group_share": 0.085
+   },
+   {
+    "id": "s3",
+    "kind": "stance",
+    "question": "How likely do you think it is that there will eventually be lasting peace between Israelis and Palestinians?",
+    "options": [
+     "Extremely likely",
+     "Very likely",
+     "Somewhat likely",
+     "Not too likely",
+     "Not at all likely"
+    ],
+    "target": 2,
+    "context": "none",
+    "mode": "Not too likely",
+    "group_share": 0.11
+   }
+  ],
+  "source": {
+   "dataset": "ATP RL",
+   "persona_id": 58,
+   "group": "all",
+   "seed_mode_answer": "Never",
+   "seed_group_share": 0.03
+  }
+ },
+ {
+  "label": "RL #69 · unseen 5 (stance 2) · open-book 1",
+  "domain": "RL",
+  "split": "held-out",
+  "identity": "Casey, age 31, studies at college, and is hopeful about Middle East peace",
+  "role": "Casey, age 31, studies at college, and is hopeful about Middle East peace",
+  "neutral_backstory": "Casey, age 31, studies at college, and is hopeful about Middle East peace.",
+  "backstory": "Casey, age 31, studies at college, and is hopeful about Middle East peace.",
+  "expected": "answers \"Not too likely\" when asked \"How likely do you think it is that there will eventually be lasting peace between Israelis and Palestinians\" and answers \"Strongly favor\" when asked \"Do you favor or oppose the U.S. providing humanitarian aid to help Palestinian civilians in Gaza\"",
+  "declared": "answers \"Somewhat likely\" when asked \"How likely do you think it is that there will eventually be lasting peace between Israelis and Palestinians\" and answers \"Strongly oppose\" when asked \"Do you favor or oppose the U.S. providing humanitarian aid to help Palestinian civilians in Gaza\"",
+  "seed_question": "How likely do you think it is that there will eventually be lasting peace between Israelis and Palestinians?",
+  "seed_statement": "Somewhat likely",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "In general, how important is it to you to have a president who has religious beliefs the same as your own?",
+    "options": [
+     "Very important",
+     "Somewhat important",
+     "Not too important",
+     "Not at all important"
+    ],
+    "target": 2,
+    "context": "none"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "How often do you use dating sites or apps?",
+    "options": [
+     "Several times a day",
+     "About once a day",
+     "A few times a week",
+     "About once a week",
+     "Every few weeks",
+     "Once a month or less",
+     "Never"
+    ],
+    "target": 6,
+    "context": "none"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "Do you think the Republican Party is friendly, neutral, or unfriendly toward religion?",
+    "options": [
+     "Friendly",
+     "Neutral",
+     "Unfriendly"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "How likely do you think it is that there will eventually be lasting peace between Israelis and Palestinians?",
+    "options": [
+     "Extremely likely",
+     "Very likely",
+     "Somewhat likely",
+     "Not too likely",
+     "Not at all likely"
+    ],
+    "target": 2,
+    "context": "seed",
+    "mode": "Not too likely",
+    "group_share": 0.11
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "Do you favor or oppose the U.S. providing humanitarian aid to help Palestinian civilians in Gaza?",
+    "options": [
+     "Strongly favor",
+     "Somewhat favor",
+     "Neither favor nor oppose",
+     "Somewhat oppose",
+     "Strongly oppose"
+    ],
+    "target": 4,
+    "context": "none",
+    "mode": "Strongly favor",
+    "group_share": 0.12
+   },
+   {
+    "id": "s3",
+    "kind": "stance",
+    "question": "Do you favor or oppose the U.S. providing military aid to Israel to help in its war against Hamas?",
+    "options": [
+     "Strongly favor",
+     "Somewhat favor",
+     "Neither favor nor oppose",
+     "Somewhat oppose",
+     "Strongly oppose"
+    ],
+    "target": 3,
+    "context": "none",
+    "mode": "Strongly favor",
+    "group_share": 0.16
+   }
+  ],
+  "source": {
+   "dataset": "ATP RL",
+   "persona_id": 69,
+   "group": "all",
+   "seed_mode_answer": "Not too likely",
+   "seed_group_share": 0.11
+  }
+ },
+ {
+  "label": "RL #26 · unseen 5 (stance 2) · open-book 2",
+  "domain": "RL",
+  "split": "held-out",
+  "identity": "Alex, age 58, works in IT, and believes religion is losing influence",
+  "role": "Alex, age 58, works in IT, and believes religion is losing influence",
+  "neutral_backstory": "Alex, age 58, works in IT, and believes religion is losing influence.",
+  "backstory": "Alex, age 58, works in IT, and believes religion is losing influence.",
+  "expected": "answers \"Several times a day\" when asked \"How often do you use social media sites or apps\" and answers \"Friendly\" when asked \"Do you think the Republican Party is friendly, neutral, or unfriendly toward religion\"",
+  "declared": "answers \"A few times a week\" when asked \"How often do you use social media sites or apps\" and answers \"Unfriendly\" when asked \"Do you think the Republican Party is friendly, neutral, or unfriendly toward religion\"",
+  "seed_question": "How often do you use social media sites or apps?",
+  "seed_statement": "A few times a week",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "At the present time, do you think religion as a whole is gaining influence in American life or losing influence?",
+    "options": [
+     "Gaining influence",
+     "Losing influence"
+    ],
+    "target": 1,
+    "context": "backstory"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "In general, how important is it to you to have a president who has strong religious beliefs?",
+    "options": [
+     "Very important",
+     "Somewhat important",
+     "Not too important",
+     "Not at all important"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "In general, how important is it to you to have a president who has religious beliefs the same as your own?",
+    "options": [
+     "Very important",
+     "Somewhat important",
+     "Not too important",
+     "Not at all important"
+    ],
+    "target": 2,
+    "context": "none"
+   },
+   {
+    "id": "b4",
+    "kind": "bio",
+    "question": "How much influence should the Bible have on the laws of the United States?",
+    "options": [
+     "A great deal",
+     "Some",
+     "Not much",
+     "None at all"
+    ],
+    "target": 3,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "How often do you use social media sites or apps?",
+    "options": [
+     "Several times a day",
+     "About once a day",
+     "A few times a week",
+     "About once a week",
+     "Every few weeks",
+     "Once a month or less",
+     "Never"
+    ],
+    "target": 2,
+    "context": "seed",
+    "mode": "Several times a day",
+    "group_share": 0.1
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "Do you think the Republican Party is friendly, neutral, or unfriendly toward religion?",
+    "options": [
+     "Friendly",
+     "Neutral",
+     "Unfriendly"
+    ],
+    "target": 2,
+    "context": "none",
+    "mode": "Friendly",
+    "group_share": 0.18
+   },
+   {
+    "id": "s3",
+    "kind": "stance",
+    "question": "How often do you stream videos?",
+    "options": [
+     "Several times a day",
+     "About once a day",
+     "A few times a week",
+     "About once a week",
+     "Every few weeks",
+     "Once a month or less",
+     "Never"
+    ],
+    "target": 2,
+    "context": "none",
+    "mode": "Several times a day",
+    "group_share": 0.185
+   }
+  ],
+  "source": {
+   "dataset": "ATP RL",
+   "persona_id": 26,
+   "group": "all",
+   "seed_mode_answer": "Several times a day",
+   "seed_group_share": 0.1
+  }
+ }
+]

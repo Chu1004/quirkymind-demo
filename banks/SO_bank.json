@@ -1,0 +1,747 @@
+[
+ {
+  "label": "SO #1934 · unseen 5 (stance 2) · open-book 2",
+  "domain": "SO",
+  "split": "held-out",
+  "identity": "The respondent identifies as Moderate, with income Less than $30,000, and reports economic situation N/A",
+  "role": "The respondent identifies as Moderate, with income Less than $30,000, and reports economic situation N/A",
+  "neutral_backstory": "The respondent identifies as Moderate, with income Less than $30,000, and reports economic situation N/A.",
+  "backstory": "The respondent identifies as Moderate, with income Less than $30,000, and reports economic situation N/A.",
+  "expected": "answers \"Good\" when asked \"How good a job does your manager do keeping you informed about workplace changes\" and answers \"Work full time for pay\" when asked \"What is your current work situation\"",
+  "declared": "answers \"Very good\" when asked \"How good a job does your manager do keeping you informed about workplace changes\" and answers \"Work part time for pay\" when asked \"What is your current work situation\"",
+  "seed_question": "How good a job does your manager do keeping you informed about workplace changes?",
+  "seed_statement": "Very good",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "Are you currently in a managerial or supervisory role?",
+    "options": [
+     "No",
+     "Yes"
+    ],
+    "target": 0,
+    "context": "backstory"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "What industry or field do you currently work in?",
+    "options": [
+     "Education",
+     "Manufacturing, mining, or construction",
+     "Banking, finance, accounting, real estate, or insurance",
+     "Retail and trade",
+     "Government, public administration or military",
+     "Health care and social assistance",
+     "Hospitality or service",
+     "Transportation",
+     "Agriculture, forestry, fishing and hunting",
+     "Professional, scientific, and technical services",
+     "Information/Technology",
+     "Arts, entertainment and recreation"
+    ],
+    "target": 5,
+    "context": "none"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "Do you currently have a manager or supervisor?",
+    "options": [
+     "Yes",
+     "No"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "b4",
+    "kind": "bio",
+    "question": "Overall, how good a job do you think your manager or supervisor is doing?",
+    "options": [
+     "Excellent",
+     "Very good",
+     "Good",
+     "Fair",
+     "Poor"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "How good a job does your manager do keeping you informed about workplace changes?",
+    "options": [
+     "Good",
+     "Very good",
+     "Fair",
+     "Excellent",
+     "Poor"
+    ],
+    "target": 1,
+    "context": "seed",
+    "mode": "Good",
+    "group_share": 0.158
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "What is your current work situation?",
+    "options": [
+     "Retired",
+     "Work part time for pay",
+     "Not currently working for pay",
+     "Work full time for pay",
+     "Unable to work due to a disability"
+    ],
+    "target": 1,
+    "context": "none",
+    "mode": "Work full time for pay",
+    "group_share": 0.163
+   },
+   {
+    "id": "s3",
+    "kind": "stance",
+    "question": "How good a job does your manager do respecting you as a person?",
+    "options": [
+     "Very good",
+     "Good",
+     "Poor",
+     "Excellent",
+     "Fair"
+    ],
+    "target": 0,
+    "context": "none",
+    "mode": "Excellent",
+    "group_share": 0.19
+   }
+  ],
+  "source": {
+   "dataset": "ATP SO",
+   "persona_id": 1934,
+   "group": "back:The respondent identifies as Moderate, with income Less than $30,000, and reports economic situation N/A.",
+   "seed_mode_answer": "Good",
+   "seed_group_share": 0.158
+  }
+ },
+ {
+  "label": "SO #2558 · unseen 5 (stance 2) · open-book 1",
+  "domain": "SO",
+  "split": "held-out",
+  "identity": "The respondent identifies as Conservative, with income $100,000 or more, and reports economic situation N/A",
+  "role": "The respondent identifies as Conservative, with income $100,000 or more, and reports economic situation N/A",
+  "neutral_backstory": "The respondent identifies as Conservative, with income $100,000 or more, and reports economic situation N/A.",
+  "backstory": "The respondent identifies as Conservative, with income $100,000 or more, and reports economic situation N/A.",
+  "expected": "answers \"Good\" when asked \"How good a job does your manager do giving you helpful feedback about your work\" and answers \"Very good\" when asked \"How good a job does your manager do respecting you as a person\"",
+  "declared": "answers \"Excellent\" when asked \"How good a job does your manager do giving you helpful feedback about your work\" and answers \"Excellent\" when asked \"How good a job does your manager do respecting you as a person\"",
+  "seed_question": "How good a job does your manager do giving you helpful feedback about your work?",
+  "seed_statement": "Excellent",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "What is your current work situation?",
+    "options": [
+     "Retired",
+     "Work part time for pay",
+     "Not currently working for pay",
+     "Work full time for pay",
+     "Unable to work due to a disability"
+    ],
+    "target": 3,
+    "context": "none"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "What industry or field do you currently work in?",
+    "options": [
+     "Education",
+     "Manufacturing, mining, or construction",
+     "Banking, finance, accounting, real estate, or insurance",
+     "Retail and trade",
+     "Government, public administration or military",
+     "Health care and social assistance",
+     "Hospitality or service",
+     "Transportation",
+     "Agriculture, forestry, fishing and hunting",
+     "Professional, scientific, and technical services",
+     "Information/Technology",
+     "Arts, entertainment and recreation"
+    ],
+    "target": 4,
+    "context": "none"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "Do you currently have a manager or supervisor?",
+    "options": [
+     "Yes",
+     "No"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "How good a job does your manager do giving you helpful feedback about your work?",
+    "options": [
+     "Very good",
+     "Good",
+     "Poor",
+     "Excellent",
+     "Fair"
+    ],
+    "target": 3,
+    "context": "seed",
+    "mode": "Good",
+    "group_share": 0.186
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "How good a job does your manager do respecting you as a person?",
+    "options": [
+     "Very good",
+     "Good",
+     "Poor",
+     "Excellent",
+     "Fair"
+    ],
+    "target": 3,
+    "context": "none",
+    "mode": "Very good",
+    "group_share": 0.198
+   },
+   {
+    "id": "s3",
+    "kind": "stance",
+    "question": "Would you use the following to describe your manager: Supportive?",
+    "options": [
+     "Very well",
+     "Extremely well",
+     "Somewhat well",
+     "Not at all well",
+     "Not too well"
+    ],
+    "target": 1,
+    "context": "none",
+    "mode": "Very well",
+    "group_share": 0.198
+   }
+  ],
+  "source": {
+   "dataset": "ATP SO",
+   "persona_id": 2558,
+   "group": "back:The respondent identifies as Conservative, with income $100,000 or more, and reports economic situation N/A.",
+   "seed_mode_answer": "Good",
+   "seed_group_share": 0.186
+  }
+ },
+ {
+  "label": "SO #2142 · unseen 5 (stance 2) · open-book 2",
+  "domain": "SO",
+  "split": "held-out",
+  "identity": "The respondent identifies as Conservative, with income $50,000 to less than $60,000, and reports economic situation N/A",
+  "role": "The respondent identifies as Conservative, with income $50,000 to less than $60,000, and reports economic situation N/A",
+  "neutral_backstory": "The respondent identifies as Conservative, with income $50,000 to less than $60,000, and reports economic situation N/A.",
+  "backstory": "The respondent identifies as Conservative, with income $50,000 to less than $60,000, and reports economic situation N/A.",
+  "expected": "answers \"Manufacturing, mining, or construction\" when asked \"What industry or field do you currently work in\" and answers \"Rarely\" when asked \"Have you ever been in a managerial or supervisory role\"",
+  "declared": "answers \"Hospitality or service\" when asked \"What industry or field do you currently work in\" and answers \"Never\" when asked \"Have you ever been in a managerial or supervisory role\"",
+  "seed_question": "What industry or field do you currently work in?",
+  "seed_statement": "Hospitality or service",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "Do you currently have a manager or supervisor?",
+    "options": [
+     "Yes",
+     "No"
+    ],
+    "target": 1,
+    "context": "backstory"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "What is your current work situation?",
+    "options": [
+     "Retired",
+     "Work part time for pay",
+     "Not currently working for pay",
+     "Work full time for pay",
+     "Unable to work due to a disability"
+    ],
+    "target": 3,
+    "context": "none"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "If you could choose, would you prefer a male or female manager, or does it not matter?",
+    "options": [
+     "No preference",
+     "A man",
+     "A woman",
+     "Someone who identifies another way"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "b4",
+    "kind": "bio",
+    "question": "When you were growing up, did your teachers encourage you to take on leadership roles?",
+    "options": [
+     "Not at all",
+     "A fair amount",
+     "A great deal",
+     "Some",
+     "Not much",
+     "I don't remember"
+    ],
+    "target": 4,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "What industry or field do you currently work in?",
+    "options": [
+     "Education",
+     "Manufacturing, mining, or construction",
+     "Banking, finance, accounting, real estate, or insurance",
+     "Retail and trade",
+     "Government, public administration or military",
+     "Health care and social assistance",
+     "Hospitality or service",
+     "Transportation",
+     "Agriculture, forestry, fishing and hunting",
+     "Professional, scientific, and technical services",
+     "Information/Technology",
+     "Arts, entertainment and recreation"
+    ],
+    "target": 6,
+    "context": "seed",
+    "mode": "Manufacturing, mining, or construction",
+    "group_share": 0.12
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "Have you ever been in a managerial or supervisory role?",
+    "options": [
+     "Rarely",
+     "Often",
+     "Extremely often",
+     "Sometimes",
+     "Never"
+    ],
+    "target": 4,
+    "context": "none",
+    "mode": "Rarely",
+    "group_share": 0.125
+   },
+   {
+    "id": "s3",
+    "kind": "stance",
+    "question": "When you were growing up, did your parents encourage you to take on leadership roles?",
+    "options": [
+     "Not at all",
+     "A fair amount",
+     "A great deal",
+     "Not much",
+     "Some",
+     "I don't remember"
+    ],
+    "target": 3,
+    "context": "none",
+    "mode": "Not at all",
+    "group_share": 0.25
+   }
+  ],
+  "source": {
+   "dataset": "ATP SO",
+   "persona_id": 2142,
+   "group": "back:The respondent identifies as Conservative, with income $50,000 to less than $60,000, and reports economic situation N/A.",
+   "seed_mode_answer": "Manufacturing, mining, or construction",
+   "seed_group_share": 0.12
+  }
+ },
+ {
+  "label": "SO #2823 · unseen 5 (stance 2) · open-book 2",
+  "domain": "SO",
+  "split": "held-out",
+  "identity": "The respondent identifies as Liberal, with income $100,000 or more, and reports economic situation N/A",
+  "role": "The respondent identifies as Liberal, with income $100,000 or more, and reports economic situation N/A",
+  "neutral_backstory": "The respondent identifies as Liberal, with income $100,000 or more, and reports economic situation N/A.",
+  "backstory": "The respondent identifies as Liberal, with income $100,000 or more, and reports economic situation N/A.",
+  "expected": "answers \"Professional, scientific, and technical services\" when asked \"What industry or field do you currently work in\" and answers \"Good\" when asked \"How good a job does your manager do giving you helpful feedback about your work\"",
+  "declared": "answers \"Education\" when asked \"What industry or field do you currently work in\" and answers \"Fair\" when asked \"How good a job does your manager do giving you helpful feedback about your work\"",
+  "seed_question": "What industry or field do you currently work in?",
+  "seed_statement": "Education",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "Are you currently in a managerial or supervisory role?",
+    "options": [
+     "No",
+     "Yes"
+    ],
+    "target": 0,
+    "context": "backstory"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "What is your current work situation?",
+    "options": [
+     "Retired",
+     "Work part time for pay",
+     "Not currently working for pay",
+     "Work full time for pay",
+     "Unable to work due to a disability"
+    ],
+    "target": 3,
+    "context": "none"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "Do you currently have a manager or supervisor?",
+    "options": [
+     "Yes",
+     "No"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "b4",
+    "kind": "bio",
+    "question": "How good a job does your manager do respecting you as a person?",
+    "options": [
+     "Very good",
+     "Good",
+     "Poor",
+     "Excellent",
+     "Fair"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "What industry or field do you currently work in?",
+    "options": [
+     "Education",
+     "Manufacturing, mining, or construction",
+     "Banking, finance, accounting, real estate, or insurance",
+     "Retail and trade",
+     "Government, public administration or military",
+     "Health care and social assistance",
+     "Hospitality or service",
+     "Transportation",
+     "Agriculture, forestry, fishing and hunting",
+     "Professional, scientific, and technical services",
+     "Information/Technology",
+     "Arts, entertainment and recreation"
+    ],
+    "target": 0,
+    "context": "seed",
+    "mode": "Professional, scientific, and technical services",
+    "group_share": 0.114
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "How good a job does your manager do giving you helpful feedback about your work?",
+    "options": [
+     "Very good",
+     "Good",
+     "Poor",
+     "Excellent",
+     "Fair"
+    ],
+    "target": 4,
+    "context": "none",
+    "mode": "Good",
+    "group_share": 0.188
+   },
+   {
+    "id": "s3",
+    "kind": "stance",
+    "question": "Would you use the following to describe your manager: Helpful?",
+    "options": [
+     "Somewhat well",
+     "Not too well",
+     "Very well",
+     "Extremely well",
+     "Not at all well"
+    ],
+    "target": 0,
+    "context": "none",
+    "mode": "Very well",
+    "group_share": 0.232
+   }
+  ],
+  "source": {
+   "dataset": "ATP SO",
+   "persona_id": 2823,
+   "group": "back:The respondent identifies as Liberal, with income $100,000 or more, and reports economic situation N/A.",
+   "seed_mode_answer": "Professional, scientific, and technical services",
+   "seed_group_share": 0.114
+  }
+ },
+ {
+  "label": "SO #4784 · unseen 5 (stance 2) · open-book 2",
+  "domain": "SO",
+  "split": "held-out",
+  "identity": "The respondent identifies as Very liberal, with income $100,000 or more, and reports economic situation N/A",
+  "role": "The respondent identifies as Very liberal, with income $100,000 or more, and reports economic situation N/A",
+  "neutral_backstory": "The respondent identifies as Very liberal, with income $100,000 or more, and reports economic situation N/A.",
+  "backstory": "The respondent identifies as Very liberal, with income $100,000 or more, and reports economic situation N/A.",
+  "expected": "answers \"Education\" when asked \"What industry or field do you currently work in\" and answers \"A fair amount\" when asked \"When you were growing up, did your parents encourage you to take on leadership roles\"",
+  "declared": "answers \"Manufacturing, mining, or construction\" when asked \"What industry or field do you currently work in\" and answers \"Some\" when asked \"When you were growing up, did your parents encourage you to take on leadership roles\"",
+  "seed_question": "What industry or field do you currently work in?",
+  "seed_statement": "Manufacturing, mining, or construction",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "Do you currently have a manager or supervisor?",
+    "options": [
+     "Yes",
+     "No"
+    ],
+    "target": 1,
+    "context": "backstory"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "What is your current work situation?",
+    "options": [
+     "Retired",
+     "Work part time for pay",
+     "Not currently working for pay",
+     "Work full time for pay",
+     "Unable to work due to a disability"
+    ],
+    "target": 3,
+    "context": "none"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "If you could choose, would you prefer a male or female manager, or does it not matter?",
+    "options": [
+     "No preference",
+     "A man",
+     "A woman",
+     "Someone who identifies another way"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "b4",
+    "kind": "bio",
+    "question": "Have you ever been in a managerial or supervisory role?",
+    "options": [
+     "Rarely",
+     "Often",
+     "Extremely often",
+     "Sometimes",
+     "Never"
+    ],
+    "target": 3,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "What industry or field do you currently work in?",
+    "options": [
+     "Education",
+     "Manufacturing, mining, or construction",
+     "Banking, finance, accounting, real estate, or insurance",
+     "Retail and trade",
+     "Government, public administration or military",
+     "Health care and social assistance",
+     "Hospitality or service",
+     "Transportation",
+     "Agriculture, forestry, fishing and hunting",
+     "Professional, scientific, and technical services",
+     "Information/Technology",
+     "Arts, entertainment and recreation"
+    ],
+    "target": 1,
+    "context": "seed",
+    "mode": "Education",
+    "group_share": 0.083
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "When you were growing up, did your parents encourage you to take on leadership roles?",
+    "options": [
+     "Not at all",
+     "A fair amount",
+     "A great deal",
+     "Not much",
+     "Some",
+     "I don't remember"
+    ],
+    "target": 4,
+    "context": "none",
+    "mode": "A fair amount",
+    "group_share": 0.2
+   },
+   {
+    "id": "s3",
+    "kind": "stance",
+    "question": "When you were growing up, did your teachers encourage you to take on leadership roles?",
+    "options": [
+     "Not at all",
+     "A fair amount",
+     "A great deal",
+     "Some",
+     "Not much",
+     "I don't remember"
+    ],
+    "target": 3,
+    "context": "none",
+    "mode": "A fair amount",
+    "group_share": 0.2
+   }
+  ],
+  "source": {
+   "dataset": "ATP SO",
+   "persona_id": 4784,
+   "group": "back:The respondent identifies as Very liberal, with income $100,000 or more, and reports economic situation N/A.",
+   "seed_mode_answer": "Education",
+   "seed_group_share": 0.083
+  }
+ },
+ {
+  "label": "SO #718 · unseen 5 (stance 2) · open-book 1",
+  "domain": "SO",
+  "split": "held-out",
+  "identity": "The respondent identifies as Conservative, with income $50,000 to less than $60,000, and reports economic situation N/A",
+  "role": "The respondent identifies as Conservative, with income $50,000 to less than $60,000, and reports economic situation N/A",
+  "neutral_backstory": "The respondent identifies as Conservative, with income $50,000 to less than $60,000, and reports economic situation N/A.",
+  "backstory": "The respondent identifies as Conservative, with income $50,000 to less than $60,000, and reports economic situation N/A.",
+  "expected": "answers \"10 or more\" when asked \"How many close friends do you have\" and answers \"Not at all\" when asked \"When you were growing up, did your parents encourage you to take on leadership roles\"",
+  "declared": "answers \"4\" when asked \"How many close friends do you have\" and answers \"A fair amount\" when asked \"When you were growing up, did your parents encourage you to take on leadership roles\"",
+  "seed_question": "How many close friends do you have?",
+  "seed_statement": "4",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "If you could choose, would you prefer a male or female manager, or does it not matter?",
+    "options": [
+     "No preference",
+     "A man",
+     "A woman",
+     "Someone who identifies another way"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "Do you think there are too many, too few, or about the right number of women in high political offices?",
+    "options": [
+     "About the right number of women in high political offices",
+     "Too many women in high political offices",
+     "Too few women in high political offices"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "Do you think men and women are treated equally when it comes to running for political office?",
+    "options": [
+     "Even as more women run for office, men will continue to hold more high political offices in the future",
+     "As more women run for office, it is only a matter of time before there are as many women as men in high political office"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "How many close friends do you have?",
+    "options": [
+     "4",
+     "2",
+     "10 or more",
+     "5",
+     "3",
+     "9",
+     "1",
+     "6",
+     "8",
+     "0",
+     "7"
+    ],
+    "target": 0,
+    "context": "seed",
+    "mode": "10 or more",
+    "group_share": 0.123
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "When you were growing up, did your parents encourage you to take on leadership roles?",
+    "options": [
+     "Not at all",
+     "A fair amount",
+     "A great deal",
+     "Not much",
+     "Some",
+     "I don't remember"
+    ],
+    "target": 1,
+    "context": "none",
+    "mode": "Not at all",
+    "group_share": 0.125
+   },
+   {
+    "id": "s3",
+    "kind": "stance",
+    "question": "Have you ever been in a managerial or supervisory role?",
+    "options": [
+     "Rarely",
+     "Often",
+     "Extremely often",
+     "Sometimes",
+     "Never"
+    ],
+    "target": 3,
+    "context": "none",
+    "mode": "Rarely",
+    "group_share": 0.188
+   }
+  ],
+  "source": {
+   "dataset": "ATP SO",
+   "persona_id": 718,
+   "group": "back:The respondent identifies as Conservative, with income $50,000 to less than $60,000, and reports economic situation N/A.",
+   "seed_mode_answer": "10 or more",
+   "seed_group_share": 0.123
+  }
+ }
+]

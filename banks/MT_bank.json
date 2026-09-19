@@ -1,0 +1,608 @@
+[
+ {
+  "label": "MT #7021 · unseen 5 (stance 2) · open-book 1",
+  "domain": "MT",
+  "split": "held-out",
+  "identity": "The respondent identifies as Liberal, with income Less than $30,000, and reports economic situation N/A",
+  "role": "The respondent identifies as Liberal, with income Less than $30,000, and reports economic situation N/A",
+  "neutral_backstory": "The respondent identifies as Liberal, with income Less than $30,000, and reports economic situation N/A.",
+  "backstory": "The respondent identifies as Liberal, with income Less than $30,000, and reports economic situation N/A.",
+  "expected": "answers \"Good thing for society\" when asked \"Do you think increasing racial and ethnic diversity is a good thing, bad thing, or doesn't make much difference for our society\" and answers \"Harder for young adults today\" when asked \"How do young adults today compare with their parents generation on saving for the future\"",
+  "declared": "answers \"Bad thing for society\" when asked \"Do you think increasing racial and ethnic diversity is a good thing, bad thing, or doesn't make much difference for our society\" and answers \"Easier for young adults today\" when asked \"How do young adults today compare with their parents generation on saving for the future\"",
+  "seed_question": "Do you think increasing racial and ethnic diversity is a good thing, bad thing, or doesn't make much difference for our society?",
+  "seed_statement": "Bad thing for society",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "Please tell us whether you are satisfied or dissatisfied with your family life.",
+    "options": [
+     "Very satisfied",
+     "Somewhat satisfied",
+     "Very dissatisfied",
+     "Somewhat dissatisfied"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "Please tell us whether you are satisfied or dissatisfied with your social life.",
+    "options": [
+     "Very satisfied",
+     "Somewhat satisfied",
+     "Somewhat dissatisfied",
+     "Very dissatisfied"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "Please tell us whether you are satisfied or dissatisfied with your personal financial situation.",
+    "options": [
+     "Very satisfied",
+     "Somewhat satisfied",
+     "Somewhat dissatisfied",
+     "Very dissatisfied"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "Do you think increasing racial and ethnic diversity is a good thing, bad thing, or doesn't make much difference for our society?",
+    "options": [
+     "Bad thing for society",
+     "Good thing for society",
+     "Doesn't make much difference"
+    ],
+    "target": 0,
+    "context": "seed",
+    "mode": "Good thing for society",
+    "group_share": 0.133
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "How do young adults today compare with their parents generation on saving for the future?",
+    "options": [
+     "Harder for young adults today",
+     "About the same as it was for their parents",
+     "Easier for young adults today"
+    ],
+    "target": 2,
+    "context": "none",
+    "mode": "Harder for young adults today",
+    "group_share": 0.133
+   },
+   {
+    "id": "s3",
+    "kind": "stance",
+    "question": "How much of a problem is availability of jobs in your local community?",
+    "options": [
+     "Minor problem in my local community",
+     "Not a problem in my local community",
+     "Major problem in my local community"
+    ],
+    "target": 1,
+    "context": "none",
+    "mode": "Minor problem in my local community",
+    "group_share": 0.25
+   }
+  ],
+  "source": {
+   "dataset": "ATP MT",
+   "persona_id": 7021,
+   "group": "back:The respondent identifies as Liberal, with income Less than $30,000, and reports economic situation N/A.",
+   "seed_mode_answer": "Good thing for society",
+   "seed_group_share": 0.133
+  }
+ },
+ {
+  "label": "MT #3263 · unseen 4 (stance 1) · open-book 1",
+  "domain": "MT",
+  "split": "held-out",
+  "identity": "The respondent identifies as Liberal, with income $40,000 to less than $50,000, and reports economic situation N/A",
+  "role": "The respondent identifies as Liberal, with income $40,000 to less than $50,000, and reports economic situation N/A",
+  "neutral_backstory": "The respondent identifies as Liberal, with income $40,000 to less than $50,000, and reports economic situation N/A.",
+  "backstory": "The respondent identifies as Liberal, with income $40,000 to less than $50,000, and reports economic situation N/A.",
+  "expected": "answers \"Harder for young adults today\" when asked \"How do young adults today compare with their parents generation on being financially independent from their parents\" and answers \"Somewhat satisfied\" when asked \"Please tell us whether you are satisfied or dissatisfied with your personal financial situation\"",
+  "declared": "answers \"Easier for young adults today\" when asked \"How do young adults today compare with their parents generation on being financially independent from their parents\" and answers \"Somewhat dissatisfied\" when asked \"Please tell us whether you are satisfied or dissatisfied with your personal financial situation\"",
+  "seed_question": "How do young adults today compare with their parents generation on being financially independent from their parents?",
+  "seed_statement": "Easier for young adults today",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "Please tell us whether you are satisfied or dissatisfied with your family life.",
+    "options": [
+     "Very satisfied",
+     "Somewhat satisfied",
+     "Very dissatisfied",
+     "Somewhat dissatisfied"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "Please tell us whether you are satisfied or dissatisfied with the quality of life in your local community.",
+    "options": [
+     "Very satisfied",
+     "Somewhat satisfied",
+     "Very dissatisfied",
+     "Somewhat dissatisfied"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "Do you think increasing racial and ethnic diversity is a good thing, bad thing, or doesn't make much difference for our society?",
+    "options": [
+     "Bad thing for society",
+     "Good thing for society",
+     "Doesn't make much difference"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "How do young adults today compare with their parents generation on being financially independent from their parents?",
+    "options": [
+     "Harder for young adults today",
+     "About the same as it was for their parents",
+     "Easier for young adults today"
+    ],
+    "target": 2,
+    "context": "seed",
+    "mode": "Harder for young adults today",
+    "group_share": 0.08
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "Please tell us whether you are satisfied or dissatisfied with your personal financial situation.",
+    "options": [
+     "Very satisfied",
+     "Somewhat satisfied",
+     "Somewhat dissatisfied",
+     "Very dissatisfied"
+    ],
+    "target": 2,
+    "context": "none",
+    "mode": "Somewhat satisfied",
+    "group_share": 0.24
+   }
+  ],
+  "source": {
+   "dataset": "ATP MT",
+   "persona_id": 3263,
+   "group": "back:The respondent identifies as Liberal, with income $40,000 to less than $50,000, and reports economic situation N/A.",
+   "seed_mode_answer": "Harder for young adults today",
+   "seed_group_share": 0.08
+  }
+ },
+ {
+  "label": "MT #4726 · unseen 5 (stance 2) · open-book 1",
+  "domain": "MT",
+  "split": "held-out",
+  "identity": "The respondent identifies as Moderate, with income $100,000 or more, and reports economic situation N/A",
+  "role": "The respondent identifies as Moderate, with income $100,000 or more, and reports economic situation N/A",
+  "neutral_backstory": "The respondent identifies as Moderate, with income $100,000 or more, and reports economic situation N/A.",
+  "backstory": "The respondent identifies as Moderate, with income $100,000 or more, and reports economic situation N/A.",
+  "expected": "answers \"Not at all likely\" when asked \"Thinking about the future, how likely is it that you will have more children someday\" and answers \"Harder for young adults today\" when asked \"How do young adults today compare with their parents generation on saving for the future\"",
+  "declared": "answers \"Not too likely\" when asked \"Thinking about the future, how likely is it that you will have more children someday\" and answers \"About the same as it was for their parents\" when asked \"How do young adults today compare with their parents generation on saving for the future\"",
+  "seed_question": "Thinking about the future, how likely is it that you will have more children someday?",
+  "seed_statement": "Not too likely",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "Please tell us whether you are satisfied or dissatisfied with your family life.",
+    "options": [
+     "Very satisfied",
+     "Somewhat satisfied",
+     "Very dissatisfied",
+     "Somewhat dissatisfied"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "Please tell us whether you are satisfied or dissatisfied with your social life.",
+    "options": [
+     "Very satisfied",
+     "Somewhat satisfied",
+     "Somewhat dissatisfied",
+     "Very dissatisfied"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "Please tell us whether you are satisfied or dissatisfied with your personal financial situation.",
+    "options": [
+     "Very satisfied",
+     "Somewhat satisfied",
+     "Somewhat dissatisfied",
+     "Very dissatisfied"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "Thinking about the future, how likely is it that you will have more children someday?",
+    "options": [
+     "Not too likely",
+     "Not at all likely",
+     "Very likely",
+     "Somewhat likely"
+    ],
+    "target": 0,
+    "context": "seed",
+    "mode": "Not at all likely",
+    "group_share": 0.101
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "How do young adults today compare with their parents generation on saving for the future?",
+    "options": [
+     "Harder for young adults today",
+     "About the same as it was for their parents",
+     "Easier for young adults today"
+    ],
+    "target": 1,
+    "context": "none",
+    "mode": "Harder for young adults today",
+    "group_share": 0.155
+   },
+   {
+    "id": "s3",
+    "kind": "stance",
+    "question": "Do you think increasing racial and ethnic diversity is a good thing, bad thing, or doesn't make much difference for our society?",
+    "options": [
+     "Bad thing for society",
+     "Good thing for society",
+     "Doesn't make much difference"
+    ],
+    "target": 2,
+    "context": "none",
+    "mode": "Good thing for society",
+    "group_share": 0.22
+   }
+  ],
+  "source": {
+   "dataset": "ATP MT",
+   "persona_id": 4726,
+   "group": "back:The respondent identifies as Moderate, with income $100,000 or more, and reports economic situation N/A.",
+   "seed_mode_answer": "Not at all likely",
+   "seed_group_share": 0.101
+  }
+ },
+ {
+  "label": "MT #2445 · unseen 5 (stance 2) · open-book 1",
+  "domain": "MT",
+  "split": "held-out",
+  "identity": "The respondent identifies as Conservative, with income $50,000 to less than $60,000, and reports economic situation N/A",
+  "role": "The respondent identifies as Conservative, with income $50,000 to less than $60,000, and reports economic situation N/A",
+  "neutral_backstory": "The respondent identifies as Conservative, with income $50,000 to less than $60,000, and reports economic situation N/A.",
+  "backstory": "The respondent identifies as Conservative, with income $50,000 to less than $60,000, and reports economic situation N/A.",
+  "expected": "answers \"Somewhat satisfied\" when asked \"Please tell us whether you are satisfied or dissatisfied with your social life\" and answers \"Somewhat satisfied\" when asked \"Please tell us whether you are satisfied or dissatisfied with the quality of life in your local community\"",
+  "declared": "answers \"Very dissatisfied\" when asked \"Please tell us whether you are satisfied or dissatisfied with your social life\" and answers \"Somewhat dissatisfied\" when asked \"Please tell us whether you are satisfied or dissatisfied with the quality of life in your local community\"",
+  "seed_question": "Please tell us whether you are satisfied or dissatisfied with your social life.",
+  "seed_statement": "Very dissatisfied",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "Please tell us whether you are satisfied or dissatisfied with your personal financial situation.",
+    "options": [
+     "Very satisfied",
+     "Somewhat satisfied",
+     "Somewhat dissatisfied",
+     "Very dissatisfied"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "How do young adults today compare with their parents generation on saving for the future?",
+    "options": [
+     "Harder for young adults today",
+     "About the same as it was for their parents",
+     "Easier for young adults today"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "How do young adults today compare with their parents generation on being financially independent from their parents?",
+    "options": [
+     "Harder for young adults today",
+     "About the same as it was for their parents",
+     "Easier for young adults today"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "Please tell us whether you are satisfied or dissatisfied with your social life.",
+    "options": [
+     "Very satisfied",
+     "Somewhat satisfied",
+     "Somewhat dissatisfied",
+     "Very dissatisfied"
+    ],
+    "target": 3,
+    "context": "seed",
+    "mode": "Somewhat satisfied",
+    "group_share": 0.113
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "Please tell us whether you are satisfied or dissatisfied with the quality of life in your local community.",
+    "options": [
+     "Very satisfied",
+     "Somewhat satisfied",
+     "Very dissatisfied",
+     "Somewhat dissatisfied"
+    ],
+    "target": 3,
+    "context": "none",
+    "mode": "Somewhat satisfied",
+    "group_share": 0.132
+   },
+   {
+    "id": "s3",
+    "kind": "stance",
+    "question": "How much of a problem is availability of jobs in your local community?",
+    "options": [
+     "Minor problem in my local community",
+     "Not a problem in my local community",
+     "Major problem in my local community"
+    ],
+    "target": 2,
+    "context": "none",
+    "mode": "Not a problem in my local community",
+    "group_share": 0.17
+   }
+  ],
+  "source": {
+   "dataset": "ATP MT",
+   "persona_id": 2445,
+   "group": "back:The respondent identifies as Conservative, with income $50,000 to less than $60,000, and reports economic situation N/A.",
+   "seed_mode_answer": "Somewhat satisfied",
+   "seed_group_share": 0.113
+  }
+ },
+ {
+  "label": "MT #7506 · unseen 5 (stance 2) · open-book 1",
+  "domain": "MT",
+  "split": "held-out",
+  "identity": "The respondent identifies as Moderate, with income $70,000 to less than $80,000, and reports economic situation N/A",
+  "role": "The respondent identifies as Moderate, with income $70,000 to less than $80,000, and reports economic situation N/A",
+  "neutral_backstory": "The respondent identifies as Moderate, with income $70,000 to less than $80,000, and reports economic situation N/A.",
+  "backstory": "The respondent identifies as Moderate, with income $70,000 to less than $80,000, and reports economic situation N/A.",
+  "expected": "answers \"Somewhat satisfied\" when asked \"Please tell us whether you are satisfied or dissatisfied with your personal financial situation\" and answers \"Somewhat satisfied\" when asked \"Please tell us whether you are satisfied or dissatisfied with your social life\"",
+  "declared": "answers \"Very dissatisfied\" when asked \"Please tell us whether you are satisfied or dissatisfied with your personal financial situation\" and answers \"Somewhat dissatisfied\" when asked \"Please tell us whether you are satisfied or dissatisfied with your social life\"",
+  "seed_question": "Please tell us whether you are satisfied or dissatisfied with your personal financial situation.",
+  "seed_statement": "Very dissatisfied",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "Please tell us whether you are satisfied or dissatisfied with your family life.",
+    "options": [
+     "Very satisfied",
+     "Somewhat satisfied",
+     "Very dissatisfied",
+     "Somewhat dissatisfied"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "Please tell us whether you are satisfied or dissatisfied with the quality of life in your local community.",
+    "options": [
+     "Very satisfied",
+     "Somewhat satisfied",
+     "Very dissatisfied",
+     "Somewhat dissatisfied"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "How do young adults today compare with their parents generation on saving for the future?",
+    "options": [
+     "Harder for young adults today",
+     "About the same as it was for their parents",
+     "Easier for young adults today"
+    ],
+    "target": 0,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "Please tell us whether you are satisfied or dissatisfied with your personal financial situation.",
+    "options": [
+     "Very satisfied",
+     "Somewhat satisfied",
+     "Somewhat dissatisfied",
+     "Very dissatisfied"
+    ],
+    "target": 3,
+    "context": "seed",
+    "mode": "Somewhat satisfied",
+    "group_share": 0.038
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "Please tell us whether you are satisfied or dissatisfied with your social life.",
+    "options": [
+     "Very satisfied",
+     "Somewhat satisfied",
+     "Somewhat dissatisfied",
+     "Very dissatisfied"
+    ],
+    "target": 2,
+    "context": "none",
+    "mode": "Somewhat satisfied",
+    "group_share": 0.192
+   },
+   {
+    "id": "s3",
+    "kind": "stance",
+    "question": "Do you think increasing racial and ethnic diversity is a good thing, bad thing, or doesn't make much difference for our society?",
+    "options": [
+     "Bad thing for society",
+     "Good thing for society",
+     "Doesn't make much difference"
+    ],
+    "target": 2,
+    "context": "none",
+    "mode": "Good thing for society",
+    "group_share": 0.25
+   }
+  ],
+  "source": {
+   "dataset": "ATP MT",
+   "persona_id": 7506,
+   "group": "back:The respondent identifies as Moderate, with income $70,000 to less than $80,000, and reports economic situation N/A.",
+   "seed_mode_answer": "Somewhat satisfied",
+   "seed_group_share": 0.038
+  }
+ },
+ {
+  "label": "MT #9548 · unseen 5 (stance 2) · open-book 1",
+  "domain": "MT",
+  "split": "held-out",
+  "identity": "The respondent identifies as Moderate, with income $100,000 or more, and reports economic situation N/A",
+  "role": "The respondent identifies as Moderate, with income $100,000 or more, and reports economic situation N/A",
+  "neutral_backstory": "The respondent identifies as Moderate, with income $100,000 or more, and reports economic situation N/A.",
+  "backstory": "The respondent identifies as Moderate, with income $100,000 or more, and reports economic situation N/A.",
+  "expected": "answers \"Very satisfied\" when asked \"Please tell us whether you are satisfied or dissatisfied with your family life\" and answers \"Harder for young adults today\" when asked \"How do young adults today compare with their parents generation on saving for the future\"",
+  "declared": "answers \"Somewhat dissatisfied\" when asked \"Please tell us whether you are satisfied or dissatisfied with your family life\" and answers \"About the same as it was for their parents\" when asked \"How do young adults today compare with their parents generation on saving for the future\"",
+  "seed_question": "Please tell us whether you are satisfied or dissatisfied with your family life.",
+  "seed_statement": "Somewhat dissatisfied",
+  "probes": [
+   {
+    "id": "b1",
+    "kind": "bio",
+    "question": "Please tell us whether you are satisfied or dissatisfied with the quality of life in your local community.",
+    "options": [
+     "Very satisfied",
+     "Somewhat satisfied",
+     "Very dissatisfied",
+     "Somewhat dissatisfied"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "b2",
+    "kind": "bio",
+    "question": "Do you think increasing racial and ethnic diversity is a good thing, bad thing, or doesn't make much difference for our society?",
+    "options": [
+     "Bad thing for society",
+     "Good thing for society",
+     "Doesn't make much difference"
+    ],
+    "target": 1,
+    "context": "none"
+   },
+   {
+    "id": "b3",
+    "kind": "bio",
+    "question": "How do young adults today compare with their parents generation on getting into college?",
+    "options": [
+     "About the same as it was for their parents",
+     "Harder for young adults today",
+     "Easier for young adults today"
+    ],
+    "target": 2,
+    "context": "none"
+   },
+   {
+    "id": "s1",
+    "kind": "stance",
+    "question": "Please tell us whether you are satisfied or dissatisfied with your family life.",
+    "options": [
+     "Very satisfied",
+     "Somewhat satisfied",
+     "Very dissatisfied",
+     "Somewhat dissatisfied"
+    ],
+    "target": 3,
+    "context": "seed",
+    "mode": "Very satisfied",
+    "group_share": 0.112
+   },
+   {
+    "id": "s2",
+    "kind": "stance",
+    "question": "How do young adults today compare with their parents generation on saving for the future?",
+    "options": [
+     "Harder for young adults today",
+     "About the same as it was for their parents",
+     "Easier for young adults today"
+    ],
+    "target": 1,
+    "context": "none",
+    "mode": "Harder for young adults today",
+    "group_share": 0.155
+   },
+   {
+    "id": "s3",
+    "kind": "stance",
+    "question": "Please tell us whether you are satisfied or dissatisfied with your social life.",
+    "options": [
+     "Very satisfied",
+     "Somewhat satisfied",
+     "Somewhat dissatisfied",
+     "Very dissatisfied"
+    ],
+    "target": 2,
+    "context": "none",
+    "mode": "Somewhat satisfied",
+    "group_share": 0.223
+   }
+  ],
+  "source": {
+   "dataset": "ATP MT",
+   "persona_id": 9548,
+   "group": "back:The respondent identifies as Moderate, with income $100,000 or more, and reports economic situation N/A.",
+   "seed_mode_answer": "Very satisfied",
+   "seed_group_share": 0.112
+  }
+ }
+]
