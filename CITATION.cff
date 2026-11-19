@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the papers below."
+title: "QuirkyMind: interactive demo"
+type: software
+authors:
+  - family-names: Chu
+    given-names: Yu-An
+  - family-names: Chiang
+    given-names: Meng-Fen
+repository-code: "https://github.com/Chu1004/quirkymind-demo"
+preferred-citation:
+  type: conference-paper
+  title: "QuirkyMind: Geometric Tracking of Persona Drift under Identity Incongruity"
+  authors:
+    - family-names: Chu
+      given-names: Yu-An
+    - family-names: Chiang
+      given-names: Meng-Fen
+  collection-title: "Proceedings of the AAAI Conference on Artificial Intelligence"
+  year: 2027
+  notes: "Demonstration track, to appear"
+references:
+  - type: conference-paper
+    title: "Faithful Persona Steering under Incongruity via Dual-Stream Refinement"
+    authors:
+      - family-names: Chu
+        given-names: Yu-An
+      - family-names: Pong
+        given-names: Jen-Ren
+      - family-names: Yeh
+        given-names: Chia-Yao
+      - family-names: Chiang
+        given-names: Meng-Fen
+    collection-title: "Findings of the Association for Computational Linguistics: ACL 2026"
+    publisher:
+      name: "Association for Computational Linguistics"
+    start: 24078
+    end: 24095
+    year: 2026
