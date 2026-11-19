@@ -1,5 +1,7 @@
 __pycache__/
-quirkymind_demo.py
-quirkymind_demo.py
-train_quirkymind.py
 __pycache__/
+*.csv
+atp_*.json
+atp_*.jsonl
+checkpoints/
+*.pt
