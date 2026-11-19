@@ -1,119 +1,234 @@
-[README_citation.md](https://github.com/user-attachments/files/35062427/README_citation.md)
-# QuirkyMind
+# QuirkyMind: Geometric Tracking of Persona Drift under Identity Incongruity
 
-Steering an LLM to hold a real survey respondent's heterodox stance — and
-auditing, item by item, whether it still does.
+Interactive demonstration accompanying our AAAI-27 Demonstration Track paper.
 
-A persona here is one American Trends Panel respondent: a **backstory** the
-prompt carries, and a **stance** the prompt never states, which reaches the
-model only through a trained soft prefix. After every conversational turn the
-system silently re-answers that respondent's own survey items from inside the
-live dialogue, so drift shows up as specific items flipping rather than as a
-falling score.
+People are often *incongruous*: a stable demographic profile coexists with an
+atypical stance (for example, a conservative who is satisfied with the state of
+democracy). Prompted LLM personas tend to lose these stances over a
+conversation and revert to what their demographic group typically says.
+QuirkyMind lets you talk to such a persona and watch, turn by turn, which
+stances it keeps, which it loses, and whether the trained steering module
+makes a difference.
+
+The underlying method is described in
+[Faithful Persona Steering under Incongruity via Dual-Stream Refinement](https://aclanthology.org/2026.findings-acl.1205/)
+(Findings of ACL 2026).
+
+## What the interface shows
+
+| Panel | Name | What it does |
+|---|---|---|
+| A | Heterodox Persona Curation | Pick a persona; its backstory and declared stance are shown next to the stance its group typically holds. |
+| B | Dual-Stream Trait Anchoring | Chat with the persona. Its stage directions drive a small expression readout. |
+| C | Real-Time Geometric Tracking | After every reply, a probe re-answers the persona's survey items inside the live conversation. An item-by-turn matrix shows which answers hold or flip; a plane places each turn by backstory retention (x) and stance retention (y). |
+| D | Live Multi-Turn Auditing & Downstream Tasks | The same conversation scored under four settings, plus reply-level metrics (BLEU-1, Distinct-1/2, EDIV, SDIV). |
+
+The four settings in panel D:
+
+| Setting | Prompt | Sees the conversation | Trained module |
+|---|---|---|---|
+| No-Turn | backstory only | no | off |
+| Single-Turn | backstory + one example pair | no | off |
+| Multi-Turn, steering off | backstory + conversation | yes | off |
+| Multi-Turn (QuirkyMind) | backstory + conversation | yes | on |
+
+No-Turn and Single-Turn never see the conversation, so they cannot drift and
+are drawn as reference levels. The two Multi-Turn settings differ only in the
+trained module, so the gap between them is the effect of the method.
+
+The probe never sees the declared stance in its prompt. Each survey item is
+marked *open-book* (its answer is stated in the backstory or the example pair)
+or *held-out* (its answer appears nowhere in the prompt); the plane in panel C
+uses held-out items.
+
+## Repository contents
+
+| File | Purpose |
+|---|---|
+| `quirkymind_demo.py` | The interactive interface (Gradio). |
+| `train_quirkymind.py` | Trains the soft-prompt adapter the interface loads. |
+| `atp_to_quirkymind.py` | Converts an ATP survey export into a persona bank and training data. |
+| `CITATION.bib` | BibTeX for the demo paper and the method paper. |
+
+## Installation
+
+Python 3.10 or later.
+
+```bash
+pip install "gradio>=4.44" plotly scikit-learn torch transformers \
+            sentence-transformers accelerate pandas
+pip install bitsandbytes   # optional: 4-bit backbone (QUIRKYMIND_4BIT=1, --load-4bit)
+pip install peft           # optional: LoRA adapters (QUIRKYMIND_LORA, --lora)
+```
+
+The default backbone is `meta-llama/Llama-3.1-8B-Instruct`, a gated model.
+Request access on Hugging Face, then log in:
+
+```bash
+huggingface-cli login
+```
 
 ## Quick start
 
-No GPU needed — this runs the whole interface with generation stubbed:
+Run the interface without a GPU or model download. Generation and scoring are
+stubbed, so the numbers are not real, but every panel works:
 
 ```bash
-pip install -r requirements.txt
-QUIRKYMIND_MOCK=1 QUIRKYMIND_BANK=banks/all_bank.json python quirkymind_demo.py
+QUIRKYMIND_MOCK=1 python quirkymind_demo.py
 ```
 
-With a trained prefix:
+Run it for real (a single GPU with about 20 GB free; add `QUIRKYMIND_4BIT=1`
+to fit in about 8 GB):
 
 ```bash
-QUIRKYMIND_BANK=banks/all_bank.json \
-QUIRKYMIND_CKPT=checkpoints/quirkymind_v5/quirkymind.pt \
 python quirkymind_demo.py
 ```
 
-Add `QUIRKYMIND_4BIT=1` to load the backbone in NF4 (~6 GB instead of ~16 GB).
+Then open `http://localhost:7860`.
 
-## Files
+## Trained adapter
 
-| File | What it does |
+The trained adapter is not included. Without it the interface still runs end
+to end, but the Multi-Turn (QuirkyMind) setting uses a placeholder prefix and
+the page header says so. To train your own, see the next section.
+
+## Building personas and training
+
+### 1. Get the survey data
+
+The personas come from Pew Research Center's American Trends Panel (ATP).
+Download the waves from [Pew](https://www.pewresearch.org/american-trends-panel-datasets/)
+(free account required). The data cannot be redistributed here.
+
+`atp_to_quirkymind.py` expects a CSV with one row per (respondent, question):
+
+| Column | Content |
 |---|---|
-| `quirkymind_demo.py` | the interface: persona, conversation, per-turn audit, four-condition comparison |
-| `build_banks.py` | turns the seven ATP CSVs into persona banks and training data |
-| `train_quirkymind.py` | trains the soft prefix (and optional LoRA) |
-| `incongruity_stats.py` | reproduces the incongruity base rate reported in the paper |
-| `make_fig1.py` | composes panel screenshots into one figure |
+| `persona_id` | respondent id |
+| `MCQ` | question text |
+| `options` | answer options as a Python list literal, e.g. `"['Yes', 'No']"` |
+| `label` | index of the respondent's answer in `options` |
+| `backstory` | one-line demographic description of the respondent |
 
-## Data
-
-The ATP files are Pew Research Center's to distribute and are not included.
-Download the waves from
-<https://www.pewresearch.org/american-trends-panel-datasets/>, put the seven
-`*_test.csv` files beside the scripts, then:
+### 2. Build the bank and training data
 
 ```bash
-python build_banks.py --csv-dir . --out banks --per-domain 40 --bank-per-domain 6
-cat banks/report.txt
+python atp_to_quirkymind.py --csv atp_export.csv \
+    --out-bank atp_bank.json --out-train atp_training.jsonl
 ```
 
-An item counts as **incongruous** when at most 30% of the respondent's own
-group gives that answer and it is not the group's mode; the group is the
-respondent's political ideology where the wave asks it, otherwise respondents
-sharing the same demographic line, otherwise the population.
+An answer counts as incongruous when at most 30% of the respondent's ideology
+group gives it and it is not the group's most common answer
+(`--incongruity-threshold` changes the 30%). Personas are split at the
+respondent level: those placed in the bank are never used for training.
 
-## Training
+### 3. Train
 
 ```bash
-PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True \
-python train_quirkymind.py \
-  --data banks/all_train.jsonl --bank banks/all_bank.json \
-  --gphi-input declared --soft-tokens 32 --epochs 8 \
-  --load-4bit --grad-checkpoint --batch 1 --grad-accum 32 --max-len 640 \
-  --out checkpoints/quirkymind_v5
+python train_quirkymind.py --data atp_training.jsonl --check-data
+python train_quirkymind.py --data atp_training.jsonl --bank atp_bank.json \
+    --gphi-input declared --soft-tokens 16 --epochs 8 \
+    --out checkpoints/quirkymind
 ```
 
-Each epoch prints the prefix gain on stance items, per domain. That number,
-not the training loss, is what says whether the prefix carries the stance.
+After each epoch the script scores the bank with and without the trained
+prefix and prints the gain on stance items. On a shared GPU add
+`--load-4bit --grad-checkpoint`.
 
-## Attribution
+### 4. Run the interface on your personas
 
-Backbone: Llama-3.1-8B-Instruct, frozen. Survey data: Pew Research Center,
-American Trends Panel; the Center bears no responsibility for the analyses
-presented here.
+```bash
+QUIRKYMIND_BANK=atp_bank.json \
+QUIRKYMIND_CKPT=checkpoints/quirkymind/quirkymind.pt \
+python quirkymind_demo.py
+```
 
-## Code release
+The terminal prints a `[QuirkyMind]` line for each of these confirming that
+the file was found and loaded.
 
-The interface and the training script are withheld during review and will be
-released with the camera-ready. The data pipeline, the persona banks and the
-statistics script are here so that every number in the paper can be checked.
+To check the whole bank without opening the interface:
 
-## Code release
+```bash
+QUIRKYMIND_SCREEN=1 QUIRKYMIND_BANK=atp_bank.json \
+QUIRKYMIND_CKPT=checkpoints/quirkymind/quirkymind.pt python quirkymind_demo.py
+```
 
-The interface and the training script are withheld during review and will be
-released with the camera-ready. The data pipeline, the persona banks and the
-statistics script are here so that every number in the paper can be checked.
+## Configuration
+
+| Variable | Default | Effect |
+|---|---|---|
+| `QUIRKYMIND_MOCK` | `0` | `1` stubs the model for a UI-only run. |
+| `QUIRKYMIND_MODEL` | `meta-llama/Llama-3.1-8B-Instruct` | Backbone. |
+| `QUIRKYMIND_PORT` | `7860` | Server port. |
+| `QUIRKYMIND_BANK` | unset | Persona bank (JSON). Unset uses the built-in personas. |
+| `QUIRKYMIND_CKPT` | unset | Trained adapter from `train_quirkymind.py`. |
+| `QUIRKYMIND_LORA` | unset | Optional LoRA adapter directory (`train_quirkymind.py --lora`). |
+| `QUIRKYMIND_4BIT` | `0` | `1` loads the backbone in 4-bit. |
+| `QUIRKYMIND_SBERT` | `sentence-transformers/all-MiniLM-L6-v2` | Sentence encoder. |
+| `QUIRKYMIND_OFFLINE` | unset | JSON of offline results for panel D. |
+| `QUIRKYMIND_SCRIPT` | unset | JSON of scripted turns for the replay button. |
+| `QUIRKYMIND_SCREEN` | unset | `1` scores the whole bank in the terminal and exits. |
+
+The adapter records which text it was trained on (`--gphi-input`), and the
+interface reads that from the checkpoint, so the two cannot drift apart.
+
+### Persona bank format
+
+```json
+[
+  {
+    "label": "Shown in the persona menu",
+    "identity": "One-line description",
+    "backstory": "Full backstory (without the declared stance)",
+    "neutral_backstory": "Optional: backstory with the stance clause removed",
+    "role": "Optional: bare role label used by the stereotype control",
+    "expected": "the stance the group typically holds",
+    "declared": "the stance this persona actually holds",
+    "seed_question": "Optional: question of the one example pair",
+    "seed_statement": "Optional: the stance stated in that pair",
+    "probes": [
+      {"id": "s1", "kind": "stance", "question": "...",
+       "options": ["...", "..."], "target": 1, "context": "none"}
+    ]
+  }
+]
+```
+
+`kind` is `bio` for congruous items and `stance` for incongruous ones.
+`context` is `backstory` or `seed` when the answer is stated in the prompt and
+`none` for held-out items.
 
 ## Citation
 
-If you use this demo, please cite:
-
 ```bibtex
 @inproceedings{chu2027quirkymind,
-  title     = {{QuirkyMind}: Geometric Tracking of Persona Drift under Identity Incongruity},
-  author    = {Chu, Yu-An and Chiang, Meng-Fen},
-  booktitle = {Proceedings of the AAAI Conference on Artificial Intelligence},
-  year      = {2027},
-  note      = {Demonstration track, to appear}
+    title     = {{QuirkyMind}: Geometric Tracking of Persona Drift under Identity Incongruity},
+    author    = {Chu, Yu-An and Chiang, Meng-Fen},
+    booktitle = {Proceedings of the AAAI Conference on Artificial Intelligence},
+    volume    = {41},
+    year      = {2027},
+    note      = {Demonstration Track}
+}
+
+@inproceedings{chu-etal-2026-faithful,
+    title     = {Faithful Persona Steering under Incongruity via Dual-Stream Refinement},
+    author    = {Chu, Yu-An and Pong, Jen-Ren and Yeh, Chia-Yao and Chiang, Meng-Fen},
+    booktitle = {Findings of the Association for Computational Linguistics: ACL 2026},
+    month     = jul,
+    year      = {2026},
+    address   = {San Diego, California, USA},
+    publisher = {Association for Computational Linguistics},
+    url       = {https://aclanthology.org/2026.findings-acl.1205/},
+    pages     = {24078--24095}
 }
 ```
 
-The steering method it demonstrates:
+## Acknowledgments
 
-```bibtex
-@inproceedings{chu2026faithful,
-  title     = {Faithful Persona Steering under Incongruity via Dual-Stream Refinement},
-  author    = {Chu, Yu-An and Pong, Jen-Ren and Yeh, Chia-Yao and Chiang, Meng-Fen},
-  booktitle = {Findings of the Association for Computational Linguistics: ACL 2026},
-  pages     = {24078--24095},
-  year      = {2026},
-  publisher = {Association for Computational Linguistics}
-}
-```
-md…]()
+This work is supported by the National Science and Technology Council (NSTC),
+Taiwan, under grants NSTC 115-2221-E-A49-120-MY3 and NSTC 115-2639-E-A49-001-ASP.
 
+## License
+
+This code is released under the [MIT License](LICENSE). The ATP survey data
+is not included and remains subject to Pew Research Center's terms of use.
