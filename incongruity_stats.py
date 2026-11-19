@@ -8,7 +8,7 @@ import pandas as pd
 from collections import Counter
 
 ap = argparse.ArgumentParser()
-ap.add_argument("--csv-dir", default="/mnt/user-data/uploads")
+ap.add_argument("--csv-dir", default=".")
 ap.add_argument("--minority-max", type=float, default=0.30)
 args = ap.parse_args()
 

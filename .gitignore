@@ -1,5 +1,4 @@
 __pycache__/
-__pycache__/
 *.csv
 atp_*.json
 atp_*.jsonl

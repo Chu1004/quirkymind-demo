@@ -1,0 +1,179 @@
+diff --git a/.gitignore b/.gitignore
+index 958f9cc..b784e84 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -1,5 +1,4 @@
+ __pycache__/
+-__pycache__/
+ *.csv
+ atp_*.json
+ atp_*.jsonl
+diff --git a/README.md b/README.md
+index 344d9a5..dfe1b5c 100644
+--- a/README.md
++++ b/README.md
+@@ -47,18 +47,20 @@ uses held-out items.
+ |---|---|
+ | `quirkymind_demo.py` | The interactive interface (Gradio). |
+ | `train_quirkymind.py` | Trains the soft-prompt adapter the interface loads. |
+-| `atp_to_quirkymind.py` | Converts an ATP survey export into a persona bank and training data. |
+-| `CITATION.bib` | BibTeX for the demo paper and the method paper. |
++| `build_banks.py` | Builds the paper's persona banks and training data from the seven ATP wave CSVs. |
++| `atp_to_quirkymind.py` | Builds a bank from a single long-format ATP export, grouping by ideology only. |
++| `table1_stats.py` | Reproduces the incongruity rates reported in the paper (85.8% at 30%, 64.2% at 20%). |
++| `incongruity_stats.py` | The same rate over every respondent rather than the paper's sample (81.8%). |
++| `make_fig1.py` | Composes panel screenshots into one figure. |
++| `banks/` | The persona banks used in the paper, per domain and pooled (`all_bank.json`). |
++| `CITATION.bib`, `CITATION.cff` | Citation for the demo paper and the method paper. |
+ 
+ ## Installation
+ 
+ Python 3.10 or later.
+ 
+-```bash
+-pip install "gradio>=4.44" plotly scikit-learn torch transformers \
+-            sentence-transformers accelerate pandas
+-pip install bitsandbytes   # optional: 4-bit backbone (QUIRKYMIND_4BIT=1, --load-4bit)
+-pip install peft           # optional: LoRA adapters (QUIRKYMIND_LORA, --lora)
++```
++pip install -r requirements.txt
+ ```
+ 
+ The default backbone is `meta-llama/Llama-3.1-8B-Instruct`, a gated model.
+@@ -110,7 +112,23 @@ Download the waves from [Pew](https://www.pewresearch.org/american-trends-panel-
+ | `label` | index of the respondent's answer in `options` |
+ | `backstory` | one-line demographic description of the respondent |
+ 
+-### 2. Build the bank and training data
++### 2a. Reproduce the paper's banks and statistics
++
++Put the seven wave CSVs (`GL_test.csv`, `JN_test.csv`, `MT_test.csv`, `PL_test.csv`,
++`RL_test.csv`, `SC_test.csv`, `SO_test.csv`) in one directory, then:
++
++```
++python build_banks.py --csv-dir . --out banks --per-domain 40 --bank-per-domain 6
++python table1_stats.py --csv-dir .
++```
++
++An answer counts as incongruous when at most 30% of the respondent's group gives it and
++it is not the group's most common answer. The group is the respondent's political
++ideology where the wave asks it (GL), otherwise respondents with the same backstory
++line (JN, MT, SO), otherwise the whole population (PL, RL, SC). `banks/report.txt`
++records the counts per domain.
++
++### 2b. Build a bank from a single ATP export
+ 
+ ```bash
+ python atp_to_quirkymind.py --csv atp_export.csv \
+@@ -127,7 +145,7 @@ respondent level: those placed in the bank are never used for training.
+ ```bash
+ python train_quirkymind.py --data atp_training.jsonl --check-data
+ python train_quirkymind.py --data atp_training.jsonl --bank atp_bank.json \
+-    --gphi-input declared --soft-tokens 16 --epochs 8 \
++    --gphi-input declared --soft-tokens 32 --epochs 8 \
+     --out checkpoints/quirkymind
+ ```
+ 
+@@ -202,24 +220,20 @@ interface reads that from the checkpoint, so the two cannot drift apart.
+ 
+ ```bibtex
+ @inproceedings{chu2027quirkymind,
+-    title     = {{QuirkyMind}: Geometric Tracking of Persona Drift under Identity Incongruity},
+-    author    = {Chu, Yu-An and Chiang, Meng-Fen},
+-    booktitle = {Proceedings of the AAAI Conference on Artificial Intelligence},
+-    volume    = {41},
+-    year      = {2027},
+-    note      = {Demonstration Track}
++  title     = {{QuirkyMind}: Geometric Tracking of Persona Drift under Identity Incongruity},
++  author    = {Chu, Yu-An and Chiang, Meng-Fen},
++  booktitle = {Proceedings of the AAAI Conference on Artificial Intelligence},
++  year      = {2027},
++  note      = {Demonstration track, to appear}
+ }
+ 
+-@inproceedings{chu-etal-2026-faithful,
+-    title     = {Faithful Persona Steering under Incongruity via Dual-Stream Refinement},
+-    author    = {Chu, Yu-An and Pong, Jen-Ren and Yeh, Chia-Yao and Chiang, Meng-Fen},
+-    booktitle = {Findings of the Association for Computational Linguistics: ACL 2026},
+-    month     = jul,
+-    year      = {2026},
+-    address   = {San Diego, California, USA},
+-    publisher = {Association for Computational Linguistics},
+-    url       = {https://aclanthology.org/2026.findings-acl.1205/},
+-    pages     = {24078--24095}
++@inproceedings{chu2026faithful,
++  title     = {Faithful Persona Steering under Incongruity via Dual-Stream Refinement},
++  author    = {Chu, Yu-An and Pong, Jen-Ren and Yeh, Chia-Yao and Chiang, Meng-Fen},
++  booktitle = {Findings of the Association for Computational Linguistics: ACL 2026},
++  pages     = {24078--24095},
++  year      = {2026},
++  publisher = {Association for Computational Linguistics}
+ }
+ ```
+ 
+diff --git a/incongruity_stats.py b/incongruity_stats.py
+index bfb63e5..93f5a4f 100644
+--- a/incongruity_stats.py
++++ b/incongruity_stats.py
+@@ -8,7 +8,7 @@ import pandas as pd
+ from collections import Counter
+ 
+ ap = argparse.ArgumentParser()
+-ap.add_argument("--csv-dir", default="/mnt/user-data/uploads")
++ap.add_argument("--csv-dir", default=".")
+ ap.add_argument("--minority-max", type=float, default=0.30)
+ args = ap.parse_args()
+ 
+diff --git a/requirements.txt b/requirements.txt
+index 25d140a..24ded79 100644
+--- a/requirements.txt
++++ b/requirements.txt
+@@ -9,3 +9,4 @@ transformers
+ torch
+ peft
+ bitsandbytes
++accelerate
+diff --git a/table1_stats.py b/table1_stats.py
+new file mode 100644
+index 0000000..dd75321
+--- /dev/null
++++ b/table1_stats.py
+@@ -0,0 +1,38 @@
++"""Table 1 of the demo paper, restricted to the paper's sampled sizes."""
++import sys, importlib.util, random, argparse
++from collections import Counter
++spec = importlib.util.spec_from_file_location("bb","build_banks.py"); bb = importlib.util.module_from_spec(spec); sys.modules["bb"]=bb; spec.loader.exec_module(bb)
++import pandas as pd
++ap = argparse.ArgumentParser(); ap.add_argument("--seed", type=int, default=0)
++ap.add_argument("--csv-dir", default="."); a = ap.parse_args()
++NAME={"SO":"Social","SC":"Science","RL":"Religion","PL":"Politics","MT":"Methodology","JN":"Journalism","GL":"Global"}
++PAPER_N={"SO":400,"SC":200,"RL":200,"PL":200,"MT":400,"JN":400,"GL":400}
++rng=random.Random(a.seed); rows=[]; tn=t30=t20=ti=0
++for c in ["GL","JN","MT","PL","RL","SC","SO"]:
++    df = bb.load(f"{a.csv_dir}/{c}_test.csv")
++    wide = df.pivot_table(index="persona_id", columns="MCQ", values="answer", aggfunc="first")
++    opts = bb.option_lists(df)
++    back = df.drop_duplicates("persona_id").set_index("persona_id")["backstory"].reindex(wide.index)
++    has_ideo = bb.IDEO in wide.columns; bcounts = Counter(back.dropna())
++    groups = pd.Series({pid: bb.group_of(wide.loc[pid], back[pid] or "", has_ideo, bcounts) for pid in wide.index})
++    grouping = "ideology" if has_ideo else ("profile" if any(k.startswith("back:") for k in groups.unique()) else "population")
++    dist = bb.group_dists(wide, groups)                    # priors from the FULL wave
++    per_persona_q = int(round(len(df)/df.persona_id.nunique()))
++    ids=list(wide.index); rng.shuffle(ids); ids=ids[:PAPER_N[c]]
++    n=a30=a20=inc_tot=0
++    for pid in ids:
++        b=back[pid] or ""
++        if not b: continue
++        st,inc,con = bb.persona_items(wide.loc[pid], b, opts, dist, groups[pid], 0.30)
++        _,i20,_    = bb.persona_items(wide.loc[pid], b, opts, dist, groups[pid], 0.20)
++        if st or inc or con:
++            n+=1; a30+= len(inc)>=1; a20+= len(i20)>=1; inc_tot+=len(inc)
++    ng = groups.nunique()
++    gb = grouping + (f" ({ng})" if grouping!="population" else "")
++    rows.append((NAME[c],c,n,per_persona_q,gb,a30/n*100,a20/n*100,inc_tot/n))
++    tn+=n; t30+=a30; t20+=a20; ti+=inc_tot
++for nm,c,n,q,gb,p30,p20,mi in rows:
++    print(f"{nm} ({c}) & {n} & {q} & {gb} & {p30:.1f} & {mi:.2f} \\\\")
++print("\\midrule")
++print(f"\\textbf{{All}} & \\textbf{{{tn}}} & --- & --- & \\textbf{{{t30/tn*100:.1f}}} & \\textbf{{{ti/tn:.2f}}} \\\\")
++print(f"% 20% threshold, pooled: {t20/tn*100:.1f}%")

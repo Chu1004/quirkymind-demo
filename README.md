@@ -47,18 +47,20 @@ uses held-out items.
 |---|---|
 | `quirkymind_demo.py` | The interactive interface (Gradio). |
 | `train_quirkymind.py` | Trains the soft-prompt adapter the interface loads. |
-| `atp_to_quirkymind.py` | Converts an ATP survey export into a persona bank and training data. |
-| `CITATION.bib` | BibTeX for the demo paper and the method paper. |
+| `build_banks.py` | Builds the paper's persona banks and training data from the seven ATP wave CSVs. |
+| `atp_to_quirkymind.py` | Builds a bank from a single long-format ATP export, grouping by ideology only. |
+| `table1_stats.py` | Reproduces the incongruity rates reported in the paper (85.8% at 30%, 64.2% at 20%). |
+| `incongruity_stats.py` | The same rate over every respondent rather than the paper's sample (81.8%). |
+| `make_fig1.py` | Composes panel screenshots into one figure. |
+| `banks/` | The persona banks used in the paper, per domain and pooled (`all_bank.json`). |
+| `CITATION.bib`, `CITATION.cff` | Citation for the demo paper and the method paper. |
 
 ## Installation
 
 Python 3.10 or later.
 
-```bash
-pip install "gradio>=4.44" plotly scikit-learn torch transformers \
-            sentence-transformers accelerate pandas
-pip install bitsandbytes   # optional: 4-bit backbone (QUIRKYMIND_4BIT=1, --load-4bit)
-pip install peft           # optional: LoRA adapters (QUIRKYMIND_LORA, --lora)
+```
+pip install -r requirements.txt
 ```
 
 The default backbone is `meta-llama/Llama-3.1-8B-Instruct`, a gated model.
@@ -110,7 +112,23 @@ Download the waves from [Pew](https://www.pewresearch.org/american-trends-panel-
 | `label` | index of the respondent's answer in `options` |
 | `backstory` | one-line demographic description of the respondent |
 
-### 2. Build the bank and training data
+### 2a. Reproduce the paper's banks and statistics
+
+Put the seven wave CSVs (`GL_test.csv`, `JN_test.csv`, `MT_test.csv`, `PL_test.csv`,
+`RL_test.csv`, `SC_test.csv`, `SO_test.csv`) in one directory, then:
+
+```
+python build_banks.py --csv-dir . --out banks --per-domain 40 --bank-per-domain 6
+python table1_stats.py --csv-dir .
+```
+
+An answer counts as incongruous when at most 30% of the respondent's group gives it and
+it is not the group's most common answer. The group is the respondent's political
+ideology where the wave asks it (GL), otherwise respondents with the same backstory
+line (JN, MT, SO), otherwise the whole population (PL, RL, SC). `banks/report.txt`
+records the counts per domain.
+
+### 2b. Build a bank from a single ATP export
 
 ```bash
 python atp_to_quirkymind.py --csv atp_export.csv \
@@ -127,7 +145,7 @@ respondent level: those placed in the bank are never used for training.
 ```bash
 python train_quirkymind.py --data atp_training.jsonl --check-data
 python train_quirkymind.py --data atp_training.jsonl --bank atp_bank.json \
-    --gphi-input declared --soft-tokens 16 --epochs 8 \
+    --gphi-input declared --soft-tokens 32 --epochs 8 \
     --out checkpoints/quirkymind
 ```
 
@@ -202,24 +220,20 @@ interface reads that from the checkpoint, so the two cannot drift apart.
 
 ```bibtex
 @inproceedings{chu2027quirkymind,
-    title     = {{QuirkyMind}: Geometric Tracking of Persona Drift under Identity Incongruity},
-    author    = {Chu, Yu-An and Chiang, Meng-Fen},
-    booktitle = {Proceedings of the AAAI Conference on Artificial Intelligence},
-    volume    = {41},
-    year      = {2027},
-    note      = {Demonstration Track}
+  title     = {{QuirkyMind}: Geometric Tracking of Persona Drift under Identity Incongruity},
+  author    = {Chu, Yu-An and Chiang, Meng-Fen},
+  booktitle = {Proceedings of the AAAI Conference on Artificial Intelligence},
+  year      = {2027},
+  note      = {Demonstration track, to appear}
 }
 
-@inproceedings{chu-etal-2026-faithful,
-    title     = {Faithful Persona Steering under Incongruity via Dual-Stream Refinement},
-    author    = {Chu, Yu-An and Pong, Jen-Ren and Yeh, Chia-Yao and Chiang, Meng-Fen},
-    booktitle = {Findings of the Association for Computational Linguistics: ACL 2026},
-    month     = jul,
-    year      = {2026},
-    address   = {San Diego, California, USA},
-    publisher = {Association for Computational Linguistics},
-    url       = {https://aclanthology.org/2026.findings-acl.1205/},
-    pages     = {24078--24095}
+@inproceedings{chu2026faithful,
+  title     = {Faithful Persona Steering under Incongruity via Dual-Stream Refinement},
+  author    = {Chu, Yu-An and Pong, Jen-Ren and Yeh, Chia-Yao and Chiang, Meng-Fen},
+  booktitle = {Findings of the Association for Computational Linguistics: ACL 2026},
+  pages     = {24078--24095},
+  year      = {2026},
+  publisher = {Association for Computational Linguistics}
 }
 ```
 
