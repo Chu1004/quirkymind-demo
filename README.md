@@ -1,3 +1,4 @@
+[README_citation.md](https://github.com/user-attachments/files/35062427/README_citation.md)
 # QuirkyMind
 
 Steering an LLM to hold a real survey respondent's heterodox stance — and
@@ -87,3 +88,32 @@ statistics script are here so that every number in the paper can be checked.
 The interface and the training script are withheld during review and will be
 released with the camera-ready. The data pipeline, the persona banks and the
 statistics script are here so that every number in the paper can be checked.
+
+## Citation
+
+If you use this demo, please cite:
+
+```bibtex
+@inproceedings{chu2027quirkymind,
+  title     = {{QuirkyMind}: Geometric Tracking of Persona Drift under Identity Incongruity},
+  author    = {Chu, Yu-An and Chiang, Meng-Fen},
+  booktitle = {Proceedings of the AAAI Conference on Artificial Intelligence},
+  year      = {2027},
+  note      = {Demonstration track, to appear}
+}
+```
+
+The steering method it demonstrates:
+
+```bibtex
+@inproceedings{chu2026faithful,
+  title     = {Faithful Persona Steering under Incongruity via Dual-Stream Refinement},
+  author    = {Chu, Yu-An and Pong, Jen-Ren and Yeh, Chia-Yao and Chiang, Meng-Fen},
+  booktitle = {Findings of the Association for Computational Linguistics: ACL 2026},
+  pages     = {24078--24095},
+  year      = {2026},
+  publisher = {Association for Computational Linguistics}
+}
+```
+md…]()
+
